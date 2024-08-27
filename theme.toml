@@ -1,0 +1,11 @@
+name = "ospo"
+license = "Apache 2.0"
+licenselink = "https://github.com/ospo-ch/ospo-hugo-theme/blob/main/LICENSE"
+description = "A Hugo theme to bootstrap an ospo portal"
+homepage = "https://github.com/ospo-ch/ospo-hugo-theme/"
+tags = ["ospo", "multilingual", "responsive"]
+features = []
+min_version = "0.116.0"
+
+[author]
+  name = "ospo.ch Authors"
