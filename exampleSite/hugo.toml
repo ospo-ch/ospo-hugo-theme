@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Example Site'
+theme = 'ospo-hugo-theme'

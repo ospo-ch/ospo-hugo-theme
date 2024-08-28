@@ -1,0 +1,21 @@
+node_modules/
+package-lock.json
+/tmp
+
+# Hugo
+.hugo_build.lock
+/public
+resources/
+
+# system files
+.DS_Store
+
+# IDE files
+.idea
+
+# environment
+.env
+
+# VS Code
+/.vscode/**
+!/.vscode/cspell.json
