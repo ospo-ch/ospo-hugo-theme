@@ -68,6 +68,12 @@ git pull
 
 ## Configuration
 
+### Add your favicons 
+
+Create a set of favicons via [https://cthedot.de/icongen/](https://cthedot.de/icongen/) or another tool and put them in your site project's `static/favicons` directory. This will override the default favicons for the theme. 
+
+For special requirements, create your own `layout/partials/head/favicons.html` file.
+
 ## Contributing
 
 To contribute, please follow the guidelines outlined in our [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CONDUCT.md).
