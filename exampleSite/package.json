@@ -1,0 +1,24 @@
+{
+  "name": "ospo-hugo-theme",
+  "version": "1.0.0",
+  "description": "Example site that uses ospo hugo theme",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ospo-ch/ospo-hugo-theme.git"
+  },
+  "author": "ospo.ch Authors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ospo-ch/ospo-hugo-theme/issues"
+  },
+  "homepage": "https://github.com/ospo-ch/ospo-hugo-theme#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.43",
+    "postcss-cli": "^11.0.0"
+  }
+}
