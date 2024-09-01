@@ -1,0 +1,10 @@
+// SCSS Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// prefix for :root CSS custom properties 
+$prefix:                ospo- !default;
+$desktop-width: calc(1200px + 25px + 25px) !default;
+$min-desktop: 1000px !default;
+$mobile-max: 999px !default;

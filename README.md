@@ -74,6 +74,13 @@ Create a set of favicons via [https://cthedot.de/icongen/](https://cthedot.de/ic
 
 For special requirements, create your own `layout/partials/head/favicons.html` file.
 
+### Custom styles 
+
+To customize your project look and feel you can provide your own version of the theme placeholder files and place them in the `assets/scss/` folder:
+
+- `_variables_project.scss`: override the theme variables
+- `_styles_project.scss`: add custom SCSS styles or override the theme's styles
+
 ## Contributing
 
 To contribute, please follow the guidelines outlined in our [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CONDUCT.md).
