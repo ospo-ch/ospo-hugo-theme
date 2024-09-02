@@ -2,3 +2,10 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Example Site'
 theme = 'ospo-hugo-theme'
+
+[build]
+    useResourceCacheWhen = 'fallback'
+
+[params]
+    [params.ui]
+        logo = '/images/logo.svg'
