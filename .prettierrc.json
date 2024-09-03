@@ -1,6 +1,0 @@
-{
-  "proseWrap": "always",
-  "semi": true,
-  "singleQuote": true,
-  "plugins": ["prettier-plugin-go-template"]
-}
