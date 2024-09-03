@@ -2,7 +2,7 @@
   <div class="container wrap">
     {{ with .Site.Params.ui.logo }}
     <a class="logo-link" href="{{ "/" | absLangURL }}">
-        <img class="logo" width="150" height="40" src="{{ . | absURL }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
+        <img class="logo" width="150" height="40" src="{{ . | relURL }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
     </a>
     {{ else }}
     <a class="site-title-link" href="{{ "/" | absLangURL }}">
@@ -22,7 +22,7 @@
             {{ range . }}
             <li>
                 <a href="{{ .value }}" title="">
-                    <img loading="lazy" width="20" height="20" src="{{ printf "/images/social-icons/%s.svg" .key }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
+                    <img loading="lazy" width="20" height="20" src="{{ printf "/images/social-icons/%s.svg" .key | relURL }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
                 </a>
             </li>
             {{ end }}
