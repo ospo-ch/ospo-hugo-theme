@@ -7,5 +7,28 @@ theme = 'ospo-hugo-theme'
     useResourceCacheWhen = 'fallback'
 
 [params]
-    [params.ui]
-        logo = '/images/logo.svg'
+
+# UI configuration
+[params.ui]
+    logo = '/images/logo.svg'
+
+[params.links]
+  [[params.links.user]]
+    key = "x-twitter"
+    name = "Twitter"
+    url = "https://example.org/twitter"
+    desc = "Follow us on Twitter to get the latest news"
+  [[params.links.user]]
+    key = "linkedin"
+    url = "https://example.org/linkedin"
+    desc = "Follow us on LinkedIn to get the latest news"
+  [[params.links.user]]
+    key = "discord"
+    name = "Discord"
+    url = "https://example.org/discord"
+    desc = "Join our discord channel to get the latest news"
+  [[params.links.user]]
+    key = "github"
+    name = "GitHub"
+    url = "https://example.org/github"
+    desc = "Development is happening here"

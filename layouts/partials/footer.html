@@ -1,1 +1,34 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="footer">
+  <div class="container wrap">
+    {{ with .Site.Params.ui.logo }}
+    <a class="logo-link" href="{{ "/" | absLangURL }}">
+        <img class="logo" width="150" height="40" src="{{ . | absURL }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
+    </a>
+    {{ else }}
+    <a class="site-title-link" href="{{ "/" | absLangURL }}">
+        <span class="site-title">{{ $.Site.Title }}</span>
+    </a>
+    {{ end }}
+    <hr class="footer-hr" />
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        <p>
+          {{ .Site.Copyright | default (printf "Copyright © %d All Rights Reserved" (now.Year)) }}
+        </p>
+      </div>
+      {{ with .Site.Params.links -}}
+        {{ with index . "user" -}}
+          <ul class="social-links">
+            {{ range . }}
+            <li>
+                <a href="{{ .value }}" title="">
+                    <img loading="lazy" width="20" height="20" src="{{ printf "/images/social-icons/%s.svg" .key }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
+                </a>
+            </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</footer>
