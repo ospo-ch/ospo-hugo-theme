@@ -7,15 +7,27 @@ $desktop-width: calc(1200px + 25px + 25px) !default;
 $min-desktop: 1000px !default;
 $mobile-max: 999px !default;
 
-$primary: #FFFFFF;
-$logo-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji' !default;
+$primary: #ffffff;
+
+$font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji" !default;
 
 //  CSS custom properties
 :root {
-    --gutter: 25px;
-    --container-width: 1200px;
-    --footer-bg-color: white;
-    --footer-link-color: black;
-    --footer-link-color-hover: grey;
-    --color-bg-subtle: #f6f8fa;
-  }
+  --white: white;
+  --black: black;
+  /* Typography */
+  --ospo-body-font-family: $font-family;
+  --ospo-title-font-family: $font-family;
+  --ospo-button-font-family: $font-family;
+
+  --ospo-text-color: black;
+  --ospo-primary-400: #bdbdbd;
+  --ospo-primary-500: #9e9e9e;
+  --ospo-primary-700: #616161;
+  --ospo-primary-800: #424242;
+  --ospo-gutter: 25px;
+  --ospo-container-width: 1200px;
+  --ospo-footer-bg-color: white;
+  --ospo-footer-link-color: black;
+}

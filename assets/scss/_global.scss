@@ -1,56 +1,56 @@
 body {
-	overscroll-behavior: none; // fixes menu off bottom of screen.
-	height: auto;
-	max-width: 100%;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	@supports (min-height: 100dvh) {
-		min-height: 100dvh;
-	}
-	&.has-menu-active {
-		// Stops backround moving when menu open.
-		overflow: hidden;
-		height: 100%;
-	}
+  overscroll-behavior: none; // fixes menu off bottom of screen.
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  @supports (min-height: 100dvh) {
+    min-height: 100dvh;
+  }
+  &.has-menu-active {
+    // Stops backround moving when menu open.
+    overflow: hidden;
+    height: 100%;
+  }
 }
 
 footer {
-	margin-top: auto;
+  margin-top: auto;
 }
 
 .container {
-	margin: auto;
-	width: 100%;
-	max-width: 100%;
-	@media (min-width: $desktop-width) {
-		max-width: var(--container-width);
-	}
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: $desktop-width) {
+    max-width: var(--ospo-container-width);
+  }
 }
 
 .wrap {
-	padding-left: 12px;
-	padding-right: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 
-	@media (min-width: 372px) {
-		padding-left: var(--gutter);
-		padding-right: var(--gutter);
-	}
+  @media (min-width: 372px) {
+    padding-left: var(--ospo-gutter);
+    padding-right: var(--ospo-gutter);
+  }
 
-	@media (min-width: $desktop-width) {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
+  @media (min-width: $desktop-width) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 // Reusable.
 .ul-reset {
-	list-style-type: none;
-	margin-block-start: 0;
-	margin-block-end: 0;
-	margin-inline-start: 0;
-	margin-inline-end: 0;
-	li {
-		margin-bottom: 0;
-	}
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  li {
+    margin-bottom: 0;
+  }
 }
