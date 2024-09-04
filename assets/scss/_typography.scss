@@ -1,0 +1,37 @@
+// General rules of typography that apply across the whole website.
+// Set body size.
+body {
+  font-size: 0.875em; // 14px.
+  @media (min-width: 500px) {
+    font-size: 1em; // 16px.
+  }
+  font-weight: 400;
+  color: var(--ospo-text-color);
+  font-family: var(--ospo-body-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+  font-family: var(--ospo-title-font-family);
+  margin-block-start: 70px;
+  margin-block-end: 50px;
+  @media (min-width: $desktop-width) {
+    margin-block-start: 100px;
+    margin-block-end: 80px;
+  }
+}
+
+h1,
+.h1 {
+  font-family: var(--ospo-title-font-family);
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  line-height: 112.2%;
+  font-size: 44px;
+  @media (min-width: $min-desktop) {
+    line-height: 115%;
+    font-size: 80px;
+  }
+}
