@@ -10,7 +10,7 @@ useResourceCacheWhen = "fallback"
 
 # UI configuration
 [params.ui]
-logo = "/images/logo.svg"
+logo = "images/logo.svg"
 
 [params.links]
 [[params.links.user]]

@@ -22,7 +22,7 @@
             {{ range . }}
             <li>
                 <a href="{{ .value }}" title="">
-                    <img loading="lazy" width="20" height="20" src="{{ printf "/images/social-icons/%s.svg" .key | relURL }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
+                    <img loading="lazy" width="20" height="20" src="{{ printf "images/social-icons/%s.svg" .key | relURL }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
                 </a>
             </li>
             {{ end }}
