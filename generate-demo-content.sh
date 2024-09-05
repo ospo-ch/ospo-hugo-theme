@@ -29,13 +29,16 @@ main() {
 
 seed_software_catalog() {
     FILENAME="catalog"
-    for i in {1..25}
+    for i in {1..9}
     do 
         FILE_SUFFIX=$(printf "%03d" "$i")
         cat > "$FILENAME-$FILE_SUFFIX.md" << EOF
-        ---
-        title: software $i
-        ---
+---
+title: software $i
+description: open source project
+params:
+    org_name: Company
+---
 EOF
     done 
 }
