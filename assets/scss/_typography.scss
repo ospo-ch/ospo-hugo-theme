@@ -35,3 +35,33 @@ h1,
     font-size: 80px;
   }
 }
+
+h2,
+.h2 {
+  font-family: var(--ospo-title-font-family);
+  font-weight: 700;
+  color: var(--primary-400);
+  text-transform: uppercase;
+  line-height: 120%;
+  font-size: 34px;
+  margin-block-start: 50px;
+  margin-block-end: 30px;
+  @media (min-width: $min-desktop) {
+    line-height: 115%;
+    font-size: 40px;
+  }
+}
+
+p + p,
+ul + p,
+ol + p {
+  margin-top: 24px;
+}
+
+a {
+  font-weight: 700;
+  color: var(--primary-600);
+  &:hover {
+    color: var(--primary-700);
+  }
+}
