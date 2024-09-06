@@ -43,15 +43,33 @@
     -webkit-box-orient: vertical;
   }
   &__links-container {
-    border-top: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c44d;
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
     margin-top: 1.5rem;
     padding: 1rem 0;
   }
+
+  &__cta-link {
+    border-top: 1px solid #c4c4c44d;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
   &__link {
     padding-left: 2rem;
     text-decoration: none;
+  }
+
+  &__cover {
+    object-fit: cover;
+    aspect-ratio: calc(16 / 10);
+    margin-bottom: 1rem;
+    background: #c4c4c4;
+    overflow: hidden;
   }
 }

@@ -1,0 +1,21 @@
+{{ define "main" }} {{ .Content }}
+<div class="cards columns-3">
+  {{ range .Pages }}
+  <div class="card">
+    <div class="card__cover"></div>
+    <div class="card__content">
+      <span class="card__lead">{{ .Params.org_name }}</span>
+      <h4 class="card__title">{{ .Title }}</h4>
+      <p class="card__description">{{ .Description }}</p>
+      <div class="card__cta-link">
+        <span>View Project</span>
+        <a href="{{ .Permalink }}" class="card__link">
+          <img loading="lazy" width="16" height="16" src="{{
+          "images/icons/arrow-right.svg" | relURL }}" alt="See details icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
