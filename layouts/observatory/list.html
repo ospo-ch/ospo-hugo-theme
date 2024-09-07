@@ -1,0 +1,67 @@
+{{ define "main" }} {{ .Content }}
+<div class="grid-container columns-2">
+  {{ range .Pages }} {{ $documentation_score := .Params.stats.documentation }}
+  {{ $license_score := .Params.stats.license }} {{ $practices_score :=
+  .Params.stats.practices }} {{ $security_score := .Params.stats.security }} {{
+  $legal_score := .Params.stats.legal }}
+  <div class="scan-card">
+    <div class="scan-card__header">
+      <div class="scan-card__title">
+        <h4>{{ .Title }}</h4>
+      </div>
+      <div class="score">
+        <span>54</span>
+      </div>
+    </div>
+    <p>{{ .Description }}</p>
+    <div class="stats">
+      <div class="stat-item">
+        <div class="category-title">
+          <span>📄 Documentation</span>
+        </div>
+        <span class="score">{{ $documentation_score }}</span>
+        <div class="progress-bar" data-score="{{ $documentation_score }}">
+          <span style="width: {{ $documentation_score }}%"></span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="category-title">
+          <span>🔑 License</span>
+        </div>
+        <span class="score">{{ $license_score }}</span>
+        <div class="progress-bar" data-score="{{ $license_score }}">
+          <span style="width: {{ $license_score }}%"></span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="category-title">
+          <span>⚙️ Best Practices</span>
+        </div>
+        <span class="score">{{ $practices_score }}</span>
+        <div class="progress-bar" data-score="{{ $practices_score }}">
+          <span style="width: {{ $practices_score }}%"></span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="category-title">
+          <span>🔒 Security</span>
+        </div>
+        <span class="score">{{ $security_score }}</span>
+        <div class="progress-bar" data-score="{{ $security_score }}">
+          <span style="width: {{ $security_score }}%"></span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="category-title">
+          <span>⚖️ Legal</span>
+        </div>
+        <span class="score">{{ $legal_score }}</span>
+        <div class="progress-bar" data-score="{{ $legal_score }}">
+          <span style="width: {{ $legal_score }}%"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
