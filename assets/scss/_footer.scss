@@ -2,7 +2,7 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 24px;
-  @media (min-width: $min-desktop) {
+  @media (min-width: $screen-lg) {
     padding-top: 100px;
   }
   background-color: var(--ospo-footer-bg-color);
@@ -16,9 +16,9 @@
 
   .footer-hr {
     opacity: 0.25;
-    color: var(--black);
+    color: var(--color-black);
     margin-top: 30px;
-    @media (min-width: $min-desktop) {
+    @media (min-width: $screen-lg) {
       margin-top: 60px;
     }
   }
@@ -30,7 +30,7 @@
 
   .logo-link {
     display: none;
-    @media (min-width: $min-desktop) {
+    @media (min-width: $screen-lg) {
       display: block;
     }
   }
@@ -43,7 +43,7 @@
   }
 
   &__copyright {
-    font-size: 11px;
+    font-size: var(--ospo-footer-copyright-font-size);
     line-height: 150%;
     letter-spacing: 0.2px;
     p {

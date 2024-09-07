@@ -2,9 +2,9 @@
 .button {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 47px;
-  background-color: var(--ospo-primary-700);
-  color: var(--white);
+  border-radius: var(--ospo-button-border-radius);
+  background-color: var(--ospo-button-background-color-primary);
+  color: var(--color-white);
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1;
@@ -13,26 +13,26 @@
 
   &:hover,
   &:active {
-    color: var(--white);
-    background-color: var(--ospo-primary-800);
+    color: var(--ospo-button-color);
+    background-color: var(--ospo-button-highlight-background-color-primary);
   }
   &.secondary {
-    background-color: var(--ospo-primary-500);
+    background-color: var(--ospo-button-background-color-secondary);
     &:hover,
     &:active {
-      color: var(--white);
-      background-color: var(--ospo-primary-700);
+      color: var(--ospo-button-color);
+      background-color: var(--ospo-button-highlight-background-color-secondary);
     }
   }
   &.tertiary {
-    background-color: var(--ospo-primary-500);
+    background-color: var(--ospo-button-background-color-secondary);
     &:hover {
-      color: var(--white);
-      background-color: var(--ospo-primary-700);
+      color: var(--ospo-button-color);
+      background-color: var(--ospo-button-highlight-background-color-secondary);
     }
     &:active {
-      color: var(--black);
-      background-color: var(--white);
+      color: var(--color-black);
+      background-color: var(--color-white);
     }
   }
 }
@@ -40,7 +40,7 @@
 .button {
   margin-top: 30px;
   margin-bottom: 30px;
-  @media (min-width: $min-desktop) {
+  @media (min-width: $screen-lg) {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -49,7 +49,7 @@
 .button + .button {
   margin-top: 0;
   margin-bottom: 30px;
-  @media (min-width: $min-desktop) {
+  @media (min-width: $screen-lg) {
     margin-top: 0;
     margin-bottom: 50px;
   }

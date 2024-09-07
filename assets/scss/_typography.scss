@@ -26,11 +26,11 @@ h1,
 .h1 {
   font-family: var(--ospo-title-font-family);
   font-weight: 700;
-  color: var(--black);
+  color: var(--color-black);
   text-transform: uppercase;
   line-height: 112.2%;
   font-size: 44px;
-  @media (min-width: $min-desktop) {
+  @media (min-width: $screen-lg) {
     line-height: 115%;
     font-size: 80px;
   }
@@ -40,13 +40,13 @@ h2,
 .h2 {
   font-family: var(--ospo-title-font-family);
   font-weight: 700;
-  color: var(--primary-400);
+  color: var(--color-gray-400);
   text-transform: uppercase;
   line-height: 120%;
   font-size: 34px;
   margin-block-start: 50px;
   margin-block-end: 30px;
-  @media (min-width: $min-desktop) {
+  @media (min-width: $screen-lg) {
     line-height: 115%;
     font-size: 40px;
   }
@@ -60,8 +60,8 @@ ol + p {
 
 a {
   font-weight: 700;
-  color: var(--primary-600);
+  color: var(--ospo-link-color);
   &:hover {
-    color: var(--primary-700);
+    color: var(--ospo-link-highlight-color);
   }
 }

@@ -8,19 +8,19 @@
 }
 
 .card {
-  border: 1px solid #c4c4c4;
-  background: var(--white);
+  border: 1px solid var(--ospo-card-border-color);
+  background: var(--ospo-card-background-color);
 
   &__content {
     padding: 1.6rem 1.6rem 1rem;
     opacity: 1;
   }
 
-  &__lead {
-    color: #3c4650;
+  &__kicker {
+    color: var(--ospo-card-kicker-color);
     font-size: 1rem;
     font-weight: 500;
-    line-height: 2.6rem;
+    line-height: var(--ospo-card-kicker-line-height);
   }
 
   &__title {
@@ -43,7 +43,7 @@
     -webkit-box-orient: vertical;
   }
   &__links-container {
-    border-top: 1px solid #c4c4c44d;
+    border-top: 1px solid var(--ospo-card-cta-wrapper-border-color);
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
@@ -52,7 +52,7 @@
   }
 
   &__cta-link {
-    border-top: 1px solid #c4c4c44d;
+    border-top: 1px solid var(--ospo-card-cta-wrapper-border-color);
     margin-top: 3rem;
     padding: 1rem 0;
     justify-content: space-between;
@@ -69,7 +69,7 @@
     object-fit: cover;
     aspect-ratio: calc(16 / 10);
     margin-bottom: 1rem;
-    background: #c4c4c4;
+    background: var(--ospo-card-cover-background-color);
     overflow: hidden;
   }
 }
