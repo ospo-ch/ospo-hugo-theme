@@ -6,6 +6,6 @@ This is an example site for the ospo theme. This theme has been created for the 
 
 {{< button link="catalog" text="Software Catalog" >}}
 
-{{< button link="projects" style="secondary" text="Projects" >}}
+{{< button link="projects" text="Projects" >}}
 
-{{< button link="monitor" style="tertiary" text="Monitor" >}}
+{{< button link="monitor" text="Monitor" >}}

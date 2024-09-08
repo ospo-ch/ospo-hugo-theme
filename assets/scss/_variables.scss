@@ -37,12 +37,10 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   --ospo-text-color: var(--color-black);
   --ospo-link-color: var(--color-gray-800);
   --ospo-link-highlight-color: var(--color-gray-700);
-  --ospo-button-background-color-primary: var(--color-gray-700);
-  --ospo-button-background-color-secondary: var(--color-gray-500);
-  --ospo-button-border-radius: 47px;
-  --ospo-button-color: var(--color-white);
-  --ospo-button-highlight-background-color-primary: var(--color-gray-800);
-  --ospo-button-highlight-background-color-secondary: var(--color-gray-700);
+  --ospo-button-background-color: var(--color-gray-700);
+  --ospo-button-border-color: var(--color-gray-500);
+  --ospo-button-highlight-color: var(--color-white);
+  --ospo-button-highlight-background-color: var(--color-gray-500);
   --ospo-gutter: 25px;
   --ospo-container-width: 1200px;
   --ospo-header-background-color: var(--color-white);

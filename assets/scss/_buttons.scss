@@ -2,9 +2,7 @@
 .button {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: var(--ospo-button-border-radius);
-  background-color: var(--ospo-button-background-color-primary);
-  color: var(--color-white);
+  border: 1px solid var(--ospo-button-border-color);
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1;
@@ -13,27 +11,8 @@
 
   &:hover,
   &:active {
-    color: var(--ospo-button-color);
-    background-color: var(--ospo-button-highlight-background-color-primary);
-  }
-  &.secondary {
-    background-color: var(--ospo-button-background-color-secondary);
-    &:hover,
-    &:active {
-      color: var(--ospo-button-color);
-      background-color: var(--ospo-button-highlight-background-color-secondary);
-    }
-  }
-  &.tertiary {
-    background-color: var(--ospo-button-background-color-secondary);
-    &:hover {
-      color: var(--ospo-button-color);
-      background-color: var(--ospo-button-highlight-background-color-secondary);
-    }
-    &:active {
-      color: var(--color-black);
-      background-color: var(--color-white);
-    }
+    color: var(--ospo-button-highlight-color);
+    background-color: var(--ospo-button-highlight-background-color);
   }
 }
 
