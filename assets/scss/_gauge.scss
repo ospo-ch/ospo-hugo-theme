@@ -1,0 +1,72 @@
+.gauge__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  padding: var(--ospo-score-container-padding);
+
+  --transition-length: 1s;
+
+  /* Contain the layout style paint & layers during animation*/
+  contain: content;
+  will-change: opacity; /* Only using for layer promotion */
+}
+
+.gauge__wrapper-low {
+  color: var(--ospo-color-low-secondary);
+  fill: var(--ospo-color-low);
+  stroke: var(--ospo-color-low);
+}
+
+.gauge__wrapper-moderate-low {
+  color: var(--ospo-color-moderate-low-secondary);
+  fill: var(--ospo-color-moderate-low);
+  stroke: var(--ospo-color-moderate-low);
+}
+
+.gauge__wrapper-moderate-high {
+  color: var(--ospo-color-moderate-high-secondary);
+  fill: var(--ospo-color-moderate-high);
+  stroke: var(--ospo-color-moderate-high);
+}
+
+.gauge__wrapper-high {
+  color: var(--ospo-color-high-secondary);
+  fill: var(--ospo-color-high);
+  stroke: var(--ospo-color-high);
+}
+
+.gauge {
+  stroke-linecap: round;
+  width: var(--ospo-gauge-circle-size);
+  height: var(--ospo-gauge-circle-size);
+}
+
+.gauge__percentage {
+  width: 100%;
+  height: var(--ospo-gauge-circle-size);
+  line-height: var(--ospo-gauge-circle-size);
+  position: absolute;
+  font-family: var(--ospo-report-font-family);
+  font-size: calc(var(--ospo-gauge-circle-size) * 0.34 + 1.3px);
+  text-align: center;
+  top: var(--ospo-score-container-padding);
+}
+
+.gauge-base {
+  opacity: 0.1;
+}
+
+@keyframes load-gauge {
+  from {
+    stroke-dasharray: 0 352;
+  }
+}
+
+.gauge-arc {
+  fill: none;
+  transform-origin: 50% 50%;
+  animation: load-gauge var(--transition-length) ease both;
+  animation-delay: 250ms;
+}

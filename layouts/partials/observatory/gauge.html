@@ -1,0 +1,40 @@
+{{ $gauge_style := "" }}
+{{ $score := .Params.scores.aggregate }}
+{{ if le $score 25 }}
+  {{ $gauge_style = "low" }}
+{{ else if le $score 50 }}
+  {{ $gauge_style = "moderate-low" }}
+{{ else if le $score 75 }}
+  {{ $gauge_style = "moderate-high" }}
+{{ else }}
+  {{ $gauge_style = "high" }}
+{{ end }}
+{{ $circumference := 0 }}
+{{ $circumference = mul 2 math.Pi 56 }}
+{{ $offset := 0 }}
+{{ $offset = mul $circumference (div (sub 100 $score) (float 100)) }}
+<div class="gauge__wrapper gauge__wrapper-{{ $gauge_style }}">
+    <div class="gauge__svg-wrapper">
+      <svg viewBox="0 0 120 120" class="gauge">
+        <circle
+          class="gauge-base"
+          r="56"
+          cx="60"
+          cy="60"
+          stroke-width="8"
+        ></circle>
+        <circle
+          class="gauge-arc"
+          r="56"
+          cx="60"
+          cy="60"
+          stoke-width="8"
+          stroke-dashoffset="{{ $offset }}px"
+          stroke-dasharray="{{ $circumference }}px"
+          style="transform: rotate(-90deg);"
+        ></circle>
+      </svg>
+    </div>
+    <div class="gauge__percentage">{{ $score }}</div>
+  </div>
+</div>
