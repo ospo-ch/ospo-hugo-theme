@@ -1,0 +1,51 @@
+.audit-categories {
+  border: 1px solid #e0e0e0; /* Adds outer border to the stats component */
+  border-collapse: collapse;
+  width: 100%; /* Make the component span the width of the container */
+  font-size: 14px;
+}
+
+.category-wrapper {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adds spacing inside each category row */
+  border-bottom: 1px solid #e0e0e0; /* Adds a bottom border between rows */
+}
+
+.category-wrapper__title {
+  min-width: 120px;
+  max-width: 230px;
+  width: 30%;
+
+  @media only screen and (max-width: $screen-md) {
+    .category-wrapper__title {
+      font-size: 65%;
+    }
+  }
+}
+
+.category-wrapper__score {
+  font-weight: bold;
+  color: gray;
+}
+
+.category-wrapper:last-child {
+  border-bottom: none; /* Removes bottom border for the last item */
+}
+
+.category-wrapper__progress-bar {
+  width: 60%; /* Adjust progress bar to fit in the remaining space */
+  height: 8px;
+  background-color: #e0e0e0;
+  position: relative;
+  border-radius: 0; /* Remove the rounded borders */
+}
+
+.category-wrapper__progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #76c7c0;
+}
