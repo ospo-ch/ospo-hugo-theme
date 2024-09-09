@@ -1,3 +1,3 @@
 ---
-title: monitor
+title: observatory
 ---
