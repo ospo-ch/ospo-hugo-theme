@@ -6,6 +6,11 @@ theme = "ospo-hugo-theme"
 [build]
 useResourceCacheWhen = "fallback"
 
+[taxonomies]
+category = "categories"
+tag = "tags"
+languages = "languages"
+
 [params]
 
 # UI configuration

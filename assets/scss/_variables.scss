@@ -75,6 +75,7 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   --ospo-report-font-family: var($font-family);
   --ospo-report-category-font-size: 14px;
   --ospo-progress-background-color: var(--color-gray-300);
+  --ospo-divider-background-color: var(--color-gray-400);
 
   /* z-index
   Keep this in order, and avoid reusing variables 
