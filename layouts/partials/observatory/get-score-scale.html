@@ -1,0 +1,26 @@
+{{/*
+Returns the scale bracket associated with the input score.    
+
+- 0 - 25   |  low 
+- 25 - 50  |  moderate low
+- 50 - 75  |  moderate high
+- 75 - 100 |  high
+    
+@param {int} . The score to map into the scale bracket.
+@returns {string}
+    
+@example {{ partial "get-score-scale.html" 25 }}
+
+*/}}
+{{- $score := . -}}
+{{- $scale := "" -}}
+{{- if le $score 25 -}}
+  {{- $scale = "low" -}}
+{{- else if le $score 50 -}}
+  {{- $scale = "moderate-low" -}}
+{{- else if le $score 75 -}}
+  {{- $scale = "moderate-high" -}}
+{{- else }}
+  {{- $scale = "high" -}}
+{{- end }}
+{{- return $scale -}}

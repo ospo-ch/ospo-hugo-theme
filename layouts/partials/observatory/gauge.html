@@ -1,14 +1,6 @@
 {{ $gauge_style := "" }}
 {{ $score := .Params.scores.aggregate }}
-{{ if le $score 25 }}
-  {{ $gauge_style = "low" }}
-{{ else if le $score 50 }}
-  {{ $gauge_style = "moderate-low" }}
-{{ else if le $score 75 }}
-  {{ $gauge_style = "moderate-high" }}
-{{ else }}
-  {{ $gauge_style = "high" }}
-{{ end }}
+{{ $gauge_style = partial "observatory/get-score-scale" $score }}
 {{ $circumference := 0 }}
 {{ $circumference = mul 2 math.Pi 56 }}
 {{ $offset := 0 }}
