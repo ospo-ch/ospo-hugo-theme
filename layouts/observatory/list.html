@@ -1,15 +1,15 @@
 {{ define "main" }} {{ .Content }}
-<div class="grid-container columns-2">
+<div class="columns columns-2">
   {{ range .Pages }}
-  <div class="scan-card">
-    <div class="scan-card__header">
-      <div class="scan-card__title">
+  <div class="report-card">
+    <div class="report-card__header">
+      <div class="report-card__title">
         <h4>{{ .Title }}</h4>
       </div>
       {{- partial "observatory/gauge.html" . -}}
-      <p>{{ .Description }}</p>
-      {{- partial "observatory/category-summary" . -}}
     </div>
+    <p>{{ .Description }}</p>
+    {{- partial "observatory/category-summary" . -}}
   </div>
   {{ end }}
 </div>
