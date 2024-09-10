@@ -11,30 +11,30 @@
   /* Contain the layout style paint & layers during animation*/
   contain: content;
   will-change: opacity; /* Only using for layer promotion */
-}
 
-.gauge__wrapper-low {
-  color: var(--ospo-color-low-secondary);
-  fill: var(--ospo-color-low);
-  stroke: var(--ospo-color-low);
-}
+  &--low {
+    color: var(--ospo-color-low-secondary);
+    fill: var(--ospo-color-low);
+    stroke: var(--ospo-color-low);
+  }
 
-.gauge__wrapper-moderate-low {
-  color: var(--ospo-color-moderate-low-secondary);
-  fill: var(--ospo-color-moderate-low);
-  stroke: var(--ospo-color-moderate-low);
-}
+  &--moderate-low {
+    color: var(--ospo-color-moderate-low-secondary);
+    fill: var(--ospo-color-moderate-low);
+    stroke: var(--ospo-color-moderate-low);
+  }
 
-.gauge__wrapper-moderate-high {
-  color: var(--ospo-color-moderate-high-secondary);
-  fill: var(--ospo-color-moderate-high);
-  stroke: var(--ospo-color-moderate-high);
-}
+  &--moderate-high {
+    color: var(--ospo-color-moderate-high-secondary);
+    fill: var(--ospo-color-moderate-high);
+    stroke: var(--ospo-color-moderate-high);
+  }
 
-.gauge__wrapper-high {
-  color: var(--ospo-color-high-secondary);
-  fill: var(--ospo-color-high);
-  stroke: var(--ospo-color-high);
+  &--high {
+    color: var(--ospo-color-high-secondary);
+    fill: var(--ospo-color-high);
+    stroke: var(--ospo-color-high);
+  }
 }
 
 .gauge {
