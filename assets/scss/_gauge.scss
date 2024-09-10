@@ -6,8 +6,6 @@
   text-decoration: none;
   padding: var(--ospo-score-container-padding);
 
-  --transition-length: 1s;
-
   /* Contain the layout style paint & layers during animation*/
   contain: content;
   will-change: opacity; /* Only using for layer promotion */
@@ -58,15 +56,7 @@
   opacity: 0.1;
 }
 
-@keyframes load-gauge {
-  from {
-    stroke-dasharray: 0 352;
-  }
-}
-
 .gauge-arc {
   fill: none;
   transform-origin: 50% 50%;
-  animation: load-gauge var(--transition-length) ease both;
-  animation-delay: 250ms;
 }

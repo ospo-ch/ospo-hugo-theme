@@ -6,27 +6,26 @@
 {{ $offset := 0 }}
 {{ $offset = mul $circumference (div (sub 100 $score) (float 100)) }}
 <div class="gauge__wrapper gauge__wrapper--{{ $gauge_style }}">
-    <div class="gauge__svg-wrapper">
-      <svg viewBox="0 0 120 120" class="gauge">
-        <circle
-          class="gauge-base"
-          r="56"
-          cx="60"
-          cy="60"
-          stroke-width="8"
-        ></circle>
-        <circle
-          class="gauge-arc"
-          r="56"
-          cx="60"
-          cy="60"
-          stoke-width="8"
-          stroke-dashoffset="{{ $offset }}px"
-          stroke-dasharray="{{ $circumference }}px"
-          style="transform: rotate(-90deg);"
-        ></circle>
-      </svg>
-    </div>
-    <div class="gauge__percentage">{{ $score }}</div>
+  <div class="gauge__svg-wrapper">
+    <svg viewBox="0 0 120 120" class="gauge">
+      <circle
+        class="gauge-base"
+        r="56"
+        cx="60"
+        cy="60"
+        stroke-width="8"
+      ></circle>
+      <circle
+        class="gauge-arc"
+        r="56"
+        cx="60"
+        cy="60"
+        stroke-width="8"
+        stroke-dashoffset="{{ $offset }}px"
+        stroke-dasharray="{{ $circumference }}px"
+        style="transform: rotate(-90deg);"
+      ></circle>
+    </svg>
   </div>
+  <div class="gauge__percentage">{{ $score }}</div>
 </div>
