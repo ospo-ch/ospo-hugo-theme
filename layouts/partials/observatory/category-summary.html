@@ -1,53 +1,22 @@
-{{- $documentation_score := .Params.scores.documentation -}}
-{{- $license_score := .Params.scores.license -}}
-{{- $practices_score := .Params.scores.practices -}}
-{{- $security_score:= .Params.scores.security -}}
-{{- $legal_score := .Params.scores.legal -}}
+{{
+  $categories := slice
+    (dict "name" "📄 Documentation" "score" .Params.scores.documentation)
+    (dict "name" "🔑 License" "score" .Params.scores.license)
+    (dict "name" "⚙️ Best Practices" "score" .Params.scores.practices)
+    (dict "name" "🔒 Security" "score" .Params.scores.security)
+    (dict "name" "⚖️ Legal" "score" .Params.scores.legal)
+}}
 <div class="audit-categories">
-    <div class="category-wrapper">
-      <div class="category-wrapper__title">
-        <span>📄 Documentation</span>
-      </div>
-      <span class="category-wrapper__score">{{ $documentation_score }}</span>
-      <div class="category-wrapper__progress-bar">
-        <span style="width: {{ $documentation_score }}%"></span>
-      </div>
+  {{ range $categories }}
+  {{ $scale := partial "observatory/get-score-scale.html" .score }}
+  <div class="category-wrapper">
+    <div class="category-wrapper__title">
+      <span>{{ .name }}</span>
     </div>
-    <div class="category-wrapper">
-      <div class="category-wrapper__title">
-        <span>🔑 License</span>
-      </div>
-      <span class="category-wrapper__score">{{ $license_score }}</span>
-      <div class="category-wrapper__progress-bar">
-        <span style="width: {{ $license_score }}%"></span>
-      </div>
-    </div>
-    <div class="category-wrapper">
-      <div class="category-wrapper__title">
-        <span>⚙️ Best Practices</span>
-      </div>
-      <span class="category-wrapper__score">{{ $practices_score }}</span>
-      <div class="category-wrapper__progress-bar">
-        <span style="width: {{ $practices_score }}%"></span>
-      </div>
-    </div>
-    <div class="category-wrapper">
-      <div class="category-wrapper__title">
-        <span>🔒 Security</span>
-      </div>
-      <span class="category-wrapper__score">{{ $security_score }}</span>
-      <div class="category-wrapper__progress-bar">
-        <span style="width: {{ $security_score }}%"></span>
-      </div>
-    </div>
-    <div class="category-wrapper">
-      <div class="category-wrapper__title">
-        <span>⚖️ Legal</span>
-      </div>
-      <span class="category-wrapper__score">{{ $legal_score }}</span>
-      <div class="category-wrapper__progress-bar">
-        <span style="width: {{ $legal_score }}%"></span>
-      </div>
+    <span class="category-wrapper__score">{{ .score }}</span>
+    <div class="category-wrapper__progress-bar">
+      <span class="progress--{{ $scale }}" style="width: {{ .score }}%"></span>
     </div>
   </div>
+  {{ end }}
 </div>

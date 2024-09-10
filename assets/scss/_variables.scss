@@ -23,18 +23,19 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   /* Color Palette */
   --color-white: white;
   --color-black: black;
+  --color-gray-300: #e0e0e0;
   --color-gray-400: #bdbdbd;
   --color-gray-500: #9e9e9e;
   --color-gray-700: #616161;
   --color-gray-800: #424242;
   --color-green-700: #080;
   --color-green: #0c6;
+  --color-yellow-700: #fdd835;
+  --color-yellow: #ffe733;
   --color-orange-700: #c33300;
   --color-orange: #fa3;
   --color-red-700: #c00;
   --color-red: #f33;
-  --color-blue: #4fc3f7;
-  --color-blue-700: #01579b;
 
   /* Typography */
   --ospo-body-font-family: $font-family;
@@ -56,22 +57,24 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   --ospo-footer-link-color: var(--color-black);
   --ospo-footer-copyright-font-size: 11px;
   --ospo-card-background-color: var(--color-white);
-  --ospo-card-border-color: #c4c4c4;
-  --ospo-card-kicker-color: #3c4650;
+  --ospo-card-border-color: var(--color-gray-400);
+  --ospo-card-kicker-color: var(--color-gray-800);
   --ospo-card-kicker-line-height: 2.6rem;
-  --ospo-card-cover-background-color: #c4c4c4;
-  --ospo-card-cta-wrapper-border-color: #c4c4c44d;
-  --ospo-gauge-circle-size: 48px;
-  --ospo-score-container-padding: 8px;
-  --ospo-report-font-family: var($font-family);
+  --ospo-card-cover-background-color: var(--color-gray-400);
+  --ospo-card-cta-wrapper-border-color: var(--color-gray-400);
   --ospo-color-low-secondary: var(--color-red-700);
   --ospo-color-low: var(--color-red);
   --ospo-color-moderate-low-secondary: var(--color-orange-700);
   --ospo-color-moderate-low: var(--color-orange);
-  --ospo-color-moderate-high-secondary: var(--color-blue-700);
-  --ospo-color-moderate-high: var(--color-blue);
+  --ospo-color-moderate-high-secondary: var(--color-yellow-700);
+  --ospo-color-moderate-high: var(--color-yellow);
   --ospo-color-high-secondary: var(--color-green-700);
   --ospo-color-high: var(--color-green);
+  --ospo-gauge-circle-size: 48px;
+  --ospo-score-container-padding: 8px;
+  --ospo-report-font-family: var($font-family);
+  --ospo-report-category-font-size: 14px;
+  --ospo-progress-background-color: var(--color-gray-300);
 
   /* z-index
   Keep this in order, and avoid reusing variables 
