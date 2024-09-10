@@ -1,0 +1,33 @@
+.main-area {
+  grid-area: content;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.main-wrapper hr {
+  grid-area: divider;
+  border: none;
+  background-color: var(--ospo-divider-background-color);
+  width: 1px;
+  height: 100%;
+}
+
+.main-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "content"
+    "sidebar";
+}
+
+@media (min-width: $screen-md) {
+  .main-wrapper {
+    grid-template-columns: 7fr 2fr 3fr;
+    grid-template-areas: "content divider sidebar";
+  }
+}

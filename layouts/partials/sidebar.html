@@ -1,0 +1,30 @@
+<div class="">
+  {{ with .GetTerms "categories" }}
+  <div class="">
+    <span>Categories</span>
+    <ul>
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }} {{ with .GetTerms "languages" }}
+  <div>
+    <span>Languages</span>
+    <ul>
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }} {{ with .GetTerms "tags" }}
+  <div>
+    <span>Tags</span>
+    <ul>
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</div>
