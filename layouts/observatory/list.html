@@ -3,9 +3,7 @@
   {{ range .Pages }}
   <div class="report-card">
     <div class="report-card__header">
-      <div class="report-card__title">
-        <h4>{{ .Title }}</h4>
-      </div>
+      <h2 class="report-card__title">{{ .Title }}</h2>
       {{- partial "observatory/gauge.html" . -}}
     </div>
     <p>{{ .Description }}</p>

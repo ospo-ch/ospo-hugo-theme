@@ -1,6 +1,17 @@
 .card {
   border: 1px solid var(--ospo-card-border-color);
   background: var(--ospo-card-background-color);
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    transition: transform var(--ospo-card-animation-duration)
+      var(--ospo-card-animation-easing);
+
+    /* scaling effect on hover */
+    &:hover {
+      transform: scale3d(1.025, 1.025, 1);
+    }
+  }
 
   &__content {
     padding: 1.6rem 1.6rem 1rem;
@@ -15,10 +26,12 @@
   }
 
   &__title {
+    color: var(--ospo-text-color);
     font-size: 2rem;
     font-weight: 700;
     line-height: 3.2rem;
     margin: 0;
+    text-transform: none;
   }
 
   &__description {
@@ -32,30 +45,44 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
-  &__links-container {
+
+  @mixin card-actions {
     border-top: 1px solid var(--ospo-card-cta-wrapper-border-color);
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: right;
-    margin-top: 1.5rem;
     padding: 1rem 0;
   }
 
-  &__cta-link {
-    border-top: 1px solid var(--ospo-card-cta-wrapper-border-color);
-    margin-top: 3rem;
-    padding: 1rem 0;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+  &__actions {
+    &-icons {
+      @include card-actions;
+      flex-direction: row-reverse;
+      justify-content: right;
+      margin-top: 1.5rem;
+    }
+
+    &-primary-action {
+      @include card-actions;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+
+      a::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+    }
   }
 
-  &__link {
+  &__action {
     padding-left: 2rem;
     text-decoration: none;
   }
 
-  &__cover {
+  &__image {
     object-fit: cover;
     aspect-ratio: calc(16 / 10);
     margin-bottom: 1rem;
