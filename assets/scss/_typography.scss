@@ -59,9 +59,10 @@ ol + p {
 }
 
 a {
-  font-weight: 700;
+  text-decoration: none;
   color: var(--ospo-link-color);
   &:hover {
+    text-decoration: none;
     color: var(--ospo-link-highlight-color);
   }
 }
