@@ -1,15 +1,21 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
-  {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
-  site.Title }}{{ end }}
+  {{- if .IsHome -}}
+    {{- site.Title -}}
+  {{- else -}}
+    {{- printf "%s | %s" .Title site.Title -}}
+  {{- end -}}
 </title>
 <meta name="description" content="{{ default .Summary .Description }}" />
 {{ if hugo.IsProduction -}}
-<meta name="robots" content="index, follow" />
-{{ else -}}
-<meta name="robots" content="noindex, nofollow" />
-{{ end -}} {{- partialCached "head/favicons.html" . }} {{- template
-"_internal/opengraph.html" . -}} {{- template "_internal/schema.html" . -}} {{-
-template "_internal/twitter_cards.html" . -}} {{- partialCached "head/css.html"
-. -}} {{- partialCached "head/js.html" . -}}
+  <meta name="robots" content="index, follow" />
+{{- else -}}
+  <meta name="robots" content="noindex, nofollow" />
+{{ end -}} 
+{{- partialCached "head/favicons.html" . -}} 
+{{- template "_internal/opengraph.html" . -}} 
+{{- template "_internal/schema.html" . -}} 
+{{- template "_internal/twitter_cards.html" . -}} 
+{{- partialCached "head/css.html" . -}} 
+{{- partialCached "head/js.html" . -}}

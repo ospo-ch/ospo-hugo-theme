@@ -1,5 +1,6 @@
 ---
 title: ospo theme demo
+description: This is an example site for the ospo theme. This theme has been created for the Hugo CMS, and has been developed and released by ospo.ch.
 ---
 
 This is an example site for the ospo theme. This theme has been created for the Hugo CMS, and has been developed and released by ospo.ch.
