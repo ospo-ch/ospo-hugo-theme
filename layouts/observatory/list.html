@@ -7,6 +7,9 @@
       {{- partial "observatory/gauge.html" . -}}
     </div>
     <p>{{ .Description }}</p>
+    <div class="card__actions-primary-action">
+      <a href="{{ .Permalink }}" class="card__action"></a>
+    </div>
     {{- partial "observatory/category-summary" . -}}
   </div>
   {{ end }}

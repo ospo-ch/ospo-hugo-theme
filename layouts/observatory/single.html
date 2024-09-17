@@ -1,0 +1,32 @@
+{{ define "main" }}
+<!-- AGGREGATED SUMMARY CARD -->
+<div class="report-card">
+  <div class="report-card__header">
+    <h2 class="report-card__title">{{ .Title }}</h2>
+    {{- partial "observatory/gauge.html" . -}}
+  </div>
+  <p>{{ .Description }}</p>
+  {{- partial "observatory/category-summary" . -}}
+</div>
+
+<!-- REPOSITORIES OVERVIEW TABLE -->
+
+<!-- REPOSITORIES AUDIT -- START  -->
+
+<!-- REPOSITORY REPORT  -->
+
+<!-- AUDIT REPORT: SCORE -->
+
+<!-- AUDIT REPORT: DOCUMENTATION -->
+
+<!-- AUDIT REPORT: LICENSING -->
+
+<!-- AUDIT REPORT: BEST PRACTICES -->
+
+<!-- AUDIT REPORT: SECURITY -->
+
+<!-- AUDIT REPORT: LEGAL -->
+
+<!-- REPOSITORIES AUDIT -- START  -->
+
+{{ end }}
