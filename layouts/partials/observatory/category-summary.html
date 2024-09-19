@@ -1,10 +1,10 @@
 {{
   $categories := slice
-    (dict "name" "📄 Documentation" "score" .Params.scores.documentation)
-    (dict "name" "🔑 License" "score" .Params.scores.license)
-    (dict "name" "⚙️ Best Practices" "score" .Params.scores.practices)
-    (dict "name" "🔒 Security" "score" .Params.scores.security)
-    (dict "name" "⚖️ Legal" "score" .Params.scores.legal)
+    (dict "name" "📄 Documentation" "score" .Params.score.documentation)
+    (dict "name" "🔑 License" "score" .Params.score.license)
+    (dict "name" "⚙️ Best Practices" "score" .Params.score.practices)
+    (dict "name" "🔒 Security" "score" .Params.score.security)
+    (dict "name" "⚖️ Legal" "score" .Params.score.legal)
 }}
 <div class="audit-categories">
   {{ range $categories }}
