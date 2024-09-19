@@ -1,0 +1,35 @@
+{{ $data := . }}
+{{ range $data }}
+<div class="o9y-audit-group">
+  {{ if eq .group.layout "accordion" }}
+  <!-- expandable layout -->
+
+  <details class="o9y-audit-list">
+    <summary>
+      <div class="o9y-audit-group__summary">
+        <div class="o9y-audit-group__header">
+          <span class="o9y-audit-group__title">{{ .group.title }}</span>
+          <span class="o9y-audit-group__itemcount">{{ .audits | len | printf " (%d)"}}</span>
+        </div>
+        <div class="o9y-audit-list-toggle">
+          <span class="o9y-audit-list-toggletext--show">Show</span>
+          <span class="o9y-audit-list-toggletext--hide">Hide</span>
+        </div>
+      </div>
+    </summary>
+    {{ range .audits }} 
+        {{ partial "observatory/audit.html" . }} 
+    {{ end }}
+  </details>
+  {{ else }}
+  <!-- inline layout -->
+  <div class="o9y-audit-group__header">
+    <span class="o9y-audit-group__title">{{ .group.title }}</span>
+  </div>
+  {{ range .audits }} 
+    {{ partial "observatory/audit.html" . }} 
+  {{ end }} 
+  {{ end }}
+  <span class="o9y-audit-group__footer">{{ .group.description }}</span>
+</div>
+{{ end }}
