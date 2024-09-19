@@ -1,0 +1,10 @@
+<!-- REPOSITORIES OVERVIEW TABLE -->
+<h3>Repositories</h3>
+{{ range .Params.repositories }} 
+  {{ $audit_categories := partial "observatory/get-grouped-audits.html" . }} 
+  {{ range $audit_categories }}
+      <div class="o9y-report-content">
+        {{ partial "observatory/audit-group.html" .audit_groups }}
+      </div>
+  {{ end }} 
+{{ end }}

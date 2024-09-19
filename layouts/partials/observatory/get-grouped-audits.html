@@ -1,0 +1,66 @@
+{{/**
+* Creates a map of top level audit categories, each category contains an audit group
+* cluster such as "failed", "passed" with the associated audit rules.
+* 
+* The result will end up being rendered:
+*
+* documentation 
+*   ├── failed
+*   |  ├── audit 3
+*   |  └── audit 4
+*   └── passed
+*      ├── audit 5
+*      └── audit 6
+* license 
+*   ├── …
+*   ⋮   
+* best_practices
+*   ├── …
+*   ⋮
+* security
+*   ├── …
+*   ⋮    
+* legal
+*   ├── …
+*   ⋮            
+*/}}
+
+{{/* Use a slice to control the order in which categories will appear */}}
+{{ $categories := slice 
+    (dict "name" "documentation" "audits" .documentation) 
+    (dict "name" "license" "audits" .license) 
+    (dict "name" "best_practices" "audits" .best_practices)
+    (dict "name" "security" "audits" .security)
+    (dict "name" "legal" "audits" .legal) 
+}}
+{{ $failedGroup := dict "title" "failed" "layout" "" }}
+{{ $passedGroup := dict "title" "passed" "layout" "accordion" }}
+{{ $data := slice }}
+{{ range $c := $categories }}
+    {{ with $c.audits }}
+        {{/* Apply a grouping function for audit checks */}}
+        {{ $passedAudits := slice }}
+        {{ $failedAudits := slice }}
+        {{ range $c.audits }}
+            {{ if eq .passed true }}
+                {{ $passedAudits = $passedAudits | append 
+                    (dict "rating" "pass" "title" .title "description" .description)
+                }} 
+            {{ else }}
+                {{ $failedAudits = $failedAudits | append 
+                    (dict "rating" "fail" "title" .title "description" .description)
+                }} 
+            {{ end }}
+        {{ end }}
+        {{ $groupedAudits := slice }}
+        {{ if gt ($failedAudits | len) 0 }}
+        {{ $groupedAudits = $groupedAudits | append (dict "group" $failedGroup "audits" $failedAudits) }}
+        {{ end }}
+        {{ if gt ($passedAudits |len) 0 }}
+        {{ $groupedAudits = $groupedAudits | append (dict "group" $passedGroup "audits" $passedAudits) }}
+        {{ end }}
+        {{ $d := dict "category" $c.name "audit_groups" $groupedAudits }}
+        {{ $data = $data | append $d }}
+    {{ end }}
+{{ end }}
+{{ return $data }}

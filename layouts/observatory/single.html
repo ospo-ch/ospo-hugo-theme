@@ -10,5 +10,8 @@
     <p>{{ .Description }}</p>
     {{- partial "observatory/category-summary" . -}}
   </div>
+  <div class="report-repositories-wrapper report-card">
+    {{ partial "observatory/report-details" . }}
+  </div>
 </div>
 {{ end }}
