@@ -1,10 +1,10 @@
 {{ $gauge_style := "" }}
-{{ $score := .Params.scores.aggregate }}
+{{ $score := .score }}
 {{ $gauge_style = partial "observatory/get-score-scale" $score }}
 {{ $circumference := 0 }}
 {{ $circumference = mul 2 math.Pi 56 }}
 {{ $offset := 0 }}
-{{ $offset = mul $circumference (div (sub 100 $score) (float 100)) }}
+{{ $offset = mul $circumference (div  (sub 100 $score) (float 100)) }}
 <div class="gauge__wrapper gauge__wrapper--{{ $gauge_style }}">
   <div class="gauge__svg-wrapper">
     <svg viewBox="0 0 120 120" class="gauge">

@@ -4,7 +4,7 @@ description: A set of scripts to build ospo.ch
 params:
   org_name: ospo.ch
   repository: https://github.com/ospo-ch/ospo-utils
-  scores:
+  score:
     aggregate: 100
     documentation: 100
     license: 100
