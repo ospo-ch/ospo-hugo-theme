@@ -1,5 +1,6 @@
 {{ $gauge_style := "" }}
 {{ $score := .score }}
+{{ $label := .label }}
 {{ $gauge_style = partial "observatory/get-score-scale" $score }}
 {{ $circumference := 0 }}
 {{ $circumference = mul 2 math.Pi 56 }}
@@ -27,5 +28,8 @@
       ></circle>
     </svg>
   </div>
-  <div class="gauge__percentage">{{ $score }}</div>
+  <div class="gauge__percentage">{{ $score | lang.FormatNumberCustom 0 }}</div>
+  {{ with $label }}
+    <div class="gauge__label">{{ . }}</div>
+  {{ end }}
 </div>

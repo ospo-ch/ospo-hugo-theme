@@ -27,11 +27,31 @@
 
 {{/* Use a slice to control the order in which categories will appear */}}
 {{ $categories := slice 
-    (dict "name" "documentation" "audits" .documentation) 
-    (dict "name" "license" "audits" .license) 
-    (dict "name" "best_practices" "audits" .best_practices)
-    (dict "name" "security" "audits" .security)
-    (dict "name" "legal" "audits" .legal) 
+    (dict 
+        "name" "Documentation" 
+        "score" .score.documentation 
+        "description" "These checks highlight opportunities to improve the documentation of your project."
+        "audits" .documentation) 
+    (dict 
+        "name" "License" 
+        "score" .score.license
+        "description" "" 
+        "audits" .license) 
+    (dict 
+        "name" "Best Practices" 
+        "score" .score.best_practices
+        "description" "" 
+        "audits" .best_practices)
+    (dict 
+        "name" "Security" 
+        "score" .score.security
+        "description" "These checks ensure that your project is following security practices." 
+        "audits" .security)
+    (dict 
+        "name" "Legal" 
+        "score" .score.legal
+        "description" "" 
+        "audits" .legal) 
 }}
 {{ $failedGroup := dict "title" "failed" "layout" "" }}
 {{ $passedGroup := dict "title" "passed" "layout" "accordion" }}
@@ -59,7 +79,11 @@
         {{ if gt ($passedAudits |len) 0 }}
         {{ $groupedAudits = $groupedAudits | append (dict "group" $passedGroup "audits" $passedAudits) }}
         {{ end }}
-        {{ $d := dict "category" $c.name "audit_groups" $groupedAudits }}
+        {{ $d := dict 
+            "category" $c.name 
+            "score" $c.score
+            "description" $c.description 
+            "audit_groups" $groupedAudits }}
         {{ $data = $data | append $d }}
     {{ end }}
 {{ end }}

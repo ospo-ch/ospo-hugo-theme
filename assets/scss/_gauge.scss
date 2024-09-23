@@ -52,6 +52,16 @@
   top: var(--ospo-score-container-padding);
 }
 
+.gauge__label {
+  font-size: var(--ospo-gauge-label-font-size);
+  font-weight: 500;
+  line-height: var(--ospo-gauge-label-line-height);
+  margin-top: 10px;
+  text-align: center;
+  color: var(--ospo-text-color);
+  word-break: keep-all;
+}
+
 .gauge-base {
   opacity: 0.1;
 }

@@ -26,7 +26,7 @@
   border: 1px solid var(--ospo-border-color); /* Adds outer border to the categories component */
   border-collapse: collapse;
   width: 100%; /* Make the component span the width of the container */
-  font-size: var(--ospo-report-category-font-size);
+  font-size: var(--ospo-report-font-size);
 }
 
 .category-wrapper {
@@ -35,7 +35,9 @@
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  padding: var(--ospo-default-padding); /* Adds spacing inside each category row */
+  padding: var(
+    --ospo-default-padding
+  ); /* Adds spacing inside each category row */
   border-bottom: 1px solid var(--ospo-border-color); /* Adds a bottom border between rows */
 }
 
@@ -101,10 +103,13 @@
 
 /* AUDIT */
 
-.o9y-report-content {
+.o9y-details-wrapper {
   --ospo-audit-group-margin-bottom: 48px;
   --ospo-audit-margin-horizontal: 5px;
-  --ospo-audit-description-padding-left: calc(var(--ospo-score-icon-size) + var(--ospo-score-icon-margin-left) + var(--ospo-score-icon-margin-right));
+  --ospo-audit-description-padding-left: calc(
+    var(--ospo-score-icon-size) + var(--ospo-score-icon-margin-left) +
+      var(--ospo-score-icon-margin-right)
+  );
   --ospo-audit-description-padding-right: 10px;
   --chevron-size: 12px;
   --chevron-line-stroke: #757575;
@@ -115,6 +120,31 @@
   --ospo-score-icon-margin: 0 var(--ospo-score-icon-margin-right) 0
     var(--ospo-score-icon-margin-left);
   --ospo-icon-square-size: calc(var(--ospo-score-icon-size) * 0.88);
+}
+
+.o9y-report-content {
+  padding: var(--ospo-category-padding);
+  max-width: var(--ospo-report-content-max-width);
+  margin: 0 auto;
+}
+
+.o9y-category-header {
+  margin-bottom: var(--ospo-section-padding-vertical);
+}
+
+.o9y-category-header .gauge__label {
+  --ospo-gauge-label-font-size: var(--ospo-gauge-label-font-size-big);
+  --ospo-gauge-label-line-height: var(--ospo-gauge-label-line-height-big);
+  margin-top: 14px;
+}
+
+.o9y-category-header .gauge {
+  --ospo-gauge-circle-size: var(--ospo-gauge-circle-size-big);
+}
+
+.o9y-category-header .gauge__percentage {
+  --ospo-gauge-circle-size: var(--ospo-gauge-circle-size-big);
+  --ospo-gauge-percentage-font-size: var(--ospo-gauge-percentage-font-size-big);
 }
 
 .o9y-audit {
@@ -163,7 +193,6 @@
   padding-right: var(--ospo-audit-description-padding-right);
   padding-top: 8px;
   padding-bottom: 8px;
-  font-size: var(--ospo-report-font-size-secondary);
 }
 
 .o9y-audit-group__itemcount {
@@ -174,6 +203,13 @@
   color: var(--color-gray-600);
   display: block;
   margin-top: var(--ospo-default-padding);
+}
+
+.o9y-category-header__description {
+  text-align: center;
+  color: var(--color-gray-700);
+  margin: 0px auto;
+  max-width: 400px;
 }
 
 .o9y-details,
@@ -208,7 +244,6 @@
 
 .o9y-audit__title {
   flex: 1;
-  font-size: var(--ospo-report-font-size-secondary);
 }
 
 /* chevron */
@@ -323,7 +358,7 @@ details[open] .o9y-audit-list-toggletext--hide {
   border-bottom: var(--ospo-score-icon-size) solid var(--ospo-color-low);
 }
 
-// TODO: error isn't supported at this time. 
+// TODO: error isn't supported at this time.
 .o9y-audit--error .o9y-audit__score-icon {
   background-image: var(--error-icon-url);
   background-repeat: no-repeat;
