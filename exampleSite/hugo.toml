@@ -37,3 +37,23 @@ key = "github"
 name = "GitHub"
 url = "https://example.org/github"
 desc = "Development is happening here"
+
+[menu]
+
+[[menu.main]]
+identifier = "software-catalog"
+name = "Software Catalog"
+url = "/catalog/"
+weight = 1
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 2
+
+[[menu.main]]
+identifier = "observatory"
+name = "Observatory"
+url = "/observatory/"
+weight = 3
