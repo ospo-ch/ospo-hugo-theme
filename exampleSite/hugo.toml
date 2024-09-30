@@ -1,7 +1,17 @@
 baseURL = "https://ospo-ch.github.io/ospo-hugo-theme/"
-languageCode = "en-us"
 title = "ospo"
 theme = "ospo-hugo-theme"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    weight = 1
+
+  [languages.fr]
+    languageName = "French"
+    languageCode = "fr-FR"
+    weight = 2
 
 [build]
 useResourceCacheWhen = "fallback"
