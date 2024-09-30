@@ -286,4 +286,12 @@
       }
     }
   }
+
+  &__actions-wrapper {
+    @media (min-width: $screen-lg) {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
 }

@@ -33,6 +33,9 @@
   </div>
 </footer>
 
+{{ $js := resources.Get "js/hoverintent.min.js" }}
+<script defer src="{{ $js.Permalink }}"></script>
+
 {{ $js := resources.Get "js/scripts.js" }}
 {{ if eq (getenv "HUGO_ENV") "production" }}
 {{ $js = $js | resources.Minify | resources.Fingerprint }}
