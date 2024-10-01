@@ -85,6 +85,9 @@ To customize your project look and feel you can provide your own version of the 
 
 To contribute, please follow the guidelines outlined in our [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
-## Credits
+## Acknowledgements
 
 - [FontAwesome](https://fontawesome.com/)
+- [CNCF Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme)
+- [Google Docsy Theme](https://github.com/google/docsy)
+- [Google Lighthouse](https://github.com/GoogleChrome/lighthouse)
