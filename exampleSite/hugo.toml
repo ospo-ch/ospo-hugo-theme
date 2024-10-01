@@ -3,15 +3,15 @@ title = "ospo"
 theme = "ospo-hugo-theme"
 
 [languages]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-US"
-    weight = 1
+[languages.en]
+languageName = "English"
+languageCode = "en-US"
+weight = 1
 
-  [languages.fr]
-    languageName = "French"
-    languageCode = "fr-FR"
-    weight = 2
+[languages.fr]
+languageName = "French"
+languageCode = "fr-FR"
+weight = 2
 
 [build]
 useResourceCacheWhen = "fallback"
@@ -22,6 +22,11 @@ tag = "tags"
 languages = "languages"
 
 [params]
+
+[params.accessibility]
+skip_text = "Skip to content"
+help_text = "Accessibility Statement"
+help_url = "/example-page/"
 
 # UI configuration
 [params.ui]
