@@ -1,11 +1,21 @@
 .columns .report-card {
   max-width: 600px;
+
+  @media (min-width: $desktop-width) {
+    transition: transform var(--ospo-card-animation-duration)
+      var(--ospo-card-animation-easing);
+
+    /* scaling effect on hover */
+    &:hover {
+      transform: scale3d(1.025, 1.025, 1);
+    }
+  }
 }
 
 .report-card {
   border: 1px solid var(--ospo-card-border-color);
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 
   &__header {
