@@ -49,23 +49,22 @@
     --ospo-default-padding
   ); /* Adds spacing inside each category row */
   border-bottom: 1px solid var(--ospo-border-color); /* Adds a bottom border between rows */
-}
 
-.category-wrapper__title {
-  min-width: 120px;
-  max-width: 230px;
-  width: 30%;
+  &__title {
+    min-width: 120px;
+    max-width: 230px;
+    width: 30%;
 
-  @media only screen and (max-width: $screen-md) {
-    .category-wrapper__title {
-      font-size: 65%;
+    @media only screen and (max-width: $screen-lg) {
+      font-size: 12px;
     }
   }
-}
 
-.category-wrapper__score {
-  font-weight: bold;
-  color: gray;
+  &__score {
+    font-weight: bold;
+    color: gray;
+    width: 10%;
+  }
 }
 
 .category-wrapper:last-child {
