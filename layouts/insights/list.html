@@ -4,14 +4,14 @@
   <div class="report-card">
     <div class="report-card__header">
       <h2 class="report-card__title">{{ .Title }}</h2>
-      {{ $score := .Params.score.aggregate }}
-      {{ partial "observatory/gauge.html" (dict "context" . "score" $score ) }}
+      {{ $score := .Params.score.aggregate }} {{ partial "insights/gauge.html"
+      (dict "context" . "score" $score ) }}
     </div>
     <p>{{ .Description }}</p>
     <div class="card__actions-primary-action">
       <a href="{{ .Permalink }}" class="card__action"></a>
     </div>
-    {{- partial "observatory/category-summary" . -}}
+    {{- partial "insights/category-summary" . -}}
   </div>
   {{ end }}
 </div>

@@ -68,7 +68,7 @@ url = "/projects/"
 weight = 2
 
 [[menu.main]]
-identifier = "observatory"
-name = "Observatory"
-url = "/observatory/"
+identifier = "insights"
+name = "Insights"
+url = "/insights/"
 weight = 3

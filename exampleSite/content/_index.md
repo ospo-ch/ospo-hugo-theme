@@ -9,4 +9,4 @@ This is an example site for the ospo theme. This theme has been created for the 
 
 {{< button link="projects" text="Projects" >}}
 
-{{< button link="observatory" text="Observatory" >}}
+{{< button link="insights" text="Insights" >}}
