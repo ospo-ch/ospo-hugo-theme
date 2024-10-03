@@ -1,22 +1,22 @@
 {{ $audit_rating := .rating }} 
 {{ $title := .title }} 
 {{ $description := .description }}
-<div class="o9y-audit o9y-audit--{{ $audit_rating }}">
-  <details class="o9y-expandable-details">
+<div class="insights-audit insights-audit--{{ $audit_rating }}">
+  <details class="insights-expandable-details">
     <summary>
-      <div class="o9y-audit__header o9y-expandable-details__summary">
-        <span class="o9y-audit__score-icon"></span>
-        <span class="o9y-audit__title">{{ $title }}</span>
-        <div class="o9y-chevron-container">
-          <!-- TODO: chevron should be scoped as ospo instead of o9y only -->
-          <svg class="o9y-chevron" viewbox="0 0 100 100">
-            <g class="o9y-chevron__lines">
+      <div class="insights-audit__header insights-expandable-details__summary">
+        <span class="insights-audit__score-icon"></span>
+        <span class="insights-audit__title">{{ $title }}</span>
+        <div class="insights-chevron-container">
+          <!-- TODO: chevron should be scoped as ospo instead of insights only -->
+          <svg class="insights-chevron" viewbox="0 0 100 100">
+            <g class="insights-chevron__lines">
               <path
-                class="o9y-chevron__line o9y-chevron__line-left"
+                class="insights-chevron__line insights-chevron__line-left"
                 d="M10 50h40"
               ></path>
               <path
-                class="o9y-chevron__line o9y-chevron__line-right"
+                class="insights-chevron__line insights-chevron__line-right"
                 d="M90 50H50"
               ></path>
             </g>
@@ -24,7 +24,7 @@
         </div>
       </div>
     </summary>
-    <div class="o9y-audit__description">
+    <div class="insights-audit__description">
       <span>{{ $description | markdownify }}</span>
     </div>
   </details>

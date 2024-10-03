@@ -1,31 +1,37 @@
-{{ $data := . }} {{ range $data }}
-<div class="o9y-audit-group">
+{{ $data := . }} 
+{{ range $data }}
+<div class="insights-audit-group">
   {{ if eq .group.layout "accordion" }}
   <!-- expandable layout -->
 
-  <details class="o9y-audit-list">
+  <details class="insights-audit-list">
     <summary>
-      <div class="o9y-audit-group__summary">
-        <div class="o9y-audit-group__header">
-          <span class="o9y-audit-group__title">{{ .group.title }}</span>
-          <span class="o9y-audit-group__itemcount"
+      <div class="insights-audit-group__summary">
+        <div class="insights-audit-group__header">
+          <span class="insights-audit-group__title">{{ .group.title }}</span>
+          <span class="insights-audit-group__itemcount"
             >{{ .audits | len | printf " (%d)"}}</span
           >
         </div>
-        <div class="o9y-audit-list-toggle">
-          <span class="o9y-audit-list-toggletext--show">Show</span>
-          <span class="o9y-audit-list-toggletext--hide">Hide</span>
+        <div class="insights-audit-list-toggle">
+          <span class="insights-audit-list-toggletext--show">Show</span>
+          <span class="insights-audit-list-toggletext--hide">Hide</span>
         </div>
       </div>
     </summary>
-    {{ range .audits }} {{ partial "insights/audit.html" . }} {{ end }}
+    {{ range .audits }} 
+      {{ partial "insights/audit.html" . }} 
+    {{ end }}
   </details>
   {{ else }}
   <!-- inline layout -->
-  <div class="o9y-audit-group__header">
-    <span class="o9y-audit-group__title">{{ .group.title }}</span>
+  <div class="insights-audit-group__header">
+    <span class="insights-audit-group__title">{{ .group.title }}</span>
   </div>
-  {{ range .audits }} {{ partial "insights/audit.html" . }} {{ end }} {{ end }}
-  <span class="o9y-audit-group__footer">{{ .group.description }}</span>
+    {{ range .audits }} 
+      {{ partial "insights/audit.html" . }} 
+    {{ end }} 
+  {{ end }}
+  <span class="insights-audit-group__footer">{{ .group.description }}</span>
 </div>
 {{ end }}
