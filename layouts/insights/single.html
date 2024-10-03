@@ -1,16 +1,16 @@
 {{ define "main" }}
 <!-- AGGREGATED SUMMARY CARD -->
-<div class="o9y-details-wrapper">
-  <div class="report-card">
-    <div class="report-card__header">
-      <h2 class="report-card__title">{{ .Title }}</h2>
+<div class="insights-wrapper">
+  <div class="insights-card">
+    <div class="insights-card__header">
+      <h2 class="insights-card__title">{{ .Title }}</h2>
       {{ $score := .Params.score.aggregate }} {{- partial "insights/gauge.html"
       (dict "context" . "score" $score ) -}}
     </div>
     <p>{{ .Description }}</p>
     {{- partial "insights/category-summary" . -}}
   </div>
-  <div class="report-repositories-wrapper report-card">
+  <div class="insights-report-wrapper insights-card">
     {{ partial "insights/report-details" . }}
   </div>
 </div>

@@ -1,9 +1,9 @@
 {{ define "main" }} {{ .Content }}
 <div class="columns columns-2">
   {{ range .Pages }}
-  <div class="report-card">
-    <div class="report-card__header">
-      <h2 class="report-card__title">{{ .Title }}</h2>
+  <div class="insights-card">
+    <div class="insights-card__header">
+      <h2 class="insights-card__title">{{ .Title }}</h2>
       {{ $score := .Params.score.aggregate }} {{ partial "insights/gauge.html"
       (dict "context" . "score" $score ) }}
     </div>
