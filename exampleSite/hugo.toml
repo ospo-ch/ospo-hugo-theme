@@ -2,13 +2,18 @@ baseURL = "https://ospo-ch.github.io/ospo-hugo-theme/"
 title = "ospo"
 theme = "ospo-hugo-theme"
 
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
 [languages]
 [languages.en]
+contentDir = "content/en"
 languageName = "English"
 languageCode = "en-US"
 weight = 1
 
 [languages.fr]
+contentDir = "content/fr"
 languageName = "French"
 languageCode = "fr-FR"
 weight = 2
@@ -58,17 +63,17 @@ desc = "Development is happening here"
 [[menu.main]]
 identifier = "software-catalog"
 name = "Software Catalog"
-url = "/catalog/"
+url = "catalog/"
 weight = 1
 
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
-url = "/projects/"
+url = "projects/"
 weight = 2
 
 [[menu.main]]
 identifier = "insights"
 name = "Insights"
-url = "/insights/"
+url = "insights/"
 weight = 3
