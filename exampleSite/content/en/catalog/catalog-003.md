@@ -1,6 +1,6 @@
 ---
 title: Ansible
-description: A adically simple IT automation platform that makes your applications and systems easier to deploy and maintain.
+description: A radically simple IT automation platform that makes your applications and systems easier to deploy and maintain.
 categories:
   - devops
 tags:
