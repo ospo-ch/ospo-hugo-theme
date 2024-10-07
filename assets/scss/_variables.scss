@@ -6,17 +6,39 @@ consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs
 
 $desktop-width: calc(1200px + 25px + 25px) !default;
 
-$screen-sm: 426px !default;
-$screen-md: 769px !default;
-$screen-lg: 992px !default;
-$screen-xl: 1200px !default;
+$screen-sm: 544px !default;
+$screen-md: 768px !default;
+$screen-lg: 1012px !default;
+$screen-xl: 1280px !default;
 $screen-xxl: 1441px !default;
 
 // screen is to small for sticky placement
 $screen-height-place-limit: 44rem !default;
 
+// Typography variables
+
+// Heading sizes - mobile
+$h1-size-mobile: 26px !default;
+$h2-size-mobile: 22px !default;
+$h3-size-mobile: 18px !default;
+$h4-size-mobile: 16px !default;
+$h5-size-mobile: 14px !default;
+$h6-size-mobile: 12px !default;
+
+// Heading sizes - desktop
+$h1-size: 32px !default;
+$h2-size: 24px !default;
+$h3-size: 20px !default;
+$h4-size: 16px !default;
+$h5-size: 14px !default;
+$h6-size: 12px !default;
+
+// Font stack
 $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji" !default;
+
+// Font weights
+$font-weight-bold: var(--base-text-weight-bold, 700) !default;
 
 //  CSS custom properties
 :root {
@@ -45,6 +67,7 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
 
   /* Component variables */
   --ospo-border-color: var(--color-gray-400);
+  --ospo-breadcrumb-divider: "/";
   --ospo-button-background-color: var(--color-gray-700);
   --ospo-button-border-color: var(--color-gray-500);
   --ospo-button-highlight-color: var(--color-white);
