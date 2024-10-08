@@ -16,7 +16,7 @@ h1,
 .h1 {
   font-size: var(--h1-size-mobile, $h1-size-mobile) !important;
   text-transform: uppercase;
-  
+
   @media (min-width: $screen-md) {
     font-size: var(--h1-size, $h1-size) !important; 
   }
@@ -74,7 +74,7 @@ h6,
 .h5, 
 .h6 {
   font-family: var(--ospo-title-font-family);
-  font-weight: 700;
+  font-weight: $font-weight-bold !important;
 }
 
 p + p,

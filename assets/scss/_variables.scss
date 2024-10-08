@@ -80,7 +80,8 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-card-cta-wrapper-border-color: var(--color-gray-400);
   --ospo-card-kicker-color: var(--color-gray-800);
   --ospo-card-kicker-line-height: 2.6rem;
-  --ospo-category-padding: calc(var(--ospo-default-padding) * 6) var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
+  --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
+    var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
   --ospo-color-high: var(--color-green);
   --ospo-color-high-secondary: var(--color-green-700);
   --ospo-color-low: var(--color-red);
@@ -95,7 +96,7 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-edge-gap-padding: calc(var(--ospo-default-padding) * 4);
   --ospo-footer-bg-color: var(--color-white);
   --ospo-footer-copyright-font-size: 11px;
-  --ospo-footer-link-color: var(--color-black); 
+  --ospo-footer-link-color: var(--color-black);
   --ospo-gauge-circle-size-big: 96px;
   --ospo-gauge-circle-size: 48px;
   --ospo-gauge-label-font-size-big: 22px;
@@ -122,5 +123,11 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   /* z-index
   Keep this in order, and avoid reusing variables 
   so elements each exist on a distinct layer*/
+  --z-index-drop-shadow: 50;
+  --z-index-menu: 100;
+  --z-index-sub-menu: 200;
+  --z-index-language-selector: 300;
   --z-index-main-header: 700;
+
+  --z-index-accessibility: 999999;
 }
