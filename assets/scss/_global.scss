@@ -1,6 +1,5 @@
 body {
   overscroll-behavior: none; // fixes menu off bottom of screen.
-  height: auto;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,13 +18,22 @@ footer {
   margin-top: auto;
 }
 
-.container {
-  margin: auto;
+@mixin make-container() { 
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
-  max-width: 100%;
+  max-width: 100%
+}
+
+.container {
+  @include make-container();
   @media (min-width: $desktop-width) {
     max-width: var(--ospo-container-width);
   }
+}
+
+.container-fluid {
+  @include make-container();
 }
 
 .wrap {
