@@ -1,7 +1,8 @@
 ---
-title: "Welcome to the ospo hugo theme documentation"
+title: "ospo hugo theme documentation"
 linkTitle: "Documentation"
 weight: 1
+toc: true
 ---
 
 Welcome to the ospo hugo theme documentation! This guide shows you how to get started creating your own open source program office portal using the theme, including a software catalog, featured projects, insights and technical documentation.
