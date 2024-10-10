@@ -1,0 +1,9 @@
+{{ define "main" }} 
+<div class="docs-intro">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+</div>
+<div class="docs-content">
+    {{ .Content }} 
+</div>
+{{ end }}
