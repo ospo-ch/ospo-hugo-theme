@@ -21,7 +21,7 @@
         @media (min-width: $screen-lg) {
             margin-bottom: 0;
             overflow: visible;
-            z-index: 30;
+            z-index: var(--z-index-language-selector, 30);
         }
         .dropdown-nav {
             height: auto;

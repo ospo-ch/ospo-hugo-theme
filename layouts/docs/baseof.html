@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html
+  lang="{{ or site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{- partial "head.html" . -}}
+  </head>
+  <body>
+    {{- partial "accessibility.html" . -}}
+     {{- partial "header.html" . -}}
+    <div class="container-fluid docs-wrapper">
+      <aside class="docs-nav-container">
+        {{ partial "docs-sidebar.html" . }}
+      </aside>
+      <div class="container">
+        <main id="content" class="docs-main">
+          <div class="docs-subnav">
+            <button type="button" class="docs-subnav__sidebar-hamburger" onclick="showDocumentationNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                height="16"
+                width="16"
+              >
+                <path d="M21 6H3M15 12H3M17 18H3" />
+              </svg>
+            </button>
+            {{ partial "breadcrumb.html" . }}
+          </div>
+          <div class="docs-main__article">
+          {{ block "main" . }}{{ end }} 
+          {{ if (eq .Page.Params.toc true) }}
+          <aside class="docs-toc-container">{{ partial "toc.html" . }}</aside>
+          {{ end }}
+        </div>
+        </main>
+      </div>
+    </div>
+    {{ $js := resources.Get "js/sidebar.js"}}
+    <script defer src="{{ $js.Permalink }}"></script>
+
+    {{ $js := resources.Get "js/accordion.js" }}
+    <script defer src="{{ $js.Permalink }}"></script>
+
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

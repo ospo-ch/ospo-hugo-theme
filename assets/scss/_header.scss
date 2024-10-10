@@ -3,6 +3,7 @@
   background: var(--ospo-header-background-color);
   z-index: var(--z-index-main-header);
   position: relative;
+  border-bottom: 1px solid var(--ospo-border-color);
 
   &.sticky {
     position: sticky;
@@ -14,26 +15,6 @@
     top: 0;
     left: 0;
     right: 0;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 20px;
-    z-index: 10;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    @media (min-width: $screen-lg) {
-      background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.05) 0%,
-        rgba(0, 0, 0, 0) 100%
-      );
-    }
   }
 
   > .container {
@@ -106,7 +87,7 @@
     left: -100%;
     top: 60px;
     bottom: 0;
-    z-index: 5;
+    z-index: var(--z-index-menu, 10);
     width: 100%;
     height: 100%;
     overflow-y: scroll;
@@ -264,7 +245,7 @@
       left: 0;
       right: 0;
       top: 100%;
-      z-index: 20;
+      z-index: var(--z-index-sub-menu, 20);
       // visiblity.
       opacity: 0;
       visibility: hidden;

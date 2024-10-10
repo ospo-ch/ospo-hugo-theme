@@ -1,0 +1,51 @@
+{{ $docsSection := default "docs" .Site.Params.DocsSection }}
+{{ $currentPage := . }}
+<nav class="docs-sidebar">
+  {{ with .Site.GetPage $docsSection }}
+  <div class="docs-sidebar__header">
+    <a class="h3" href="{{ .RelPermalink }}" title="{{ .LinkTitle }}"
+      >{{ .LinkTitle }}</a
+    >
+  </div>
+  <div class="docs-sidebar__content">
+    {{ template "docs-section-tree" (dict "Section" . "CurrentPage" $currentPage) }}
+  </div>
+  {{ end }}
+</nav>
+
+{{ define "docs-section-tree" }}
+{{ $p := .CurrentPage }}
+{{ $s := .Section }}
+<ul>
+  {{ range $s.Pages }} 
+    {{ $hasChildren := gt (len .Pages) 0 }} 
+    {{- if $hasChildren }}
+    {{ $active := (or (eq $p .) ($p.IsDescendant .))}}
+    <li class="docs-sidebar-section accordion {{- if $active }} accordion__active{{ end }}">
+      <div class="docs-sidebar-section__title docs-sidebar-link accordion__title">
+        <span class="docs">{{ .LinkTitle }}</span>
+        <span class="docs-sidebar-section__icon">
+          <svg viewbox="0 0 16 16" width="16" height="16">
+            <path
+              d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"
+            ></path>
+          </svg>
+        </span>
+      </div>
+      <div class="docs-sidebar-section__content accordion__content">
+        {{- template "docs-section-tree" (dict "Section" . "CurrentPage" $p) }}
+      </div>
+    </li>
+    {{ else }}
+    <li class="docs-sidebar-page">
+      <a
+        href="{{ .RelPermalink }}"
+        class="docs-sidebar-link"
+        title="{{ .LinkTitle }}"
+        >{{ .LinkTitle }}</a
+      >
+    </li>
+    {{ end }} 
+  {{ end }}
+</ul>
+{{ end }}
