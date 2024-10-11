@@ -66,6 +66,7 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-menu-font-family: $font-family;
 
   /* Component variables */
+  --ospo-body-line-height: 1.5;
   --ospo-border-color: var(--color-gray-400);
   --ospo-breadcrumb-divider: "/";
   --ospo-button-background-color: var(--color-gray-700);
@@ -128,6 +129,7 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --z-index-sub-menu: 200;
   --z-index-language-selector: 300;
   --z-index-main-header: 700;
-
+  --z-index-docs-nav-backdrop: 800;
+  --z-index-docs-nav: 900;
   --z-index-accessibility: 999999;
 }

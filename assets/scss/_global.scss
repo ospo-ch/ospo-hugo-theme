@@ -3,11 +3,13 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  line-height: var(--ospo-body-line-height);
   min-height: 100vh;
   @supports (min-height: 100dvh) {
     min-height: 100dvh;
   }
-  &.has-menu-active {
+  &.has-menu-active,
+  &.has-sidebar-active {
     // Stops backround moving when menu open.
     overflow: hidden;
     height: 100%;
