@@ -28,6 +28,12 @@
 {{ $p := .CurrentPage }}
 {{ $s := .Section }}
 <ul>
+  {{/* Show current section page in menu */}}
+  {{ with $s.RegularPages }}
+  <li class="docs-sidebar-page">
+    <a href="{{ $s.RelPermalink }}" class="docs-sidebar-link" title="In this section">In this section</a>
+  </li>
+  {{ end }}
   {{ range $s.Pages }} 
     {{ $hasChildren := gt (len .Pages) 0 }} 
     {{- if $hasChildren }}
