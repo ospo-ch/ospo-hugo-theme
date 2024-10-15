@@ -2,19 +2,18 @@
   width: 100%;
   background: var(--ospo-header-background-color);
   z-index: var(--z-index-main-header);
-  position: relative;
   border-bottom: 1px solid var(--ospo-border-color);
 
   &.sticky {
     position: sticky;
-
-    // no sticky header on small screens
-    @media (min-width: $screen-md) and (min-height: $screen-height-place-limit) {
-      position: relative;
-    }
     top: 0;
     left: 0;
     right: 0;
+
+    // no sticky header on small screens
+    @media (max-width: $screen-sm) and (min-height: $screen-height-place-limit) {
+      position: relative;
+    }
   }
 
   > .container {
