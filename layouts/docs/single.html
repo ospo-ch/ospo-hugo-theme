@@ -1,9 +1,30 @@
-{{ define "main" }} 
+{{ define "main" }}
 <div class="docs-intro">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}
+  <div class="lead">{{ . | markdownify }}</div>
+  {{ end }}
 </div>
 <div class="docs-content">
-    {{ .Content }} 
+  {{ .Content }}
+  <nav class="docs-pager-nav">
+    {{ $pages := .CurrentSection.Pages.ByWeight.Reverse }}
+    <div class="docs-pager">
+      {{ with $pages.Prev .}}
+      <a href="{{ .RelPermalink }}" class="docs-pager-link prev">
+        <span class="docs-pager__desc">Previous</span>
+        <span class="docs-pager__title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </div>
+    <div class="docs-pager">
+      {{ with $pages.Next . }}
+      <a href="{{ .RelPermalink }}" class="docs-pager-link next">
+        <span class="docs-pager__desc">Next</span>
+        <span class="docs-pager__title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </nav>
 </div>
 {{ end }}
