@@ -3,6 +3,8 @@
 }
 
 .docs-main {
+  height: 100vh;
+
   &__article {
     padding: 0 16px;
     grid-area: main;
@@ -30,13 +32,24 @@
   }
 }
 
+.sidebar {
+  position: relative;
+}
+
 .docs-nav-container {
   border-right: 1px solid var(--ospo-border-color);
+  height: 100%;
 
   &.is-open {
     visibility: visible;
   }
 
+  @media (max-width: $screen-lg) {
+    visibility: hidden;
+  }
+}
+
+.docs-sidebar {
   @media (max-width: $screen-lg) {
     position: fixed;
     top: 0;
@@ -49,7 +62,6 @@
     border-radius: 0;
     transform: none;
     color: var(--ospo-text-color);
-    visibility: hidden;
     background-color: var(
       --ospo-nav-container-bg-color,
       white
@@ -61,7 +73,9 @@
 
   @media (min-width: $screen-lg) {
     position: sticky;
-    height: 100vh;
+    top: 81px;
+    height: 100vh -81px;
+    overflow-y: auto;
   }
 }
 
@@ -83,6 +97,10 @@
   width: 325px;
 
   &__header {
+    flex: none;
+  }
+
+  &__header-nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -110,6 +128,7 @@
   &__content {
     margin-left: 16px;
     padding-top: 16px;
+    flex: 1;
 
     ul {
       @extend .ul-reset;
@@ -129,7 +148,6 @@
 }
 
 .docs-sidebar ul li {
-
   li .docs-sidebar-section__title {
     padding-left: 16px;
   }
