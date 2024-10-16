@@ -12,7 +12,7 @@
     <div class="docs-pager">
       {{ with $pages.Prev .}}
       <a href="{{ .RelPermalink }}" class="docs-pager-link prev">
-        <span class="docs-pager__desc">Previous</span>
+        <span class="docs-pager__desc">{{ T "ui_pager_prev"}}</span>
         <span class="docs-pager__title">{{ .Title }}</span>
       </a>
       {{ end }}
@@ -20,7 +20,7 @@
     <div class="docs-pager">
       {{ with $pages.Next . }}
       <a href="{{ .RelPermalink }}" class="docs-pager-link next">
-        <span class="docs-pager__desc">Next</span>
+        <span class="docs-pager__desc">{{ T "ui_pager_next" }}</span>
         <span class="docs-pager__title">{{ .Title }}</span>
       </a>
       {{ end }}
