@@ -1,16 +1,16 @@
 {{ $categories := slice 
-  (dict "name" "📄 Documentation" "score" .Params.score.documentation) 
-  (dict "name" "🔑 License" "score" .Params.score.license) 
-  (dict "name" "⚙️ Best Practices" "score" .Params.score.practices) 
-  (dict "name" "🔒 Security" "score" .Params.score.security) 
-  (dict "name" "⚖️ Legal" "score" .Params.score.legal) 
+  (dict "key" "insights_documentation" "score" .Params.score.documentation) 
+  (dict "key" "insights_license" "score" .Params.score.license) 
+  (dict "key" "insights_best_practices" "score" .Params.score.practices) 
+  (dict "key" "insights_security" "score" .Params.score.security) 
+  (dict "key" "insights_legal" "score" .Params.score.legal) 
 }}
 <div class="insights-categories">
   {{ range $categories }} 
     {{ $scale := partial "insights/get-score-scale.html" .score }}
   <div class="category-wrapper">
     <div class="category-wrapper__title">
-      <span>{{ .name }}</span>
+      <span>{{ T (printf "%s_heading" .key) }}</span>
     </div>
     <span class="category-wrapper__score">{{ .score }}</span>
     <div class="category-wrapper__progress-bar">

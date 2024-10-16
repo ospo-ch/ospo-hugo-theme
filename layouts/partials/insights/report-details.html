@@ -4,10 +4,10 @@
   <div class="insights-report-content">
     <div class="insights-category-header">
       <div class="insights-score__gauge">
-        <!-- TODO: Adapt data structure to provide category information -->
-        {{ partial "insights/gauge.html" (dict "score" .score "label" .category) }}
+        {{ $category_label := T (printf "%s_heading" .category_key) }}
+        {{ partial "insights/gauge.html" (dict "score" .score "label" $category_label) }}
       </div>
-      <div class="insights-category-header__description">{{ .description }}</div>
+      <div class="insights-category-header__description">{{ T (printf "%s_desc" .category_key) }}</div>
     </div>
     {{ partial "insights/audit-group.html" .audit_groups }}
   </div>
