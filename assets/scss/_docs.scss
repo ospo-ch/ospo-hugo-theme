@@ -62,10 +62,7 @@
     border-radius: 0;
     transform: none;
     color: var(--ospo-text-color);
-    background-color: var(
-      --ospo-nav-container-bg-color,
-      white
-    ); // TODO: variable
+    background-color: var(--ospo-nav-container-bg-color, white);
     background-clip: padding-box;
     outline: 0;
     overflow-y: scroll;
@@ -140,7 +137,6 @@
     }
 
     li {
-      // margin: 0 8px; TODO: drop this
       display: flex;
       flex-direction: column;
     }
