@@ -1,0 +1,14 @@
+# UI strings: buttons, components, etc ...
+
+[ui_pager_prev]
+other = "Previous"
+
+[ui_pager_next]
+other = "Next"
+
+# Docs
+[docs_toc_heading]
+other = "On this page"
+
+[docs_sidebar_current_section]
+other = "In this section"

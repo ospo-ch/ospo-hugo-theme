@@ -32,7 +32,7 @@
   {{/* Show current section page in menu */}}
   {{ with $s.RegularPages }}
   <li class="docs-sidebar-page">
-    <a href="{{ $s.RelPermalink }}" class="docs-sidebar-link" title="In this section">In this section</a>
+    <a href="{{ $s.RelPermalink }}" class="docs-sidebar-link" title="{{ T "docs_sidebar_current_section" }}">{{ T "docs_sidebar_current_section" }}</a>
   </li>
   {{ end }}
   {{ range $s.Pages }} 
