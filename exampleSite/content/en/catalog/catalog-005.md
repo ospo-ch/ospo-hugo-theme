@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL
-description: A a powerful, open source object-relational database system.
+description: A powerful, open source object-relational database system.
 params:
   org_name: PostgreSQL
   website: https://www.postgresql.org/
