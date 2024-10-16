@@ -21,7 +21,7 @@
           <ul class="social-links">
             {{ range . }}
             <li>
-                <a href="{{ .value }}" title="">
+                <a href="{{ .url }}" title="">
                     <img loading="lazy" width="20" height="20" src="{{ printf "images/icons/%s.svg" .key | relURL }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
                 </a>
             </li>
