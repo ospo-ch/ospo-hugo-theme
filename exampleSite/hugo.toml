@@ -4,6 +4,7 @@ theme = "ospo-hugo-theme"
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = true
 
 [languages]
 [languages.en]

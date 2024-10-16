@@ -1,4 +1,6 @@
 {{/**
+* get-grouped-audits: 
+*
 * Creates a map of top level audit categories, each category contains an audit group
 * cluster such as "failed", "passed" with the associated audit rules.
 * 
@@ -28,29 +30,24 @@
 {{/* Use a slice to control the order in which categories will appear */}}
 {{ $categories := slice 
     (dict 
-        "name" "Documentation" 
+        "key" "insights_documentation" 
         "score" .score.documentation 
-        "description" "These checks highlight opportunities to improve the documentation of your project."
         "audits" .documentation) 
     (dict 
-        "name" "License" 
+        "key" "insights_license" 
         "score" .score.license
-        "description" "" 
         "audits" .license) 
     (dict 
-        "name" "Best Practices" 
+        "key" "insights_best_practices" 
         "score" .score.best_practices
-        "description" "" 
         "audits" .best_practices)
     (dict 
-        "name" "Security" 
+        "key" "insights_security" 
         "score" .score.security
-        "description" "These checks ensure that your project is following security practices." 
         "audits" .security)
     (dict 
-        "name" "Legal" 
+        "key" "insights_legal" 
         "score" .score.legal
-        "description" "" 
         "audits" .legal) 
 }}
 {{ $failedGroup := dict "title" "failed" "layout" "" }}
@@ -80,9 +77,8 @@
         {{ $groupedAudits = $groupedAudits | append (dict "group" $passedGroup "audits" $passedAudits) }}
         {{ end }}
         {{ $d := dict 
-            "category" $c.name 
+            "category_key" $c.key
             "score" $c.score
-            "description" $c.description 
             "audit_groups" $groupedAudits }}
         {{ $data = $data | append $d }}
     {{ end }}

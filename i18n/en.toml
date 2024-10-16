@@ -6,9 +6,51 @@ other = "Previous"
 [ui_pager_next]
 other = "Next"
 
+[ui_toggle_show]
+other = "Show"
+
+[ui_toggle_hide]
+other = "Hide"
+
 # Docs
 [docs_toc_heading]
 other = "On this page"
 
 [docs_sidebar_current_section]
 other = "In this section"
+
+# Insights: Documentation 
+[insights_documentation_heading]
+other = "Documentation"
+
+[insights_documentation_desc]
+other = "These checks highlight opportunities to improve the documentation of your project."
+
+# Insights: License
+[insights_license_heading]
+other = "License"
+
+[insights_license_desc]
+other = "These checks ensure the project has compliant licensing."
+
+# Insights: Best practices 
+[insights_best_practices_heading]
+other = "Best practices"
+
+[insights_best_practices_desc]
+other = "These checks evaluate recommended practices for the project."
+
+# Insights: Security
+[insights_security_heading]
+other = "Security"
+
+[insights_security_desc]
+other = "These checks ensure that your project is following security practices."
+
+# Insights: Legal 
+[insights_legal_heading]
+other = "Legal"
+
+[insights_legal_desc]
+other = "These checks ensure that your project is compliant with the legal guidelines."
+
