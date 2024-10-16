@@ -13,7 +13,7 @@
     <div class="footer__bottom">
       <div class="footer__copyright">
         <p>
-          {{ .Site.Copyright | default (printf "Copyright © %d All Rights Reserved" (now.Year)) }}
+          {{ .Site.Copyright | default (printf "Copyright © %d All Rights Reserved" (now.Year)) | markdownify }}
         </p>
       </div>
       {{ with .Site.Params.links -}}

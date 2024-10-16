@@ -41,6 +41,8 @@ languages:
     languageName: "English"
     languageCode: "en-US"
     weight: 1
+    ### Copyright ###
+    copyright: "Copyright &copy; 2024. All Rights Reserved."
     params:
       ### Accessibility ###
       accessibility:
@@ -70,6 +72,8 @@ languages:
     contentDir: "content/fr"
     languageName: "French"
     languageCode: "fr-FR"
+    ### Copyright ###
+    copyright: "&copy; 2024 auteurs ospo.ch. Tous droits réservés."
     weight: 2
     params:
       ### Accessibility ###
