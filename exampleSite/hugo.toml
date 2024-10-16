@@ -77,3 +77,9 @@ identifier = "insights"
 name = "Insights"
 url = "insights/"
 weight = 3
+
+[[menu.main]]
+identifier = "docs"
+name = "Docs"
+url = "docs/"
+weight = 4
