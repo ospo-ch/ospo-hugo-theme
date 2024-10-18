@@ -5,4 +5,4 @@
 # set -e will cause the script to exit immediately when a command fails
 set -e 
 
-cd exampleSite && hugo server --gc --themesDir=../..
+cd exampleSite && hugo server --gc --themesDir=../.. --logLevel debug
