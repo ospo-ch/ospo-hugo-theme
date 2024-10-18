@@ -1,7 +1,7 @@
 .columns .insights-card {
   max-width: 600px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     transition: transform var(--ospo-card-animation-duration)
       var(--ospo-card-animation-easing);
 
