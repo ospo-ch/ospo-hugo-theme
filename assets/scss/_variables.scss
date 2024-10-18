@@ -4,8 +4,6 @@ Variables should follow the `$component-state-property-size` formula for
 consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 **/
 
-$desktop-width: calc(1200px + 25px + 25px) !default;
-
 $screen-sm: 544px !default;
 $screen-md: 768px !default;
 $screen-lg: 1012px !default;

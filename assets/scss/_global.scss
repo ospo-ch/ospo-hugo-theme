@@ -29,7 +29,7 @@ footer {
 
 .container {
   @include make-container();
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     max-width: var(--ospo-container-width);
   }
 }
@@ -47,7 +47,7 @@ footer {
     padding-right: var(--ospo-gutter);
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     padding-left: 0px;
     padding-right: 0px;
   }
