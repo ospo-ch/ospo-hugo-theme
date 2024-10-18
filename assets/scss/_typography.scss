@@ -5,7 +5,7 @@ body {
   @media (min-width: $screen-sm) {
     font-size: 1em; // 16px.
   }
-  font-weight: 400;
+  font-weight: var(--ospo-body-font-weight);
   color: var(--ospo-text-color);
   font-family: var(--ospo-body-font-family);
   -webkit-font-smoothing: antialiased;

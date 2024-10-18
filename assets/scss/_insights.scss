@@ -60,7 +60,7 @@
   }
 
   &__score {
-    font-weight: bold;
+    font-weight: var(--ospo-font-weight-bold);
     color: gray;
     width: 10%;
   }
@@ -193,7 +193,7 @@
 
 .insights-audit-group__title {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: var(--ospo-font-weight-medium);
 }
 
 .insights-audit__description {
