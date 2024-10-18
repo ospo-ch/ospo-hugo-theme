@@ -43,7 +43,11 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji" !default;
 
 // Font weights
-$font-weight-bold: var(--base-text-weight-bold, 700) !default;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
 
 //  CSS custom properties
 :root {
@@ -69,7 +73,15 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   // Note: Use `inspect` for lists so that quoted items keep the quotes.
   // https://github.com/sass/sass/issues/2383#issuecomment-336349172
   --ospo-body-font-family: #{inspect($font-family)};
+  --ospo-body-font-weight: #{$font-weight-regular};
   --ospo-heading-font-family: #{inspect($font-family)};
+  --ospo-heading-font-weight: #{$font-weight-bold};
+
+  --ospo-font-weight-light: #{$font-weight-light};
+  --ospo-font-weight-regular: #{$font-weight-regular};
+  --ospo-font-weight-medium: #{$font-weight-medium};
+  --ospo-font-weight-semibold: #{$font-weight-semibold};
+  --ospo-font-weight-bold: #{$font-weight-bold};
 
   /* Component variables */
   --ospo-body-line-height: 1.5;
