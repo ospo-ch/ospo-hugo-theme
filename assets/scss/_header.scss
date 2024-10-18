@@ -52,7 +52,7 @@
     text-decoration: none;
     color: var(--ospo-link-color);
     text-transform: uppercase;
-    font-family: var(--ospo-title-font-family);
+    font-family: var(--ospo-heading-font-family);
     font-weight: 700;
     font-size: 20px;
     @media (min-width: $screen-lg) {
@@ -115,7 +115,7 @@
       display: block;
       color: var(--ospo-menu-link-color);
       text-decoration: none;
-      font-family: var(--ospo-menu-font-family);
+      font-family: var(--ospo-heading-font-family);
       font-size: 16px;
       font-style: normal;
       font-weight: 700;

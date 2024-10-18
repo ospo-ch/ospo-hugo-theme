@@ -65,10 +65,11 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --color-red: #f33;
 
   /* Typography */
-  --ospo-body-font-family: $font-family;
-  --ospo-title-font-family: $font-family;
-  --ospo-button-font-family: $font-family;
-  --ospo-menu-font-family: $font-family;
+
+  // Note: Use `inspect` for lists so that quoted items keep the quotes.
+  // https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --ospo-body-font-family: #{inspect($font-family)};
+  --ospo-heading-font-family: #{inspect($font-family)};
 
   /* Component variables */
   --ospo-body-line-height: 1.5;
@@ -86,8 +87,6 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-card-cta-wrapper-border-color: var(--color-gray-400);
   --ospo-card-kicker-color: var(--color-gray-800);
   --ospo-card-kicker-line-height: 2.6rem;
-  --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
-    var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
   --ospo-color-high: var(--color-green);
   --ospo-color-high-secondary: var(--color-green-700);
   --ospo-color-low: var(--color-red);
@@ -100,6 +99,8 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-default-padding: 8px;
   --ospo-divider-background-color: var(--color-gray-400);
   --ospo-edge-gap-padding: calc(var(--ospo-default-padding) * 4);
+  --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
+    var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
   --ospo-footer-bg-color: var(--color-white);
   --ospo-footer-copyright-font-size: 11px;
   --ospo-footer-link-color: var(--color-black);
