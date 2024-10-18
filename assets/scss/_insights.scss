@@ -1,7 +1,7 @@
 .columns .insights-card {
   max-width: 600px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     transition: transform var(--ospo-card-animation-duration)
       var(--ospo-card-animation-easing);
 
@@ -60,7 +60,7 @@
   }
 
   &__score {
-    font-weight: bold;
+    font-weight: var(--ospo-font-weight-bold);
     color: gray;
     width: 10%;
   }
@@ -193,7 +193,7 @@
 
 .insights-audit-group__title {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: var(--ospo-font-weight-medium);
 }
 
 .insights-audit__description {
@@ -310,7 +310,7 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $screen-md) {
   /* no black outline if we're not confident the entire table can be displayed within bounds */
   .insights-expandable-details[open] {
     animation: none;

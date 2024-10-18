@@ -1,13 +1,13 @@
-// Hiding class, making content visible only to screen readers but not visually 
-// "sr" mearning "screen-reader" 
-// source: https://css-tricks.com/inclusively-hidden/, class from Scott O'Hara 
+// Hiding class, making content visible only to screen readers but not visually
+// "sr" mearning "screen-reader"
+// source: https://css-tricks.com/inclusively-hidden/, class from Scott O'Hara
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -26,7 +26,7 @@
   border-radius: 3px;
   color: #000000;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: var(--ospo-font-weight-bold);
   padding: 15px 23px 14px;
   text-decoration: none;
   &:focus {

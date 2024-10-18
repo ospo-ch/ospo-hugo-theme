@@ -1,21 +1,26 @@
 /** Variables
-
-Variables should follow the `$component-state-property-size` formula for
-consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+*
+* Variables should follow the `$component-state-property-size` formula for
+* consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 **/
 
-$desktop-width: calc(1200px + 25px + 25px) !default;
+/**************************
+*       BREAKPOINTS
+***************************/
 
+$screen-xs: 320px !default;
 $screen-sm: 544px !default;
 $screen-md: 768px !default;
 $screen-lg: 1012px !default;
 $screen-xl: 1280px !default;
-$screen-xxl: 1441px !default;
+$screen-xxl: 1400px !default;
 
 // screen is to small for sticky placement
 $screen-height-place-limit: 44rem !default;
 
-// Typography variables
+/**************************
+*       TYPOGRAPHY
+***************************/
 
 // Heading sizes - mobile
 $h1-size-mobile: 26px !default;
@@ -38,7 +43,11 @@ $font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji" !default;
 
 // Font weights
-$font-weight-bold: var(--base-text-weight-bold, 700) !default;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
 
 //  CSS custom properties
 :root {
@@ -60,10 +69,19 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --color-red: #f33;
 
   /* Typography */
-  --ospo-body-font-family: $font-family;
-  --ospo-title-font-family: $font-family;
-  --ospo-button-font-family: $font-family;
-  --ospo-menu-font-family: $font-family;
+
+  // Note: Use `inspect` for lists so that quoted items keep the quotes.
+  // https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --ospo-body-font-family: #{inspect($font-family)};
+  --ospo-body-font-weight: #{$font-weight-regular};
+  --ospo-heading-font-family: #{inspect($font-family)};
+  --ospo-heading-font-weight: #{$font-weight-bold};
+
+  --ospo-font-weight-light: #{$font-weight-light};
+  --ospo-font-weight-regular: #{$font-weight-regular};
+  --ospo-font-weight-medium: #{$font-weight-medium};
+  --ospo-font-weight-semibold: #{$font-weight-semibold};
+  --ospo-font-weight-bold: #{$font-weight-bold};
 
   /* Component variables */
   --ospo-body-line-height: 1.5;
@@ -81,8 +99,6 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-card-cta-wrapper-border-color: var(--color-gray-400);
   --ospo-card-kicker-color: var(--color-gray-800);
   --ospo-card-kicker-line-height: 2.6rem;
-  --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
-    var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
   --ospo-color-high: var(--color-green);
   --ospo-color-high-secondary: var(--color-green-700);
   --ospo-color-low: var(--color-red);
@@ -95,6 +111,8 @@ $font-weight-bold: var(--base-text-weight-bold, 700) !default;
   --ospo-default-padding: 8px;
   --ospo-divider-background-color: var(--color-gray-400);
   --ospo-edge-gap-padding: calc(var(--ospo-default-padding) * 4);
+  --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
+    var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
   --ospo-footer-bg-color: var(--color-white);
   --ospo-footer-copyright-font-size: 11px;
   --ospo-footer-link-color: var(--color-black);
