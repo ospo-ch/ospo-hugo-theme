@@ -1,19 +1,26 @@
 /** Variables
-
-Variables should follow the `$component-state-property-size` formula for
-consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+*
+* Variables should follow the `$component-state-property-size` formula for
+* consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 **/
 
+/**************************
+*       BREAKPOINTS
+***************************/
+
+$screen-xs: 320px !default;
 $screen-sm: 544px !default;
 $screen-md: 768px !default;
 $screen-lg: 1012px !default;
 $screen-xl: 1280px !default;
-$screen-xxl: 1441px !default;
+$screen-xxl: 1400px !default;
 
 // screen is to small for sticky placement
 $screen-height-place-limit: 44rem !default;
 
-// Typography variables
+/**************************
+*       TYPOGRAPHY
+***************************/
 
 // Heading sizes - mobile
 $h1-size-mobile: 26px !default;

@@ -69,7 +69,7 @@
   background-color: white;
   padding-left: 12px;
   padding-right: 12px;
-  @media (min-width: 372px) {
+  @media (min-width: $screen-sm) {
     padding-left: var(--ospo-gutter);
     padding-right: var(--ospo-gutter);
   }
