@@ -310,7 +310,7 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $screen-md) {
   /* no black outline if we're not confident the entire table can be displayed within bounds */
   .insights-expandable-details[open] {
     animation: none;
