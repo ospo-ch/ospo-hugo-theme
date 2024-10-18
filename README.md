@@ -1,9 +1,19 @@
-# ospo theme for Hugo
+# ospo-hugo-theme
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
+> [!WARNING]
+> ospo-hugo-theme is under development and potentially unstable.
+
+This is a [Hugo](https://gohugo.io) theme for Open Source Program Office (ospo) portals. Our aim is to help you get a working ospo site up and running as easily as possible, so you can concentrate on creating great content for your community.
+
 ## Features
+
+- **Software Catalog**: Inventory of the open-source projects used within your oganization
+- **Projects**: List of projects developped and maintained by your organization
+- **Insights**: Open Source Health reports for your projects
+- **Docs**: Technical documentation
 
 ## Installation
 
@@ -87,6 +97,9 @@ To contribute, please follow the guidelines outlined in our [CONTRIBUTING.md](./
 
 ## Acknowledgements
 
+This project couldn't be possible without the amazing open-source work from the community, especially:
+
+- [Hugo](https://gohugo.io)
 - [FontAwesome](https://fontawesome.com/)
 - [CNCF Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme)
 - [Google Docsy Theme](https://github.com/google/docsy)
