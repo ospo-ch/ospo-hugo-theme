@@ -24,8 +24,6 @@
   }
 
   &__title {
-    font-size: 1.5rem;
-    color: var(--ospo-text-color);
     text-transform: none;
     margin: 0;
   }
@@ -55,7 +53,7 @@
     width: 30%;
 
     @media only screen and (max-width: $screen-lg) {
-      font-size: 12px;
+      font-size: var(--ospo-font-body-size-small);
     }
   }
 
@@ -152,7 +150,6 @@
 
 .insights-category-header .gauge__percentage {
   --ospo-gauge-circle-size: var(--ospo-gauge-circle-size-big);
-  --ospo-gauge-percentage-font-size: var(--ospo-gauge-percentage-font-size-big);
 }
 
 .insights-audit {

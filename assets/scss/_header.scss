@@ -54,13 +54,12 @@
     text-transform: uppercase;
     font-family: var(--ospo-heading-font-family);
     font-weight: var(--ospo-heading-font-weight);
-    font-size: 20px;
+    font-size: var(--ospo-font-heading-size-medium);
     @media (min-width: $screen-lg) {
       flex-shrink: 0;
-      font-size: 22px;
     }
     @media (min-width: $screen-xl) {
-      font-size: 28px;
+      font-size: var(--ospo-font-heading-size-large);
     }
   }
 }
@@ -116,7 +115,7 @@
       color: var(--ospo-menu-link-color);
       text-decoration: none;
       font-family: var(--ospo-heading-font-family);
-      font-size: 16px;
+      font-size: var(--ospo-font-heading-size-small);
       font-style: normal;
       font-weight: var(--ospo-heading-font-weight);
       line-height: 1;
@@ -140,7 +139,7 @@
         color: var(--color-gray-700);
         display: block;
         font-weight: var(--ospo-font-weight-regular);
-        font-size: 13px;
+        font-size: var(--ospo-font-body-size-small);
         line-height: 130%;
         margin-top: 10px;
         letter-spacing: 0;

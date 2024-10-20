@@ -83,6 +83,14 @@ $font-weight-bold: 700 !default;
   --ospo-font-weight-semibold: #{$font-weight-semibold};
   --ospo-font-weight-bold: #{$font-weight-bold};
 
+  --ospo-font-heading-size-large: 2rem; // 32px
+  --ospo-font-heading-size-medium: 1.25rem; // 20px
+  --ospo-font-heading-size-small: 1rem; //16px
+  --ospo-font-body-size-large: 1rem; // 16px
+  --ospo-font-body-size-medium: 0.875rem; // 14px
+  --ospo-font-body-size-small: 0.75rem; // 12px
+  --ospo-font-caption-size: 0.75rem; // 12px
+
   /* Component variables */
   --ospo-body-line-height: 1.5;
   --ospo-border-color: var(--color-gray-400);
@@ -118,12 +126,10 @@ $font-weight-bold: 700 !default;
   --ospo-footer-link-color: var(--color-black);
   --ospo-gauge-circle-size-big: 96px;
   --ospo-gauge-circle-size: 48px;
-  --ospo-gauge-label-font-size-big: 22px;
-  --ospo-gauge-label-font-size: 14px;
+  --ospo-gauge-label-font-size-big: var(--ospo-font-heading-size-medium);
+  --ospo-gauge-label-font-size: var(--ospo-font-heading-size-small);
   --ospo-gauge-label-line-height-big: 26px;
   --ospo-gauge-label-line-height: 20px;
-  --ospo-gauge-percentage-font-size-big: 34px;
-  --ospo-gauge-percentage-font-size: 26px;
   --ospo-gutter: 25px;
   --ospo-header-background-color: var(--color-white);
   --ospo-link-color: var(--color-gray-800);
@@ -131,9 +137,8 @@ $font-weight-bold: 700 !default;
   --ospo-menu-link-color: var(--color-black);
   --ospo-menu-link-color-hover: var(--color-gray-700);
   --ospo-progress-background-color: var(--color-gray-300);
-  --ospo-report-font-family: $font-family;
-  --ospo-report-font-size: 14px;
-  --ospo-report-font-size-secondary: 12px;
+  --ospo-report-font-size: var(--ospo-font-body-size-medium);
+  --ospo-report-font-size-secondary: var(--ospo-font-body-size-small);
   --ospo-report-content-max-width: calc(60 * var(--ospo-report-font-size));
   --ospo-score-container-padding: 8px;
   --ospo-section-padding-vertical: calc(var(--ospo-default-padding) * 6);
