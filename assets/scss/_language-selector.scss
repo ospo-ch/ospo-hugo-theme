@@ -12,7 +12,7 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
   background: #fff;
   font-weight: var(--ospo-font-weight-bold);
   line-height: normal;
-  font-size: 16px;
+  font-size: var(--ospo-font-body-size-large);
   letter-spacing: 0.32px;
   cursor: pointer;
   overflow: hidden;
@@ -136,7 +136,7 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
 
     a {
       padding: 12px 10px 12px 15px;
-      font-size: 16px;
+      font-size: var(--ospo-font-body-size-large);
       font-style: normal;
       font-weight: var(--ospo-font-weight-bold);
       line-height: 24px;

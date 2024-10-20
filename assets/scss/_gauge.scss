@@ -46,7 +46,6 @@
   height: var(--ospo-gauge-circle-size);
   line-height: var(--ospo-gauge-circle-size);
   position: absolute;
-  font-family: var(--ospo-report-font-family);
   font-size: calc(var(--ospo-gauge-circle-size) * 0.34 + 1.3px);
   text-align: center;
   top: var(--ospo-score-container-padding);
@@ -54,7 +53,7 @@
 
 .gauge__label {
   font-size: var(--ospo-gauge-label-font-size);
-  font-weight: var(--ospo-font-weight-regulars);
+  font-weight: var(--ospo-font-weight-regular);
   line-height: var(--ospo-gauge-label-line-height);
   margin-top: 10px;
   text-align: center;

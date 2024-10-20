@@ -1,9 +1,9 @@
 // General rules of typography that apply across the whole website.
 // Set body size.
 body {
-  font-size: 0.875em; // 14px.
+  font-size: var(--ospo-font-body-size-medium); // 14px.
   @media (min-width: $screen-sm) {
-    font-size: 1em; // 16px.
+    font-size: var(--ospo-font-body-size-large); // 16px.
   }
   font-weight: var(--ospo-body-font-weight);
   color: var(--ospo-text-color);
