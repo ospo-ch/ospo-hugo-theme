@@ -10,7 +10,7 @@
 .columns-2 {
   > * {
     grid-column: span 12;
-    @media (min-width: 800px) {
+    @media (min-width: $screen-md) {
       grid-column: span 6;
     }
   }
@@ -19,7 +19,7 @@
 .columns-3 {
   > * {
     grid-column: span 12;
-    @media (min-width: 600px) {
+    @media (min-width: $screen-sm) {
       grid-column: span 6;
     }
     @media (min-width: $screen-lg) {
@@ -31,7 +31,7 @@
 .columns-4 {
   > * {
     grid-column: span 12;
-    @media (min-width: 600px) {
+    @media (min-width: $screen-sm) {
       grid-column: span 6;
     }
     @media (min-width: $screen-lg) {

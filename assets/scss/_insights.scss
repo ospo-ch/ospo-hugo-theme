@@ -1,7 +1,7 @@
 .columns .insights-card {
   max-width: 600px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     transition: transform var(--ospo-card-animation-duration)
       var(--ospo-card-animation-easing);
 
@@ -24,8 +24,6 @@
   }
 
   &__title {
-    font-size: 1.5rem;
-    color: var(--ospo-text-color);
     text-transform: none;
     margin: 0;
   }
@@ -55,12 +53,12 @@
     width: 30%;
 
     @media only screen and (max-width: $screen-lg) {
-      font-size: 12px;
+      font-size: var(--ospo-font-body-size-small);
     }
   }
 
   &__score {
-    font-weight: bold;
+    font-weight: var(--ospo-font-weight-bold);
     color: gray;
     width: 10%;
   }
@@ -152,7 +150,6 @@
 
 .insights-category-header .gauge__percentage {
   --ospo-gauge-circle-size: var(--ospo-gauge-circle-size-big);
-  --ospo-gauge-percentage-font-size: var(--ospo-gauge-percentage-font-size-big);
 }
 
 .insights-audit {
@@ -193,7 +190,7 @@
 
 .insights-audit-group__title {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: var(--ospo-font-weight-medium);
 }
 
 .insights-audit__description {
@@ -310,7 +307,7 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $screen-md) {
   /* no black outline if we're not confident the entire table can be displayed within bounds */
   .insights-expandable-details[open] {
     animation: none;

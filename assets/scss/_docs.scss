@@ -185,7 +185,7 @@
   @media (max-width: $screen-lg) {
     border-bottom: 1px solid var(--ospo-border-color);
     padding: 0 16px;
-    font-size: 14px;
+    font-size: var(--ospo-font-body-size-medium);
     margin-top: 0;
   }
 }
@@ -219,7 +219,7 @@
     -webkit-box-flex: 1;
     padding: 6px 8px;
     margin: 0px 8px;
-    font-size: 14px;
+    font-size: var(--ospo-font-body-size-medium);
     color: var(--ospo-link-color);
     line-height: 20px;
     cursor: pointer;
@@ -228,7 +228,7 @@
       flex-grow: 1;
       -webkit-box-flex: 1;
       word-break: break-word;
-      font-weight: 500;
+      font-weight: var(--ospo-font-weight-medium);
     }
   }
 
@@ -255,8 +255,8 @@
 }
 
 .docs-sidebar-page {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--ospo-font-body-size-medium);
+  font-weight: var(--ospo-font-weight-medium);
 
   a {
     flex-grow: 1;
@@ -295,7 +295,7 @@
 }
 
 .toc {
-  font-size: 0.875rem;
+  font-size: var(--ospo-font-body-size-medium);
   margin-block-start: 1em;
   margin-block-end: 1em;
   padding-bottom: 24px;
@@ -311,7 +311,7 @@
   }
 
   &__heading {
-    font-weight: 600;
+    font-weight: var(--ospo-font-weight-semibold);
     margin-bottom: 4px;
   }
 
@@ -342,7 +342,7 @@
     }
 
     &.active {
-      font-weight: 500;
+      font-weight: var(--ospo-font-weight-regular);
     }
   }
 }
@@ -411,15 +411,15 @@
 .docs-pager {
   &__desc {
     color: var(--color-gray-800);
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: var(--ospo-font-body-size-medium);
+    font-weight: var(--ospo-font-weight-regular);
     line-height: 20px;
     display: block;
   }
 
   &__title {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: var(--ospo-font-heading-size-small);
+    font-weight: var(--ospo-font-weight-regular);
     line-height: 20px;
     word-break: break-word;
     display: block;
