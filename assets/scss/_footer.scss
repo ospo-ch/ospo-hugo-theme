@@ -43,8 +43,8 @@
   }
 
   &__copyright {
-    font-size: var(--ospo-footer-copyright-font-size);
-    line-height: 150%;
+    font-size: var(--ospo-font-caption-size);
+    line-height: var(--ospo-font-caption-line-height);
     letter-spacing: 0.2px;
     p {
       margin: 0;
