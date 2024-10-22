@@ -20,17 +20,16 @@
 
   &__kicker {
     color: var(--ospo-card-kicker-color);
-    font-size: var(--ospo-font-body-size-large);
+    font-size: var(--ospo-font-body-size-medium);
     font-weight: var(--ospo-font-weight-medium);
-    line-height: var(--ospo-card-kicker-line-height);
+    line-height: var(--ospo-font-body-line-height-medium);
   }
 
   &__title {
     color: var(--ospo-text-color);
     font-size: var(--ospo-font-heading-size-large);
     font-weight: var(--ospo-heading-font-weight);
-    line-height: 3.2rem;
-    margin: 0;
+    line-height: var(--ospo-font-heading-line-height-large);
     text-transform: none;
   }
 

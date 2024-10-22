@@ -91,8 +91,16 @@ $font-weight-bold: 700 !default;
   --ospo-font-body-size-small: 0.75rem; // 12px
   --ospo-font-caption-size: 0.75rem; // 12px
 
+  --ospo-font-heading-line-height-large: 1.5;
+  --ospo-font-heading-line-height-medium: 1.6;
+  --ospo-font-heading-line-height-small: 1.5;
+  --ospo-font-body-line-height-large: 1.5;
+  --ospo-font-body-line-height-medium: 1.4285;
+  --ospo-font-body-line-height-small: 1.6666;
+  --ospo-font-caption-line-height: 1.3333;
+  --ospo-font-icon-button-line-height: 1;
+
   /* Component variables */
-  --ospo-body-line-height: 1.5;
   --ospo-border-color: var(--color-gray-400);
   --ospo-breadcrumb-divider: "/";
   --ospo-button-background-color: var(--color-gray-700);
@@ -122,7 +130,6 @@ $font-weight-bold: 700 !default;
   --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
     var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
   --ospo-footer-bg-color: var(--color-white);
-  --ospo-footer-copyright-font-size: 11px;
   --ospo-footer-link-color: var(--color-black);
   --ospo-gauge-circle-size-big: 96px;
   --ospo-gauge-circle-size: 48px;
