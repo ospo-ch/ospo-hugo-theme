@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid var(--ospo-card-border-color);
+  border: var(--ospo-border-width-thin) solid var(--ospo-card-border-color);
   background: var(--ospo-card-background-color);
   position: relative;
 
@@ -46,7 +46,8 @@
   }
 
   @mixin card-actions {
-    border-top: 1px solid var(--ospo-card-cta-wrapper-border-color);
+    border-top: var(--ospo-border-width-thin) solid
+      var(--ospo-card-cta-wrapper-border-color);
     display: flex;
     padding: 1rem 0;
   }

@@ -8,7 +8,7 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
 
 .dropdown {
   position: relative;
-  border-radius: 6px;
+  border-radius: var(--ospo-border-radius-medium);
   background: #fff;
   font-weight: var(--ospo-font-weight-bold);
   line-height: normal;
@@ -124,8 +124,8 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
   margin: 0;
   padding: 0;
   @media (min-width: $screen-lg) {
-    border: 1px solid var(--color-gray-300);
-    border-radius: 12px;
+    border: var(--ospo-border-width-thin) solid var(--color-gray-300);
+    border-radius: var(--ospo-border-radius-large);
     background-color: var(--color-white);
   }
 }

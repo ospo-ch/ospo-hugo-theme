@@ -2,7 +2,7 @@
   width: 100%;
   background: var(--ospo-header-background-color);
   z-index: var(--z-index-main-header);
-  border-bottom: 1px solid var(--ospo-border-color);
+  border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
 
   &.sticky {
     position: sticky;
@@ -158,7 +158,7 @@
     > a {
       padding-top: 25px;
       padding-bottom: 25px;
-      border-bottom: 1px solid var(--color-gray-300);
+      border-bottom: var(--ospo-border-width-thin) solid var(--color-gray-300);
       padding-right: 5px;
       display: flex;
       align-items: center;
@@ -257,8 +257,8 @@
       padding-left: 0; // reset.
       @media (min-width: $screen-lg) {
         background-color: var(--color-white);
-        border-radius: 12px;
-        border: 1px solid var(--color-gray-300);
+        border-radius: var(--ospo-border-radius-large);
+        border: var(--ospo-border-width-thin) solid var(--ospo-border-color);
         box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
           0px 12px 16px -4px rgba(16, 24, 40, 0.08);
         padding: 20px;

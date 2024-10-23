@@ -37,7 +37,7 @@
 }
 
 .docs-nav-container {
-  border-right: 1px solid var(--ospo-border-color);
+  border-right: var(--ospo-border-width-thin) solid var(--ospo-border-color);
   height: 100%;
 
   &.is-open {
@@ -59,7 +59,7 @@
     flex-direction: column;
     height: 100vh;
     z-index: var(--z-index-docs-nav);
-    border-radius: 0;
+    border-radius: var(--ospo-border-radius-sharp);
     transform: none;
     color: var(--ospo-text-color);
     background-color: var(--ospo-nav-container-bg-color, white);
@@ -103,7 +103,7 @@
     flex-grow: 1;
     -webkit-box-flex: 1;
 
-    border-bottom: 1px solid var(--ospo-border-color);
+    border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
     padding: 16px 0 16px 24px;
 
     .docs-title {
@@ -183,7 +183,7 @@
   }
 
   @media (max-width: $screen-lg) {
-    border-bottom: 1px solid var(--ospo-border-color);
+    border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
     padding: 0 16px;
     font-size: var(--ospo-font-body-size-medium);
     margin-top: 0;
@@ -195,7 +195,7 @@
   width: 32px;
   background-color: transparent;
   border: 0;
-  border-radius: 6px;
+  border-radius: var(--ospo-border-radius-medium);
   line-height: var(--ospo-font-icon-button-line-height);
   cursor: pointer;
 
@@ -271,7 +271,7 @@
   margin: 0px 8px;
 
   &:hover {
-    border-radius: 6px;
+    border-radius: var(--ospo-border-radius-medium);
     background-color: rgba(208, 215, 222, 0.24);
   }
 }
@@ -299,7 +299,7 @@
   margin-block-start: 1em;
   margin-block-end: 1em;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--ospo-border-color);
+  border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
 
   @media (min-width: $screen-xl) {
     position: sticky;
@@ -399,7 +399,7 @@
   display: grid;
   grid-row-gap: 8px;
   padding-top: 24px;
-  border-top: 1px solid var(--ospo-border-color);
+  border-top: var(--ospo-border-width-thin) solid var(--ospo-border-color);
   margin-top: 64px;
 
   @media (min-width: $screen-md) {
@@ -427,8 +427,8 @@
 }
 
 .docs-pager-link {
-  border: 1px solid var(--ospo-border-color);
-  border-radius: 6px;
+  border: var(--ospo-border-width-thin) solid var(--ospo-border-color);
+  border-radius: var(--ospo-border-radius-medium);
   padding: 12px 16px;
   width: 100%;
   height: 100%;
