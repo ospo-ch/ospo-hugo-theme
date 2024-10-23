@@ -5,9 +5,9 @@ body {
   @media (min-width: $screen-sm) {
     font-size: var(--ospo-font-body-size-large); // 16px.
   }
-  font-weight: var(--ospo-body-font-weight);
+  font-weight: var(--ospo-font-weight-body);
   color: var(--ospo-text-color);
-  font-family: var(--ospo-body-font-family);
+  font-family: var(--ospo-font-family-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -73,8 +73,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: var(--ospo-heading-font-family);
-  font-weight: $font-weight-bold !important;
+  font-family: var(--ospo-font-family-heading);
+  font-weight: var(--ospo-font-weight-heading) !important;
 }
 
 p + p,

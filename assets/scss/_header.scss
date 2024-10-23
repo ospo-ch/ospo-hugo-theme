@@ -52,8 +52,8 @@
     text-decoration: none;
     color: var(--ospo-link-color);
     text-transform: uppercase;
-    font-family: var(--ospo-heading-font-family);
-    font-weight: var(--ospo-heading-font-weight);
+    font-family: var(--ospo-font-family-heading);
+    font-weight: var(--ospo-font-weight-heading);
     font-size: var(--ospo-font-heading-size-medium);
     @media (min-width: $screen-lg) {
       flex-shrink: 0;
@@ -114,10 +114,10 @@
       display: block;
       color: var(--ospo-menu-link-color);
       text-decoration: none;
-      font-family: var(--ospo-heading-font-family);
+      font-family: var(--ospo-font-family-heading);
       font-size: var(--ospo-font-heading-size-small);
       font-style: normal;
-      font-weight: var(--ospo-heading-font-weight);
+      font-weight: var(--ospo-font-weight-heading);
       line-height: var(--ospo-font-heading-line-height-small);
       letter-spacing: 0.8px;
       transition: color 0.5s ease;
