@@ -2,7 +2,7 @@
 .button {
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid var(--ospo-button-border-color);
+  border: var(--ospo-border-width-thin) solid var(--ospo-button-border-color);
   text-transform: uppercase;
   text-decoration: none;
   line-height: var(--ospo-font-icon-button-line-height);

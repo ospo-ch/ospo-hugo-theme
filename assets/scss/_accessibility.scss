@@ -23,7 +23,7 @@
   word-wrap: normal;
   transition: none;
   background-color: #f1f1f1;
-  border-radius: 3px;
+  border-radius: var(--ospo-border-radius-small);
   color: #000000;
   font-size: var(--ospo-font-body-size-medium);
   font-weight: var(--ospo-font-weight-bold);
