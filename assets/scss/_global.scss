@@ -3,7 +3,7 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  line-height: var(--ospo-body-line-height);
+  line-height: var(--ospo-font-body-line-height-large);
   min-height: 100vh;
   @supports (min-height: 100dvh) {
     min-height: 100dvh;
@@ -29,7 +29,7 @@ footer {
 
 .container {
   @include make-container();
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     max-width: var(--ospo-container-width);
   }
 }
@@ -42,12 +42,12 @@ footer {
   padding-left: 12px;
   padding-right: 12px;
 
-  @media (min-width: 372px) {
+  @media (min-width: $screen-sm) {
     padding-left: var(--ospo-gutter);
     padding-right: var(--ospo-gutter);
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     padding-left: 0px;
     padding-right: 0px;
   }

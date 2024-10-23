@@ -1,9 +1,9 @@
 .card {
-  border: 1px solid var(--ospo-card-border-color);
+  border: var(--ospo-border-width-thin) solid var(--ospo-card-border-color);
   background: var(--ospo-card-background-color);
   position: relative;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     transition: transform var(--ospo-card-animation-duration)
       var(--ospo-card-animation-easing);
 
@@ -20,22 +20,21 @@
 
   &__kicker {
     color: var(--ospo-card-kicker-color);
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: var(--ospo-card-kicker-line-height);
+    font-size: var(--ospo-font-body-size-medium);
+    font-weight: var(--ospo-font-weight-medium);
+    line-height: var(--ospo-font-body-line-height-medium);
   }
 
   &__title {
     color: var(--ospo-text-color);
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 3.2rem;
-    margin: 0;
+    font-size: var(--ospo-font-heading-size-large);
+    font-weight: var(--ospo-font-weight-heading);
+    line-height: var(--ospo-font-heading-line-height-large);
     text-transform: none;
   }
 
   &__description {
-    font-size: 1rem;
+    font-size: var(--ospo-font-body-size-large);
     opacity: 0.89;
     min-height: 3.4rem;
     overflow: hidden;
@@ -47,7 +46,8 @@
   }
 
   @mixin card-actions {
-    border-top: 1px solid var(--ospo-card-cta-wrapper-border-color);
+    border-top: var(--ospo-border-width-thin) solid
+      var(--ospo-card-cta-wrapper-border-color);
     display: flex;
     padding: 1rem 0;
   }

@@ -1,8 +1,8 @@
 .main-area {
   grid-area: content;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 2rem;
+  font-size: var(--ospo-font-body-size-large);
+  font-weight: var(--ospo-font-weight-light);
+  line-height: var(--ospo-font-body-line-height-large);
 }
 
 .side {
@@ -39,20 +39,24 @@
   ul {
     @extend .ul-reset;
     padding-inline-start: 0;
+
+    li {
+      margin-top: 8px;
+    }
   }
 
   .metadata-title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: var(--ospo-font-weight-semibold);
   }
 
   .sidebar-tag {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 2rem;
+    font-size: var(--ospo-font-body-size-large);
+    font-weight: var(--ospo-font-weight-light);
+    line-height: var(--ospo-font-body-line-height-large);
 
     &:hover {
-      font-weight: 600;
+      font-weight: var(--ospo-font-weight-semibold);
     }
   }
 }

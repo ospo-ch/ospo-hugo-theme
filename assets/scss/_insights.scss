@@ -1,7 +1,7 @@
 .columns .insights-card {
   max-width: 600px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $screen-xl) {
     transition: transform var(--ospo-card-animation-duration)
       var(--ospo-card-animation-easing);
 
@@ -13,7 +13,7 @@
 }
 
 .insights-card {
-  border: 1px solid var(--ospo-card-border-color);
+  border: var(--ospo-border-width-thin) solid var(--ospo-card-border-color);
   padding: 20px;
   position: relative;
 
@@ -24,15 +24,13 @@
   }
 
   &__title {
-    font-size: 1.5rem;
-    color: var(--ospo-text-color);
     text-transform: none;
     margin: 0;
   }
 }
 
 .insights-categories {
-  border: 1px solid var(--ospo-border-color); /* Adds outer border to the categories component */
+  border: var(--ospo-border-width-thin) solid var(--ospo-border-color); /* Adds outer border to the categories component */
   border-collapse: collapse;
   width: 100%; /* Make the component span the width of the container */
   font-size: var(--ospo-report-font-size);
@@ -47,7 +45,7 @@
   padding: var(
     --ospo-default-padding
   ); /* Adds spacing inside each category row */
-  border-bottom: 1px solid var(--ospo-border-color); /* Adds a bottom border between rows */
+  border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color); /* Adds a bottom border between rows */
 
   &__title {
     min-width: 120px;
@@ -55,12 +53,12 @@
     width: 30%;
 
     @media only screen and (max-width: $screen-lg) {
-      font-size: 12px;
+      font-size: var(--ospo-font-body-size-small);
     }
   }
 
   &__score {
-    font-weight: bold;
+    font-weight: var(--ospo-font-weight-bold);
     color: gray;
     width: 10%;
   }
@@ -75,7 +73,9 @@
   height: 8px;
   background-color: var(--ospo-progress-background-color);
   position: relative;
-  border-radius: 0; /* Remove the rounded borders */
+  border-radius: var(
+    --ospo-border-radius-sharp
+  ); /* Remove the rounded borders */
 }
 
 .category-wrapper__progress-bar span {
@@ -152,13 +152,12 @@
 
 .insights-category-header .gauge__percentage {
   --ospo-gauge-circle-size: var(--ospo-gauge-circle-size-big);
-  --ospo-gauge-percentage-font-size: var(--ospo-gauge-percentage-font-size-big);
 }
 
 .insights-audit {
   // TODO: custom properties
-  border-top: 1px solid var(--ospo-border-color);
-  border-bottom: 1px solid var(--ospo-border-color);
+  border-top: var(--ospo-border-width-thin) solid var(--ospo-border-color);
+  border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
 }
 
 .insights-audit ~ .insights-audit {
@@ -193,7 +192,7 @@
 
 .insights-audit-group__title {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: var(--ospo-font-weight-medium);
 }
 
 .insights-audit__description {
@@ -302,15 +301,16 @@
 
 @keyframes openDetails {
   from {
-    outline: 1px solid var(--ospo-report-background-color);
+    outline: var(--ospo-outline-width-thin) solid
+      var(--ospo-report-background-color);
   }
   to {
-    outline: 1px solid;
+    outline: var(--ospo-outline-width-thin) solid;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $screen-md) {
   /* no black outline if we're not confident the entire table can be displayed within bounds */
   .insights-expandable-details[open] {
     animation: none;
@@ -319,7 +319,7 @@
 
 .insights-expandable-details[open] summary,
 details.insights-audit-list > summary {
-  border-bottom: 1px solid var(--ospo-border-color);
+  border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
 }
 details.insights-audit-list[open] > summary {
   border-bottom-width: 0;
