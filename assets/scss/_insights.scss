@@ -85,19 +85,19 @@
 
 .progress {
   &--low {
-    background-color: var(--ospo-color-low);
+    background-color: var(--ospo-color-insights-score-low);
   }
 
   &--moderate-low {
-    background-color: var(--ospo-color-moderate-low);
+    background-color: var(--ospo-color-insights-score-moderate-low);
   }
 
   &--moderate-high {
-    background-color: var(--ospo-color-moderate-high);
+    background-color: var(--ospo-color-insights-score-moderate-high);
   }
 
   &--high {
-    background-color: var(--ospo-color-high);
+    background-color: var(--ospo-color-insights-score-high);
   }
 }
 
@@ -350,11 +350,11 @@ details[open] .insights-audit-list-toggletext--hide {
 
 .insights-audit--pass .insights-audit__score-icon {
   border-radius: 100%;
-  background: var(--ospo-color-high);
+  background: var(--ospo-color-insights-score-high);
 }
 
 .insights-audit--average .insights-audit__score-icon {
-  background: var(--ospo-color-moderate-high);
+  background: var(--ospo-color-insights-score-moderate-high);
   width: var(--ospo-icon-square-size);
   height: var(--ospo-icon-square-size);
 }
@@ -363,7 +363,8 @@ details[open] .insights-audit-list-toggletext--hide {
 .insights-audit--error .insights-audit__score-icon {
   border-left: calc(var(--ospo-score-icon-size) / 2) solid transparent;
   border-right: calc(var(--ospo-score-icon-size) / 2) solid transparent;
-  border-bottom: var(--ospo-score-icon-size) solid var(--ospo-color-low);
+  border-bottom: var(--ospo-score-icon-size) solid
+    var(--ospo-color-insights-score-low);
 }
 
 // TODO: error isn't supported at this time.
