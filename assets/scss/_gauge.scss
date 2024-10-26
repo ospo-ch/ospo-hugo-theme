@@ -11,27 +11,27 @@
   will-change: opacity; /* Only using for layer promotion */
 
   &--low {
-    color: var(--ospo-color-low-secondary);
-    fill: var(--ospo-color-low);
-    stroke: var(--ospo-color-low);
+    color: var(--ospo-color-insights-score-low-secondary);
+    fill: var(--ospo-color-insights-score-low);
+    stroke: var(--ospo-color-insights-score-low);
   }
 
   &--moderate-low {
-    color: var(--ospo-color-moderate-low-secondary);
-    fill: var(--ospo-color-moderate-low);
-    stroke: var(--ospo-color-moderate-low);
+    color: var(--ospo-color-insights-score-moderate-low-secondary);
+    fill: var(--ospo-color-insights-score-moderate-low);
+    stroke: var(--ospo-color-insights-score-moderate-low);
   }
 
   &--moderate-high {
-    color: var(--ospo-color-moderate-high-secondary);
-    fill: var(--ospo-color-moderate-high);
-    stroke: var(--ospo-color-moderate-high);
+    color: var(--ospo-color-insights-score-moderate-high-secondary);
+    fill: var(--ospo-color-insights-score-moderate-high);
+    stroke: var(--ospo-color-insights-score-moderate-high);
   }
 
   &--high {
-    color: var(--ospo-color-high-secondary);
-    fill: var(--ospo-color-high);
-    stroke: var(--ospo-color-high);
+    color: var(--ospo-color-insights-score-high-secondary);
+    fill: var(--ospo-color-insights-score-high);
+    stroke: var(--ospo-color-insights-score-high);
   }
 }
 
