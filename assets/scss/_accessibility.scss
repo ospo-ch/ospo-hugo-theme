@@ -27,7 +27,7 @@
   color: var(--ospo-text-color);
   font-size: var(--ospo-font-body-size-medium);
   font-weight: var(--ospo-font-weight-bold);
-  padding: 15px 23px 14px;
+  padding: var(--ospo-spacing-lg) var(--ospo-spacing-xl) var(--ospo-spacing-lg);
   text-decoration: none;
   &:focus {
     clip: auto !important;

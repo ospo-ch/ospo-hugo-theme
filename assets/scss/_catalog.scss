@@ -33,7 +33,7 @@
 }
 
 .metadata-group {
-  padding-top: 1.5rem;
+  padding-top: var(--ospo-spacing-xl);
 
   // Reset lists.
   ul {
@@ -41,7 +41,7 @@
     padding-inline-start: 0;
 
     li {
-      margin-top: 8px;
+      margin-top: var(--ospo-spacing-md);
     }
   }
 

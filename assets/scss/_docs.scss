@@ -6,7 +6,7 @@
   min-height: 100vh;
 
   &__article {
-    padding: 0 16px;
+    padding: var(--ospo-spacing-none) var(--ospo-spacing-lg);
     grid-area: main;
     display: grid;
     grid-template-areas:
@@ -17,7 +17,7 @@
     row-gap: 8px;
 
     @media (min-width: $screen-md) {
-      padding: 0 40px;
+      padding: var(--ospo-spacing-none) var(--ospo-spacing-2xl);
     }
 
     @media (min-width: $screen-xl) {
@@ -54,7 +54,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 0;
+    margin-top: var(--ospo-spacing-none);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -104,18 +104,19 @@
     -webkit-box-flex: 1;
 
     border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
-    padding: 16px 0 16px 24px;
+    padding: var(--ospo-spacing-lg) 0 var(--ospo-spacing-lg)
+      var(--ospo-spacing-xl);
 
     .docs-title {
       flex-grow: 1;
       -webkit-box-flex: 1;
-      padding-left: 4px;
+      padding-left: var(--ospo-spacing-xs);
     }
   }
 
   &__button-close {
     flex-shrink: 0;
-    margin-right: 8px;
+    margin-right: var(--ospo-spacing-md);
 
     @media (min-width: $screen-lg) {
       display: none;
@@ -123,8 +124,8 @@
   }
 
   &__content {
-    margin-left: 16px;
-    padding-top: 16px;
+    margin-left: var(--ospo-spacing-lg);
+    padding-top: var(--ospo-spacing-lg);
     flex: 1;
 
     ul {
@@ -133,7 +134,7 @@
     }
 
     > ul:first-child {
-      padding: 8px 0;
+      padding: var(--ospo-spacing-md) var(--ospo-spacing-none);
     }
 
     li {
@@ -145,15 +146,15 @@
 
 .docs-sidebar ul li {
   li .docs-sidebar-section__title {
-    padding-left: 16px;
+    padding-left: var(--ospo-spacing-lg);
   }
 
   li .docs-sidebar-link {
-    padding-left: 16px;
+    padding-left: var(--ospo-spacing-lg);
   }
 
   li li .docs-sidebar-link {
-    padding-left: 24px;
+    padding-left: var(--ospo-spacing-xl);
   }
 }
 
@@ -162,10 +163,10 @@
   flex-grow: 1;
   -webkit-box-flex: 1;
   align-items: center;
-  margin-top: 20px;
+  margin-top: var(--ospo-spacing-xl);
 
   @media (min-width: $screen-md) {
-    padding: 0 40px;
+    padding: var(--ospo-spacing-none) var(--ospo-spacing-2xl);
   }
 
   &__breadcrumbs {
@@ -175,7 +176,7 @@
 
   &__sidebar-hamburger {
     flex-shrink: 0;
-    margin-right: 8px;
+    margin-right: var(--ospo-spacing-md);
 
     @media (min-width: $screen-lg) {
       display: none;
@@ -184,9 +185,9 @@
 
   @media (max-width: $screen-lg) {
     border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
-    padding: 0 16px;
+    padding: var(--ospo-spacing-none) var(--ospo-spacing-lg);
     font-size: var(--ospo-font-body-size-medium);
-    margin-top: 0;
+    margin-top: var(--ospo-spacing-none);
   }
 }
 
@@ -217,8 +218,8 @@
     align-items: center;
     flex-grow: 1;
     -webkit-box-flex: 1;
-    padding: 6px 8px;
-    margin: 0px 8px;
+    padding: var(--ospo-spacing-sm) var(--ospo-spacing-md);
+    margin: var(--ospo-spacing-none) var(--ospo-spacing-md);
     font-size: var(--ospo-font-body-size-medium);
     color: var(--ospo-link-color);
     line-height: var(--ospo-font-body-line-height-medium);
@@ -235,7 +236,7 @@
   &__icon {
     flex-shrink: 0;
     height: 20px;
-    margin-left: 8px;
+    margin-left: var(--ospo-spacing-md);
 
     svg {
       display: inline-block;
@@ -263,12 +264,12 @@
     -webkit-box-flex: 1;
     word-break: break-word;
     line-height: var(--ospo-font-body-line-height-medium);
-    padding: 6px 8px;
+    padding: var(--ospo-spacing-sm) var(--ospo-spacing-md);
   }
 }
 
 .docs-sidebar-link {
-  margin: 0px 8px;
+  margin: var(--ospo-spacing-none) var(--ospo-spacing-md);
 
   &:hover {
     border-radius: var(--ospo-border-radius-medium);
@@ -278,7 +279,7 @@
 
 .docs-content {
   grid-area: content;
-  padding: 0 0 128px 0;
+  padding-bottom: var(--ospo-spacing-7xl);
 }
 
 .docs-intro {
@@ -291,14 +292,14 @@
 
 .docs-toc-container {
   grid-area: toc;
-  padding-right: 0.5rem;
+  padding-right: var(--ospo-spacing-md);
 }
 
 .toc {
   font-size: var(--ospo-font-body-size-medium);
   margin-block-start: 1em;
   margin-block-end: 1em;
-  padding-bottom: 24px;
+  padding-bottom: var(--ospo-spacing-xl);
   border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
 
   @media (min-width: $screen-xl) {
@@ -312,20 +313,20 @@
 
   &__heading {
     font-weight: var(--ospo-font-weight-semibold);
-    margin-bottom: 4px;
+    margin-bottom: var(--ospo-spacing-xs);
   }
 
   &__content {
-    margin: 8px 0;
+    margin: var(--ospo-spacing-md) var(--ospo-spacing-none);
   }
 
   ul {
-    padding-left: 0;
-    margin-bottom: 0;
+    padding-left: var(--ospo-spacing-none);
+    margin-bottom: var(--ospo-spacing-none);
     list-style: none;
 
     ul {
-      padding-left: 1rem;
+      padding-left: var(--ospo-spacing-lg);
     }
   }
 
@@ -333,8 +334,9 @@
     display: block;
     color: inherit;
     text-decoration: none;
-    padding: 0.125rem 0 0.125rem 0.75rem;
-    border-left: 0.125rem solid transparent;
+    padding: var(--ospo-spacing-xs) var(--ospo-spacing-none)
+      var(--ospo-spacing-xs) var(--ospo-spacing-sm);
+    border-left: var(--ospo-border-width-thick) solid transparent;
 
     &:hover,
     &.active {
@@ -373,17 +375,17 @@
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0;
+  padding: var(--ospo-spacing-none);
   list-style: none;
 }
 
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 8px;
+  padding-left: var(--ospo-spacing-md);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
   float: left;
-  padding-right: 8px;
+  padding-right: var(--ospo-spacing-md);
   content: var(--ospo-breadcrumb-divider, "/");
 }
 
@@ -398,9 +400,9 @@
 .docs-pager-nav {
   display: grid;
   grid-row-gap: 8px;
-  padding-top: 24px;
+  padding-top: var(--ospo-spacing-xl);
   border-top: var(--ospo-border-width-thin) solid var(--ospo-border-color);
-  margin-top: 64px;
+  margin-top: var(--ospo-spacing-4xl);
 
   @media (min-width: $screen-md) {
     grid-template-columns: repeat(2, 1fr);
@@ -429,7 +431,7 @@
 .docs-pager-link {
   border: var(--ospo-border-width-thin) solid var(--ospo-border-color);
   border-radius: var(--ospo-border-radius-medium);
-  padding: 12px 16px;
+  padding: var(--ospo-spacing-md) var(--ospo-spacing-lg);
   width: 100%;
   height: 100%;
   line-height: var(--ospo-font-body-line-height-medium);

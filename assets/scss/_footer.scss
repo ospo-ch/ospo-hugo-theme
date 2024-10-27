@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 24px;
+  padding-top: var(--ospo-spacing-4xl);
+  padding-bottom: var(--ospo-spacing-xl);
   @media (min-width: $screen-lg) {
-    padding-top: 100px;
+    padding-top: var(--ospo-spacing-6xl);
   }
   background-color: var(--ospo-footer-bg-color);
   color: var(--ospo-footer-link-color);
@@ -17,9 +17,9 @@
   .footer-hr {
     opacity: 0.25;
     color: var(--color-black);
-    margin-top: 30px;
+    margin-top: var(--ospo-spacing-2xl);
     @media (min-width: $screen-lg) {
-      margin-top: 60px;
+      margin-top: var(--ospo-spacing-4xl);
     }
   }
 
@@ -47,12 +47,12 @@
     line-height: var(--ospo-font-caption-line-height);
     letter-spacing: 0.2px;
     p {
-      margin: 0;
+      margin: var(--ospo-spacing-none);
     }
   }
 
   .social-links {
-    margin-top: 0;
+    margin-top: var(--ospo-spacing-none);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -63,7 +63,7 @@
       align-items: center;
       align-content: center;
       justify-content: center;
-      padding: 10px;
+      padding: var(--ospo-spacing-md);
       &:hover {
         opacity: 0.8;
       }

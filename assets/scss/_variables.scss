@@ -100,6 +100,7 @@ $font-weight-bold: 700 !default;
   --ospo-font-caption-line-height: 1.3333;
   --ospo-font-icon-button-line-height: 1;
 
+  /* Border */
   --ospo-border-width-thin: max(1px, 0.0625rem);
   --ospo-border-width-thick: max(2px, 0.125rem);
   --ospo-border-width-thicker: max(4px, 0.25rem);
@@ -110,6 +111,20 @@ $font-weight-bold: 700 !default;
   --ospo-border-color: var(--color-gray-400);
 
   --ospo-outline-width-thin: max(1px, 0.0625rem);
+
+  /* Spacing */
+  --ospo-spacing-none: 0rem; // 0px
+  --ospo-spacing-xs: 0.25rem; // 4px
+  --ospo-spacing-sm: 0.375rem; // 6px
+  --ospo-spacing-md: 0.5rem; // 8px
+  --ospo-spacing-lg: 1rem; // 16px
+  --ospo-spacing-xl: 1.5rem; // 24px;
+  --ospo-spacing-2xl: 2rem; // 32px;
+  --ospo-spacing-3xl: 3rem; // 48px
+  --ospo-spacing-4xl: 4rem; //64px
+  --ospo-spacing-5xl: 5rem; // 80px
+  --ospo-spacing-6xl: 6rem; // 96px
+  --ospo-spacing-7xl: 8rem; // 128px
 
   /* Component variables */
   --ospo-breadcrumb-divider: "/";
@@ -134,11 +149,10 @@ $font-weight-bold: 700 !default;
   --ospo-color-insights-score-moderate-low: var(--color-orange);
   --ospo-color-insights-score-moderate-low-secondary: var(--color-orange-700);
   --ospo-container-width: 1200px;
-  --ospo-default-padding: 8px;
   --ospo-divider-background-color: var(--color-gray-400);
-  --ospo-edge-gap-padding: calc(var(--ospo-default-padding) * 4);
-  --ospo-category-padding: calc(var(--ospo-default-padding) * 6)
-    var(--ospo-edge-gap-padding) calc(var(--ospo-default-padding) * 4);
+  --ospo-edge-gap-padding: calc(var(--ospo-spacing-md) * 4);
+  --ospo-category-padding: calc(var(--ospo-spacing-md) * 6)
+    var(--ospo-edge-gap-padding) calc(var(--ospo-spacing-md) * 4);
   --ospo-footer-bg-color: var(--color-white);
   --ospo-footer-link-color: var(--color-black);
   --ospo-gauge-circle-size-big: 96px;
@@ -147,7 +161,7 @@ $font-weight-bold: 700 !default;
   --ospo-gauge-label-font-size: var(--ospo-font-heading-size-small);
   --ospo-gauge-label-line-height-big: 26px;
   --ospo-gauge-label-line-height: 20px;
-  --ospo-gutter: 25px;
+  --ospo-gutter: var(--ospo-spacing-xl);
   --ospo-header-background-color: var(--color-white);
   --ospo-link-color: var(--color-gray-800);
   --ospo-link-highlight-color: var(--color-gray-700);
@@ -157,8 +171,8 @@ $font-weight-bold: 700 !default;
   --ospo-report-font-size: var(--ospo-font-body-size-medium);
   --ospo-report-font-size-secondary: var(--ospo-font-body-size-small);
   --ospo-report-content-max-width: calc(60 * var(--ospo-report-font-size));
-  --ospo-score-container-padding: 8px;
-  --ospo-section-padding-vertical: calc(var(--ospo-default-padding) * 6);
+  --ospo-score-container-padding: var(--ospo-spacing-md);
+  --ospo-section-padding-vertical: calc(var(--ospo-spacing-md) * 6);
   --ospo-text-color: var(--color-black);
 
   /* z-index

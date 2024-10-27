@@ -1,7 +1,7 @@
 // Default button style
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: var(--ospo-spacing-md) var(--ospo-spacing-lg);
   border: var(--ospo-border-width-thin) solid var(--ospo-button-border-color);
   text-transform: uppercase;
   text-decoration: none;
@@ -17,19 +17,19 @@
 }
 
 .button {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: var(--ospo-spacing-2xl);
+  margin-bottom: var(--ospo-spacing-2xl);
   @media (min-width: $screen-lg) {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: var(--ospo-spacing-3xl);
+    margin-bottom: var(--ospo-spacing-3xl);
   }
 }
 
 .button + .button {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-top: var(--ospo-spacing-none);
+  margin-bottom: var(--ospo-spacing-2xl);
   @media (min-width: $screen-lg) {
-    margin-top: 0;
-    margin-bottom: 50px;
+    margin-top: var(--ospo-spacing-none);
+    margin-bottom: var(--ospo-spacing-3xl);
   }
 }
