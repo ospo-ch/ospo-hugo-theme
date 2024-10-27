@@ -14,7 +14,8 @@
   }
 
   &__content {
-    padding: 1.6rem 1.6rem 1rem;
+    padding: var(--ospo-spacing-xl) var(--ospo-spacing-xl)
+      var(--ospo-spacing-lg);
     opacity: 1;
   }
 
@@ -49,7 +50,7 @@
     border-top: var(--ospo-border-width-thin) solid
       var(--ospo-card-cta-wrapper-border-color);
     display: flex;
-    padding: 1rem 0;
+    padding: var(--ospo-spacing-lg) var(--ospo-spacing-none);
   }
 
   &__actions {
@@ -57,14 +58,14 @@
       @include card-actions;
       flex-direction: row-reverse;
       justify-content: right;
-      margin-top: 1.5rem;
+      margin-top: var(--ospo-spacing-xl);
     }
 
     &-primary-action {
       @include card-actions;
       justify-content: space-between;
       align-items: center;
-      margin-top: 1.5rem;
+      margin-top: var(--ospo-spacing-xl);
 
       a::before {
         content: "";
@@ -78,14 +79,14 @@
   }
 
   &__action {
-    padding-left: 2rem;
+    padding-left: var(--ospo-spacing-2xl);
     text-decoration: none;
   }
 
   &__image {
     object-fit: cover;
     aspect-ratio: calc(16 / 10);
-    margin-bottom: 1rem;
+    margin-bottom: var(--ospo-spacing-lg);
     background: var(--ospo-card-cover-background-color);
     overflow: hidden;
   }

@@ -18,16 +18,16 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
   overflow: hidden;
   min-width: min-content;
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: var(--ospo-spacing-2xl);
   @media (max-width: $screen-lg) {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   }
   @media (min-width: $screen-lg) {
-    margin-top: 0;
+    margin-top: var(--ospo-spacing-none);
   }
   &.is-expanded {
     @media (min-width: $screen-lg) {
-      margin-bottom: 0;
+      margin-bottom: var(--ospo-spacing-none);
       overflow: visible;
       z-index: var(--z-index-language-selector, 30);
     }
@@ -37,7 +37,7 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
       top: 100%;
       right: 0;
       @media (min-width: $screen-lg) {
-        padding-top: 30px;
+        padding-top: var(--ospo-spacing-2xl);
         width: 100px;
       }
     }
@@ -68,9 +68,9 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
   width: 100%;
   line-height: var(--ospo-font-body-line-height-large);
   vertical-align: middle;
-  padding-right: 20px; // min space for word and chevron.
+  padding-right: var(--ospo-spacing-xl); // min space for word and chevron.
   @media (min-width: $screen-lg) {
-    padding-right: 10px; // as per other menu items.
+    padding-right: var(--ospo-spacing-md); // as per other menu items.
   }
   transition: color 0.5s ease;
   @media (prefers-reduced-motion: reduce) {
@@ -83,7 +83,8 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
 
 .dropdown-arrow {
   width: 100%;
-  padding: 0 10px 0 15px;
+  padding: var(--ospo-spacing-none) var(--ospo-spacing-md)
+    var(--ospo-spacing-none) var(--ospo-spacing-lg);
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -104,7 +105,7 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
     }
   }
   @media (min-width: $screen-lg) {
-    padding: 0;
+    padding: var(--ospo-spacing-none);
   }
 }
 
@@ -121,8 +122,8 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
 
 .dropdown-group {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: var(--ospo-spacing-none);
+  padding: var(--ospo-spacing-none);
   @media (min-width: $screen-lg) {
     border: var(--ospo-border-width-thin) solid var(--color-gray-300);
     border-radius: var(--ospo-border-radius-large);
@@ -135,7 +136,8 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
     position: relative;
 
     a {
-      padding: 12px 10px 12px 15px;
+      padding: var(--ospo-spacing-md) var(--ospo-spacing-md)
+        var(--ospo-spacing-md) var(--ospo-spacing-lg);
       font-size: var(--ospo-font-body-size-large);
       font-style: normal;
       font-weight: var(--ospo-font-weight-bold);

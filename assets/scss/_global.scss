@@ -39,8 +39,8 @@ footer {
 }
 
 .wrap {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: var(--ospo-spacing-md);
+  padding-right: var(--ospo-spacing-md);
 
   @media (min-width: $screen-sm) {
     padding-left: var(--ospo-gutter);
@@ -48,8 +48,8 @@ footer {
   }
 
   @media (min-width: $screen-xl) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: var(--ospo-spacing-none);
+    padding-right: var(--ospo-spacing-none);
   }
 }
 
@@ -61,6 +61,6 @@ footer {
   margin-inline-start: 0;
   margin-inline-end: 0;
   li {
-    margin-bottom: 0;
+    margin-bottom: var(--ospo-spacing-none);
   }
 }
