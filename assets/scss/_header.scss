@@ -65,7 +65,7 @@
 }
 
 .main-menu {
-  background-color: white;
+  background-color: var(--color-white);
   padding-left: var(--ospo-spacing-md);
   padding-right: var(--ospo-spacing-md);
   @media (min-width: $screen-sm) {

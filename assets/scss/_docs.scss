@@ -201,7 +201,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(208, 215, 222, 0.24);
+    background-color: var(--ospo-color-background-hover);
   }
 
   svg {
@@ -273,7 +273,7 @@
 
   &:hover {
     border-radius: var(--ospo-border-radius-medium);
-    background-color: rgba(208, 215, 222, 0.24);
+    background-color: var(--ospo-color-background-hover);
   }
 }
 

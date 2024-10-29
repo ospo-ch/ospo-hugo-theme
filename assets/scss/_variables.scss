@@ -174,6 +174,7 @@ $font-weight-bold: 700 !default;
   --ospo-score-container-padding: var(--ospo-spacing-md);
   --ospo-section-padding-vertical: calc(var(--ospo-spacing-md) * 6);
   --ospo-text-color: var(--color-black);
+  --ospo-color-background-hover: rgba(208, 215, 222, 0.24);
 
   /* z-index
   Keep this in order, and avoid reusing variables 
