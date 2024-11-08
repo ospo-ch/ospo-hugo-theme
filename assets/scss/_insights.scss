@@ -175,7 +175,7 @@
 }
 
 .insights-audit-group__header {
-  letter-spacing: 0.8px;
+  letter-spacing: var(--ospo-font-letter-spacing-large);
   padding: var(--ospo-spacing-md);
   padding-left: var(--ospo-spacing-none);
 }

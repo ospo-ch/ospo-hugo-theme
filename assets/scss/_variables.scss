@@ -100,6 +100,11 @@ $font-weight-bold: 700 !default;
   --ospo-font-caption-line-height: 1.3333;
   --ospo-font-icon-button-line-height: 1;
 
+  --ospo-font-letter-spacing-none: 0;
+  --ospo-font-letter-spacing-small: 0.2px;
+  --ospo-font-letter-spacing-medium: 0.32px;
+  --ospo-font-letter-spacing-large: 0.8px;
+
   /* Border */
   --ospo-border-width-thin: max(1px, 0.0625rem);
   --ospo-border-width-thick: max(2px, 0.125rem);
