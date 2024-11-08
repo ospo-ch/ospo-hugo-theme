@@ -57,7 +57,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: var(--ospo-gap-medium);
     a {
       display: flex;
       align-items: center;

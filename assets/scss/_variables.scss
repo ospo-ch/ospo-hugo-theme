@@ -126,6 +126,13 @@ $font-weight-bold: 700 !default;
   --ospo-spacing-6xl: 6rem; // 96px
   --ospo-spacing-7xl: 8rem; // 128px
 
+  --ospo-gap-none: 0;
+  --ospo-gap-small: 0.5rem; // 8px
+  --ospo-gap-default: 1rem; // 16px
+  --ospo-gap-medium: 1.25rem; // 20px
+  --ospo-gap-large: 1.5rem; // 24px
+  --ospo-gap-xlarge: 2rem;
+
   /* Component variables */
   --ospo-breadcrumb-divider: "/";
   --ospo-button-background-color: var(--color-gray-700);
