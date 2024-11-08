@@ -19,7 +19,7 @@
 
 .main-wrapper {
   display: grid;
-  gap: 20px;
+  gap: var(--ospo-gap-medium);
   grid-template-areas:
     "content"
     "sidebar";

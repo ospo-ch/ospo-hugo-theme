@@ -14,7 +14,7 @@
       "toc"
       "content";
     grid-template-rows: auto auto 1fr;
-    row-gap: 8px;
+    row-gap: var(--ospo-gap-small);
 
     @media (min-width: $screen-md) {
       padding: var(--ospo-spacing-none) var(--ospo-spacing-2xl);
@@ -26,8 +26,8 @@
         "content    toc";
       grid-template-rows: auto 1fr;
       grid-template-columns: 7fr 2fr;
-      column-gap: 1.5rem;
-      row-gap: 0;
+      column-gap: var(--ospo-gap-large);
+      row-gap: var(--ospo-gap-none);
     }
   }
 }
@@ -399,14 +399,14 @@
 
 .docs-pager-nav {
   display: grid;
-  grid-row-gap: 8px;
+  grid-row-gap: var(--ospo-gap-small);
   padding-top: var(--ospo-spacing-xl);
   border-top: var(--ospo-border-width-thin) solid var(--ospo-border-color);
   margin-top: var(--ospo-spacing-4xl);
 
   @media (min-width: $screen-md) {
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 16px;
+    grid-column-gap: var(--ospo-gap-default);
   }
 }
 

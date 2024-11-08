@@ -1,6 +1,6 @@
 .columns {
   display: grid;
-  row-gap: 32px;
+  row-gap: var(--ospo-gap-xlarge);
   column-gap: 3%;
   grid-template-columns: repeat(12, 1fr);
   margin-top: var(--ospo-spacing-2xl);
