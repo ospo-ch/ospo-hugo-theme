@@ -45,7 +45,7 @@
   &__copyright {
     font-size: var(--ospo-font-caption-size);
     line-height: var(--ospo-font-caption-line-height);
-    letter-spacing: 0.2px;
+    letter-spacing: var(--ospo-font-letter-spacing-small);
     p {
       margin: var(--ospo-spacing-none);
     }

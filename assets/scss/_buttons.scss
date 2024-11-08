@@ -7,7 +7,7 @@
   text-decoration: none;
   line-height: var(--ospo-font-icon-button-line-height);
   text-align: center;
-  letter-spacing: 0.7px;
+  letter-spacing: var(--ospo-font-letter-spacing-large);
 
   &:hover,
   &:active {
