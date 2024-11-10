@@ -136,9 +136,31 @@ $font-weight-bold: 700 !default;
   --ospo-gap-default: 1rem; // 16px
   --ospo-gap-medium: 1.25rem; // 20px
   --ospo-gap-large: 1.5rem; // 24px
-  --ospo-gap-xlarge: 2rem;
+  --ospo-gap-xlarge: 2rem; // 32px
+
+  --ospo-size-width-xxsmall: 6rem; // 96px
+  --ospo-size-width-xsmall: 7.5rem; // 120px
+  --ospo-size-width-small: 15rem; // 240px
+  --ospo-size-width-medium: 20rem; // 320px
+  --ospo-size-width-large: 25rem; // 400px
+  --ospo-size-width-xlarge: 40rem; // 640px
+  --ospo-size-width-xxlarge: 75rem; // 1200px
+
+  --ospo-size-height-xxsmall: 0.1875rem; // 3px
+  --ospo-size-height-xsmall: 0.375rem; // 6px
+  --ospo-size-height-small: 0.5rem; // 8px
+  --ospo-size-height-medium: 1.25rem; // 20px
+  --ospo-size-height-large: 2rem; // 32px
+  --ospo-size-height-xlarge: 3rem; // 48px
+  --ospo-size-height-xxlarge: 4rem; // 64px
+
+  --ospo-icon-size-small: 0.375rem;
+  --ospo-icon-size-medium: 0.625rem; // 10px
+  --ospo-icon-size-large: 2rem; // 32px
 
   /* Component variables */
+  --ospo-header-height: 3.75rem;
+  --ospo-header-height-large: 5rem; // 80px
   --ospo-breadcrumb-divider: "/";
   --ospo-button-background-color: var(--color-gray-700);
   --ospo-button-border-color: var(--color-gray-500);

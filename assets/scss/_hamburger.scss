@@ -113,7 +113,7 @@ $hamburger-responsive-hide: $screen-lg;
   &::before,
   &::after {
     width: $hamburger-layer-width;
-    height: 3px;
+    height: var(--ospo-size-height-xxsmall);
     background-color: $hamburger-color;
     position: absolute;
     transition-property: transform;

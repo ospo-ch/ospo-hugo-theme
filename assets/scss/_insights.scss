@@ -1,5 +1,5 @@
 .columns .insights-card {
-  max-width: 600px;
+  max-width: var(--ospo-size-width-xlarge);
 
   @media (min-width: $screen-xl) {
     transition: transform var(--ospo-card-animation-duration)
@@ -46,8 +46,8 @@
   border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color); /* Adds a bottom border between rows */
 
   &__title {
-    min-width: 120px;
-    max-width: 230px;
+    min-width: var(--ospo-size-width-xsmall);
+    max-width: var(--ospo-size-width-small);
     width: 30%;
 
     @media only screen and (max-width: $screen-lg) {
@@ -68,7 +68,7 @@
 
 .category-wrapper__progress-bar {
   width: 60%; /* Adjust progress bar to fit in the remaining space */
-  height: 8px;
+  height: var(--ospo-size-height-small);
   background-color: var(--ospo-progress-background-color);
   position: relative;
   border-radius: var(
@@ -213,7 +213,7 @@
   text-align: center;
   color: var(--color-gray-700);
   margin: var(--ospo-spacing-none) auto;
-  max-width: 400px;
+  max-width: var(--ospo-size-width-large);
 }
 
 .insights-details,

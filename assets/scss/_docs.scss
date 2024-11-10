@@ -91,7 +91,7 @@
 }
 
 .docs-sidebar {
-  width: 325px;
+  width: var(--ospo-size-width-medium);
 
   &__header {
     flex: none;
@@ -192,8 +192,8 @@
 }
 
 .docs-button {
-  height: 32px;
-  width: 32px;
+  height: var(--ospo-icon-size-large);
+  width: var(--ospo-icon-size-large);
   background-color: transparent;
   border: 0;
   border-radius: var(--ospo-border-radius-medium);
@@ -235,7 +235,7 @@
 
   &__icon {
     flex-shrink: 0;
-    height: 20px;
+    height: var(--ospo-size-height-medium);
     margin-left: var(--ospo-spacing-md);
 
     svg {
