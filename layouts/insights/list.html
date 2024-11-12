@@ -1,18 +1,21 @@
-{{ define "main" }} {{ .Content }}
-<div class="columns columns-2">
-  {{ range .Pages }}
-  <div class="insights-card">
-    <div class="insights-card__header">
-      <h2 class="insights-card__title">{{ .Title }}</h2>
-      {{ $score := .Params.score.aggregate }} {{ partial "insights/gauge.html"
-      (dict "context" . "score" $score ) }}
+{{ define "main" }} {{ $paginator := .Paginate .Pages.ByTitle }} {{ .Content }}
+<div class="list-wrapper">
+  <div class="columns columns-2">
+    {{ range $paginator.Pages }}
+    <div class="insights-card">
+      <div class="insights-card__header">
+        <h2 class="insights-card__title">{{ .Title }}</h2>
+        {{ $score := .Params.score.aggregate }} {{ partial "insights/gauge.html"
+        (dict "context" . "score" $score ) }}
+      </div>
+      <p>{{ .Description }}</p>
+      <div class="card__actions-primary-action">
+        <a href="{{ .Permalink }}" class="card__action"></a>
+      </div>
+      {{- partial "insights/category-summary" . -}}
     </div>
-    <p>{{ .Description }}</p>
-    <div class="card__actions-primary-action">
-      <a href="{{ .Permalink }}" class="card__action"></a>
-    </div>
-    {{- partial "insights/category-summary" . -}}
+    {{ end }}
   </div>
-  {{ end }}
+  {{ partial "pagination.html" . }}
 </div>
 {{ end }}
