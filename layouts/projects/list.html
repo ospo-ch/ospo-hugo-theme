@@ -1,21 +1,26 @@
-{{ define "main" }} {{ .Content }}
-<div class="columns columns-3">
-  {{ range .Pages }}
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__content">
-      <span class="card__kicker">{{ .Params.org_name }}</span>
-      <h2 class="card__title">{{ .Title }}</h2>
-      <p class="card__description">{{ .Description }}</p>
-      <div class="card__actions-primary-action">
-        <span>View Project</span>
-        <a href="{{ .Permalink }}" class="card__action">
-          <img loading="lazy" width="16" height="16" src="{{
-          "images/icons/arrow-right.svg" | relURL }}" alt="See details icon">
-        </a>
+{{ define "main" }} 
+{{ $paginator := .Paginate .Pages.ByTitle }} 
+{{ .Content }}
+<div class="list-wrapper">
+  <div class="columns columns-3">
+    {{ range $paginator.Pages }}
+    <div class="card">
+      <div class="card__image"></div>
+      <div class="card__content">
+        <span class="card__kicker">{{ .Params.org_name }}</span>
+        <h2 class="card__title">{{ .Title }}</h2>
+        <p class="card__description">{{ .Description }}</p>
+        <div class="card__actions-primary-action">
+          <span>View Project</span>
+          <a href="{{ .Permalink }}" class="card__action">
+            <img loading="lazy" width="16" height="16" src="{{
+            "images/icons/arrow-right.svg" | relURL }}" alt="See details icon">
+          </a>
+        </div>
       </div>
     </div>
+    {{ end }}
   </div>
-  {{ end }}
+  {{ partial "pagination.html" . }}
 </div>
 {{ end }}

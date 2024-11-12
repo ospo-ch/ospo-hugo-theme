@@ -1,0 +1,115 @@
+.pagination-wrapper {
+  padding-top: var(--ospo-spacing-lg);
+  padding-bottom: var(--ospo-spacing-lg);
+
+  @media (min-width: $screen-md) {
+    padding-top: var(--ospo-spacing-xl);
+    padding-bottom: var(--ospo-spacing-xl);
+  }
+}
+
+.pagination-nav {
+  margin-top: var(--ospo-spacing-xl);
+  margin-bottom: var(--oxpo-spacing-lg);
+  text-align: center;
+}
+
+.pagination {
+  @extend .ul-reset;
+
+  .page-item {
+    display: inline-block;
+  }
+
+  .page-link {
+    display: inline-block;
+    min-width: var(--ospo-icon-size-large);
+    height: var(--ospo-icon-size-large);
+    padding: var(--ospo-spacing-md) var(--ospo-spacing-sm);
+    line-height: var(--ospo-font-icon-button-line-height);
+    color: var(--ospo-link-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    margin-right: var(--ospo-spacing-xs);
+    background-color: transparent;
+    border-radius: var(--ospo-border-radius-medium);
+
+    &:last-child {
+      margin-right: var(--ospo-spacing-none);
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: var(--ospo-color-background-hover);
+      outline: 0;
+    }
+
+    &[aria-current],
+    &[aria-current]:hover {
+      color: var(--ospo-button-highlight-color);
+      background-color: var(--ospo-button-highlight-background-color);
+      border-color: transparent;
+    }
+
+    &[aria-disabled],
+    &[aria-disabled]:hover {
+      color: var(--ospo-link-disabled-color);
+      cursor: default;
+      background-color: transparent;
+      margin: var(--ospo-spacing-none) var(--ospo-spacing-xxs);
+
+      &:first-child {
+        margin-right: var(--ospo-spacing-sm);
+      }
+    }
+
+    @supports (clip-path: polygon(50% 0, 100% 50%, 50% 100%)) {
+      &[rel="prev"]::before,
+      &[rel="next"]::after {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+        content: "";
+        background-color: currentColor;
+      }
+
+      // chevron-left
+      &[rel="prev"]::before {
+        margin-right: var(--ospo-spacing-xs);
+        clip-path: polygon(
+          9.8px 12.8px,
+          8.7px 12.8px,
+          4.5px 8.5px,
+          4.5px 7.5px,
+          8.7px 3.2px,
+          9.8px 4.3px,
+          6.1px 8px,
+          9.8px 11.7px,
+          9.8px 12.8px
+        );
+      }
+
+      // chevron-right
+      &[rel="next"]::after {
+        margin-left: var(--ospo-spacing-xs);
+        clip-path: polygon(
+          6.2px 3.2px,
+          7.3px 3.2px,
+          11.5px 7.5px,
+          11.5px 8.5px,
+          7.3px 12.8px,
+          6.2px 11.7px,
+          9.9px 8px,
+          6.2px 4.3px,
+          6.2px 3.2px
+        );
+      }
+    }
+  }
+}

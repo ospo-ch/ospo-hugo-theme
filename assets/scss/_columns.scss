@@ -1,3 +1,8 @@
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .columns {
   display: grid;
   row-gap: var(--ospo-gap-xlarge);
