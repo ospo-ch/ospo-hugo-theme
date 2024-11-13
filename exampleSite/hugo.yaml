@@ -6,6 +6,11 @@ defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
 enableMissingTranslationPlaceholders: true
 
+pagination:
+  disableAliases: false
+  pagerSize: 10
+  path: page
+
 build:
   useResourceCacheWhen: "fallback"
 taxonomies:
@@ -34,7 +39,7 @@ params:
         name: "GitHub"
         url: https://example.org/github
         desc: "Development is happening here"
-languages: 
+languages:
   en:
     ### Language ###
     contentDir: "content/en"
@@ -50,8 +55,8 @@ languages:
         help_text: "Accessibility Statement"
         help_url: "/example-page/"
     ### Menu ###
-    menu: 
-      main: 
+    menu:
+      main:
         - identifier: "software-catalog"
           name: "Software Catalog"
           url: "catalog/"
@@ -82,8 +87,8 @@ languages:
         help_text: "Accessibilité"
         help_url: "/example-page/"
     ### Menu ###
-    menu: 
-      main: 
+    menu:
+      main:
         - identifier: "software-catalog"
           name: "Catalogue"
           url: "catalog/"
