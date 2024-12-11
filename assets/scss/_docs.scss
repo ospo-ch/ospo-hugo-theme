@@ -165,8 +165,15 @@
   align-items: center;
   margin-top: var(--ospo-spacing-xl);
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     padding: var(--ospo-spacing-none) var(--ospo-spacing-2xl);
+  }
+
+  @media (max-width: $screen-lg) {
+    border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
+    padding: var(--ospo-spacing-none) var(--ospo-spacing-lg);
+    font-size: var(--ospo-font-body-size-medium);
+    margin-top: var(--ospo-spacing-none);
   }
 
   &__breadcrumbs {
@@ -177,17 +184,11 @@
   &__sidebar-hamburger {
     flex-shrink: 0;
     margin-right: var(--ospo-spacing-md);
+    text-align: left;
 
     @media (min-width: $screen-lg) {
       display: none;
     }
-  }
-
-  @media (max-width: $screen-lg) {
-    border-bottom: var(--ospo-border-width-thin) solid var(--ospo-border-color);
-    padding: var(--ospo-spacing-none) var(--ospo-spacing-lg);
-    font-size: var(--ospo-font-body-size-medium);
-    margin-top: var(--ospo-spacing-none);
   }
 }
 
@@ -196,6 +197,7 @@
   width: var(--ospo-icon-size-large);
   background-color: transparent;
   border: 0;
+  padding: 0;
   border-radius: var(--ospo-border-radius-medium);
   line-height: var(--ospo-font-icon-button-line-height);
   text-decoration: none;
