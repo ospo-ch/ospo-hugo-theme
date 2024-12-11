@@ -69,8 +69,8 @@
   padding-left: var(--ospo-spacing-md);
   padding-right: var(--ospo-spacing-md);
   @media (min-width: $screen-sm) {
-    padding-left: var(--ospo-gutter);
-    padding-right: var(--ospo-gutter);
+    padding-left: var(--ospo-spacing-xl);
+    padding-right: var(--ospo-spacing-xl);
   }
   @media (min-width: $screen-lg) {
     display: flex;
