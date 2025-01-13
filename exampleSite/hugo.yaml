@@ -18,6 +18,16 @@ taxonomies:
   tag: "tags"
   languages: "languages"
 
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
 # UI configuration
 params:
   ui:
