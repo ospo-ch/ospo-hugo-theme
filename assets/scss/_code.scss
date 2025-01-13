@@ -1,0 +1,19 @@
+// Code formatting
+
+.docs-wrapper {
+  // Highlighted code.
+  .highlight {
+    margin: var(--ospo-spacing-2xl) var(--ospo-spacing-none);
+    padding: var(--ospo-spacing-none);
+    position: relative;
+
+    pre {
+      margin: var(--ospo-spacing-none);
+      padding: var(--ospo-spacing-lg);
+      background-color: var(--ospo-code-highlight-background-color);
+      border: var(--ospo-border-width-thin) solid
+        var(--ospo-code-highlight-border-color);
+      border-radius: var(--ospo-border-radius-medium);
+    }
+  }
+}
