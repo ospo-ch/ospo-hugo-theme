@@ -5,6 +5,23 @@
 // Currently it's docs-wrapper which restricts those styles
 // to the documentation section of the theme.
 .docs-wrapper {
+  // Inline code
+  p code,
+  li > code,
+  table code {
+    color: inherit;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    word-break: normal;
+    background-color: var(--ospo-background-color-muted);
+    border-radius: var(--ospo-border-radius-medium);
+
+    br {
+      display: none;
+    }
+  }
+
   // Highlighted code.
   .highlight {
     margin: var(--ospo-spacing-2xl) var(--ospo-spacing-none);
@@ -14,9 +31,9 @@
     pre {
       margin: var(--ospo-spacing-none);
       padding: var(--ospo-spacing-lg);
+      font-size: 85%;
       background-color: var(--ospo-code-highlight-background-color);
-      border: var(--ospo-border-width-thin) solid
-        var(--ospo-code-highlight-border-color);
+      border: var(--ospo-border-width-thin) solid var(--ospo-border-color-muted);
       border-radius: var(--ospo-border-radius-medium);
     }
   }
