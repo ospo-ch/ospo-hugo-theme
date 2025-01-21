@@ -35,4 +35,86 @@
       border-radius: var(--ospo-border-radius-medium);
     }
   }
+
+  table {
+    display: table;
+    width: 100%;
+    font-size: var(--ospo-font-body-size-medium);
+    text-align: left;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    // For mobile (small viewports) we need to fix the table
+    // because if the table is larger than the viewport
+    // it will force the width of the table causing issues
+    // with the header on scroll
+    :not(:global(.has-nested-table)) & {
+      table-layout: fixed;
+    }
+
+    // We want to keep table-layout: auto so that column widths dynamically adjust;
+    // otherwise entries get needlessly squashed into narrow columns. As a workaround,
+    // we use components/lib/wrap-code-terms.js to prevent some reference table content
+    // from expanding beyond the horizontal boundaries of the parent element.
+    @media (min-width: $screen-sm) {
+      table-layout: auto;
+    }
+
+    // Remove zebra striping
+    tr:nth-child(2n) {
+      background-color: transparent;
+    }
+
+    // Make the header sticky
+    thead {
+      position: sticky;
+      top: calc(var(--ospo-header-height) + 1px);
+      background: var(--ospo-color-canvas-default);
+
+      @media (min-width: $screen-lg) {
+        top: calc(var(--ospo-header-height-large) + 1px) !important;
+      }
+    }
+
+    tr,
+    th,
+    td {
+      border: none;
+    }
+
+    thead th,
+    thead td {
+      box-shadow: inset 0 -2px var(--ospo-border-color-muted);
+    }
+
+    tbody th,
+    tbody td {
+      box-shadow: inset 0 -1px var(--ospo-border-color-muted);
+    }
+
+    tbody tr:last-child th,
+    tbody tr:last-child td {
+      box-shadow: none;
+    }
+
+    th,
+    td {
+      padding: var(--ospo-content-table-padding-vertical) var(--ospo-spacing-md);
+      vertical-align: top;
+    }
+
+    th:first-child,
+    td:first-child {
+      padding-left: var(--ospo-spacing-none);
+    }
+
+    pre {
+      margin-top: var(--ospo-spacing-xs);
+    }
+
+    p:last-child {
+      margin-bottom: var(--ospo-spacing-none);
+    }
+  }
 }
