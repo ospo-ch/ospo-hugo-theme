@@ -129,8 +129,20 @@ Example `[example](https://example.com)` will display the link [example](https:/
 | Column #1 |  Column #2  | Column #3 |
 | --------- | :---------: | --------: |
 | Item #1   | Property #1 |     $1600 |
-| Item #1   | Property #2 |       $12 |
-| Item #1   | Property #3 |        $1 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
 ```
 
 **Output**
@@ -138,8 +150,20 @@ Example `[example](https://example.com)` will display the link [example](https:/
 | Column #1 |  Column #2  | Column #3 |
 | --------- | :---------: | --------: |
 | Item #1   | Property #1 |     $1600 |
-| Item #1   | Property #2 |       $12 |
-| Item #1   | Property #3 |        $1 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
+| Item #1   | Property #1 |     $1600 |
+| Item #2   | Property #2 |       $12 |
+| Item #3   | Property #3 |        $1 |
 
 ## Admonitions / Callouts
 

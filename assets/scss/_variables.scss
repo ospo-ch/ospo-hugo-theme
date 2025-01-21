@@ -162,7 +162,7 @@ $font-weight-bold: 700 !default;
   --ospo-icon-size-large: 2rem; // 32px
 
   /* Component variables */
-  --ospo-header-height: 3.75rem;
+  --ospo-header-height: 3.75rem; // 60 px
   --ospo-header-height-large: 5rem; // 80px
   --ospo-breadcrumb-divider: "/";
   --ospo-button-color: var(--color-gray-800);
@@ -221,6 +221,8 @@ $font-weight-bold: 700 !default;
     0.24
   ); // TODO: use base design token
   --ospo-background-color-muted: #afb8c133; // TODO: use base design token
+  --ospo-content-table-padding-vertical: calc(var(--ospo-spacing-xs) * 3);
+  --ospo-color-canvas-default: var(--color-white);
 
   /* z-index
   Keep this in order, and avoid reusing variables 
