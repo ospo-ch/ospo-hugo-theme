@@ -57,7 +57,7 @@ languages:
     languageCode: "en-US"
     weight: 1
     ### Copyright ###
-    copyright: "Copyright &copy; 2024. All Rights Reserved."
+    copyright: "Copyright &copy; 2024 - 2025. All Rights Reserved."
     params:
       ### Accessibility ###
       accessibility:
@@ -88,7 +88,7 @@ languages:
     languageName: "French"
     languageCode: "fr-FR"
     ### Copyright ###
-    copyright: "&copy; 2024 auteurs ospo.ch. Tous droits réservés."
+    copyright: "&copy; 2024 - 2025 auteurs ospo.ch. Tous droits réservés."
     weight: 2
     params:
       ### Accessibility ###
