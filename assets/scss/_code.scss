@@ -1,5 +1,9 @@
 // Code formatting
 
+// TODO: review the top level css container
+//
+// Currently it's docs-wrapper which restricts those styles
+// to the documentation section of the theme.
 .docs-wrapper {
   // Highlighted code.
   .highlight {
