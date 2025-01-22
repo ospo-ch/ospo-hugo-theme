@@ -1,0 +1,10 @@
+<blockquote class="alert alert-{{ .AlertType }}">
+  <p class="alert-heading">
+    {{ with .AlertTitle }} 
+        {{ . }} 
+    {{ else }} 
+        {{ or (T (printf "alert_%s" .AlertType)) (title .AlertType) }} 
+    {{ end }}
+  </p>
+  {{ .Text }}
+</blockquote>

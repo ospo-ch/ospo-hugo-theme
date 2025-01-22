@@ -19,6 +19,23 @@ other = "On this page"
 [docs_sidebar_current_section]
 other = "In this section"
 
+# Alert 
+[alert_note]
+other = "Note"
+
+[alert_tip]
+other = "Tip"
+
+[alert_important]
+other = "Important"
+
+[alert_warning]
+other = "Warning"
+
+[alert_caution]
+other = "Caution"
+
+
 # Insights: Documentation 
 [insights_documentation_heading]
 other = "Documentation"
@@ -53,4 +70,3 @@ other = "Legal"
 
 [insights_legal_desc]
 other = "These checks ensure that your project is compliant with the legal guidelines."
-
