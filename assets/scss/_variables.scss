@@ -49,6 +49,14 @@ $font-weight-medium: 500 !default;
 $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
 
+$alert-types: (
+  "note": "accent",
+  "tip": "success",
+  "important": "upsell",
+  "warning": "attention",
+  "caution": "danger",
+) !default;
+
 //  CSS custom properties
 :root {
   /* Color Palette */
@@ -68,6 +76,12 @@ $font-weight-bold: 700 !default;
   --color-orange: #ffaa33;
   --color-red-700: #cc0000;
   --color-red: #ff3333;
+
+  --color-accent: #0969da;
+  --color-success: #1f883d;
+  --color-upsell: #8250df;
+  --color-attention: #9a6700;
+  --color-danger: #cf222e;
 
   /* Typography */
 
@@ -223,6 +237,12 @@ $font-weight-bold: 700 !default;
   --ospo-background-color-muted: #afb8c133; // TODO: use base design token
   --ospo-content-table-padding-vertical: calc(var(--ospo-spacing-xs) * 3);
   --ospo-color-canvas-default: var(--color-white);
+
+  /* Alerts Colors */
+  @each $type, $color in $alert-types {
+    --ospo-#{$type}-text-emphasis: var(--color-#{$color});
+    --ospo-#{$type}-border-subtle: var(--color-#{$color});
+  }
 
   /* z-index
   Keep this in order, and avoid reusing variables 
