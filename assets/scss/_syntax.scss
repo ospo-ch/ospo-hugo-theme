@@ -118,6 +118,11 @@
   }
 
   blockquote {
+    border-left: var(--ospo-border-width-thicker) solid
+      var(--ospo-border-color-muted);
+    margin: var(--ospo-spacing-lg) var(--ospo-spacing-none);
+    padding: var(--ospo-spacing-md) var(--ospo-spacing-lg);
+
     p {
       margin-top: var(--ospo-spacing-none);
     }
