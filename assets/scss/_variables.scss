@@ -226,7 +226,7 @@ $alert-types: (
   --ospo-report-font-size-secondary: var(--ospo-font-body-size-small);
   --ospo-report-content-max-width: calc(60 * var(--ospo-report-font-size));
   --ospo-score-container-padding: var(--ospo-spacing-md);
-  --ospo-section-padding-vertical: calc(var(--ospo-spacing-md) * 6);
+  --ospo-section-padding-y: calc(var(--ospo-spacing-md) * 6);
   --ospo-text-color: var(--color-black);
   --ospo-color-background-hover: rgba(
     208,
@@ -235,7 +235,7 @@ $alert-types: (
     0.24
   ); // TODO: use base design token
   --ospo-background-color-muted: #afb8c133; // TODO: use base design token
-  --ospo-content-table-padding-vertical: calc(var(--ospo-spacing-xs) * 3);
+  --ospo-content-table-padding-y: calc(var(--ospo-spacing-xs) * 3);
   --ospo-color-canvas-default: var(--color-white);
 
   /* Alerts Colors */
