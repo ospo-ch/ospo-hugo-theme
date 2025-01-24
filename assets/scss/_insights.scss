@@ -111,7 +111,7 @@
 
 .insights-wrapper {
   --ospo-audit-group-margin-bottom: 48px;
-  --ospo-audit-margin-horizontal: 5px;
+  --ospo-audit-margin-x: 5px;
   --ospo-audit-description-padding-left: calc(
     var(--ospo-score-icon-size) + var(--ospo-score-icon-margin-left) +
       var(--ospo-score-icon-margin-right)
@@ -135,7 +135,7 @@
 }
 
 .insights-category-header {
-  margin-bottom: var(--ospo-section-padding-vertical);
+  margin-bottom: var(--ospo-section-padding-y);
 }
 
 .insights-category-header .gauge__label {
@@ -223,13 +223,6 @@
   line-height: var(--ospo-report-line-height-secondary);
 }
 
-.insights-audit-explanation {
-  margin: var(--audit-padding-vertical) 0
-    calc(var(--audit-padding-vertical) / 2) var(--ospo-audit-margin-horizontal);
-  line-height: var(--audit-explanation-line-height);
-  display: inline-block;
-}
-
 .insights-wrapper details > summary {
   /* Blink 89+ and Firefox will hide the arrow when display is changed from (new) default of `list-item` to block.  https://chromestatus.com/feature/6730096436051968*/
   display: block;
@@ -252,7 +245,7 @@
 
 /* chevron */
 .insights-chevron-container {
-  margin: var(--ospo-spacing-none) var(--ospo-audit-margin-horizontal);
+  margin: var(--ospo-spacing-none) var(--ospo-audit-margin-x);
   margin-right: var(--ospo-spacing-none);
 }
 
@@ -332,7 +325,7 @@ details[open] .insights-audit-list-toggletext--hide {
 
 .insights-audit__display-text,
 .insights-chevron-container {
-  margin: var(--ospo-spacing-none) var(--ospo-audit-margin-horizontal);
+  margin: var(--ospo-spacing-none) var(--ospo-audit-margin-x);
 }
 .insights-chevron-container {
   margin-right: var(--ospo-spacing-none);
