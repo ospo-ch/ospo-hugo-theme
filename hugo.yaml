@@ -1,0 +1,8 @@
+# ospo-hugo-theme config
+#
+# documentation: https://gohugo.io/hugo-modules/configuration/
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.134.0
