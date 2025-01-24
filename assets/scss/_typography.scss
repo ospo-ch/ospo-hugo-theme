@@ -15,7 +15,6 @@ body {
 h1,
 .h1 {
   font-size: var(--h1-size-mobile, $h1-size-mobile) !important;
-  text-transform: uppercase;
 
   @media (min-width: $screen-md) {
     font-size: var(--h1-size, $h1-size) !important;
