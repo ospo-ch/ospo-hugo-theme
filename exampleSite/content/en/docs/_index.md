@@ -1,5 +1,5 @@
 ---
-title: "ospo hugo theme documentation"
+title: "OSPO Hugo Theme Documentation"
 linkTitle: "Documentation"
 weight: 1
 toc: true

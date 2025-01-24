@@ -1,6 +1,6 @@
 ---
-title: Writing Content
-linkTitle: Writing Content
+title: Writing content
+linkTitle: Writing content
 description: >
   How to write content
 weight: 5
