@@ -237,6 +237,7 @@ $alert-types: (
   --ospo-background-color-muted: #afb8c133; // TODO: use base design token
   --ospo-content-table-padding-y: calc(var(--ospo-spacing-xs) * 3);
   --ospo-color-canvas-default: var(--color-white);
+  --ospo-text-color-muted: var(--color-gray-700);
 
   /* Alerts Colors */
   @each $type, $color in $alert-types {

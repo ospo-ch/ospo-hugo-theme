@@ -2,6 +2,11 @@
 #
 # documentation: https://gohugo.io/hugo-modules/configuration/
 
+params:
+  anchors:
+    min: 1
+    max: 2
+
 module:
   hugoVersion:
     extended: true

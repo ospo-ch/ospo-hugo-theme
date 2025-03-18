@@ -82,6 +82,19 @@ ol + p {
   margin-top: var(--ospo-spacing-xl);
 }
 
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: unset;
+  text-decoration: none;
+  &:hover {
+    color: unset;
+  }
+}
+
 a {
   text-decoration: none;
   color: var(--ospo-link-color);
