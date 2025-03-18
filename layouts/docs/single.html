@@ -2,7 +2,9 @@
 <div class="docs-intro">
   <h1>{{ .Title }}</h1>
   {{ with .Params.description }}
-  <div class="lead">{{ . | markdownify }}</div>
+  <div class="article-intro h2">
+    <p>{{ . | markdownify }}</p>
+  </div>
   {{ end }}
 </div>
 <div class="docs-content">
