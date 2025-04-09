@@ -63,7 +63,7 @@ languages:
       accessibility:
         skip_text: "Skip to content"
         help_text: "Accessibility Statement"
-        help_url: "/example-page/"
+        help_url: "docs/accessibility/"
     ### Menu ###
     menu:
       main:
@@ -95,7 +95,7 @@ languages:
       accessibility:
         skip_text: "Aller au contenu"
         help_text: "Accessibilité"
-        help_url: "/example-page/"
+        help_url: "docs/accessibility/"
     ### Menu ###
     menu:
       main:
