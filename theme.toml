@@ -3,9 +3,10 @@ license = "Apache 2.0"
 licenselink = "https://github.com/ospo-ch/ospo-hugo-theme/blob/main/LICENSE"
 description = "A Hugo theme to bootstrap an ospo portal"
 homepage = "https://github.com/ospo-ch/ospo-hugo-theme/"
-tags = ["ospo", "multilingual", "responsive"]
-features = []
+tags = ["ospo", "multilingual", "responsive", "documentation", "docs"]
+features = ["responsive", "docs", "social-icons", "multilingual", "projects"]
 min_version = "0.134.0"
 
 [author]
-name = "ospo.ch Authors"
+    name = "ospo.ch Authors"
+    homepage = "https://github.com/ospo-ch/ospo-hugo-theme/"
