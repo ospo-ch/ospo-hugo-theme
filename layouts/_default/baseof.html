@@ -7,7 +7,8 @@
     {{- partial "head.html" . -}}
   </head>
   <body>
-    {{- partial "accessibility.html" . -}} {{- partialCached "header.html" . -}}
+    {{- partialCached "accessibility.html" . -}} 
+    {{- partialCached "header.html" . -}}
     <section id="content" class="container wrap">
       <header>
         <h1>{{ .Title }}</h1>
