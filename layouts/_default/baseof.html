@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html
+  lang="{{ or site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
   <head>
     {{- partial "head.html" . -}}
   </head>
   <body>
-    {{- partial "accessibility.html" . -}}
-    {{- partial "header.html" . -}}
+    {{- partial "accessibility.html" . -}} {{- partial "header.html" . -}}
     <section id="content" class="container wrap">
       <header>
         <h1>{{ .Title }}</h1>
       </header>
       <main>{{ block "main" . }}{{ end }}</main>
     </section>
-    {{- partial "footer.html" . -}}
+    {{- partialCached "footer.html" . -}}
   </body>
 </html>
