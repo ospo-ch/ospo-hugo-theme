@@ -14,12 +14,13 @@
             href="{{ .Params.repository }}"
             class="card__action"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img loading="lazy" width="16" height="16" src="{{
             "images/icons/repository.svg" | relURL }}" alt="Source repository
             icon">
           </a>
-          <a href="{{ .Params.website }}" class="card__action" target="_blank">
+          <a href="{{ .Params.website }}" class="card__action" target="_blank" rel="noopener noreferrer">
             <img loading="lazy" width="16" height="16" src="{{
             "images/icons/up-right-from-square.svg" | relURL }}" alt="Go to
             website icon">
