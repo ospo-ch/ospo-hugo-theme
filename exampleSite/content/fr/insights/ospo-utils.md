@@ -8,7 +8,7 @@ params:
     aggregate: 100
     documentation: 100
     license: 100
-    practices: 100
+    best_practices: 100
     security: 100
     legal: 100
 ---
