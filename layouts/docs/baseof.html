@@ -7,8 +7,8 @@
     {{- partial "head.html" . -}}
   </head>
   <body>
-    {{- partialCached "accessibility.html" . -}} 
-    {{- partialCached "header.html" . -}}
+    {{- partialCached "accessibility.html" . "global" -}}
+    {{- partialCached "header.html" . .Language.Lang -}}
     <div class="container-fluid docs-wrapper">
       <aside class="sidebar">
         <div class="docs-nav-container">
@@ -49,6 +49,6 @@
     {{ $js := resources.Get "js/accordion.js" }}
     <script defer src="{{ $js.Permalink }}"></script>
 
-    {{ partial "scripts.html" . }}
+    {{- partialCached "scripts.html" . "global" -}}
   </body>
 </html>
