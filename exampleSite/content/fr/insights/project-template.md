@@ -8,7 +8,7 @@ params:
     aggregate: 28
     documentation: 50
     license: 25
-    practices: 15
+    best_practices: 15
     security: 40
     legal: 10
   repositories:
