@@ -87,8 +87,8 @@
   };
 
   const handleEscapeKey = (e) => {
-    if (e.keyCode == 27) {
-      closeSidebar();
+    if (e.key === "Escape") {
+      closeSidebar(sidebar);
     }
   };
 
