@@ -50,7 +50,23 @@
   }
 }
 
+.docs-nav-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+  z-index: var(--z-index-docs-nav-backdrop);
+}
+
+.docs-nav-backdrop.show {
+  opacity: 0.5;
+}
+
 .docs-sidebar {
+  width: var(--ospo-size-width-medium);
+
   @media (max-width: $screen-lg) {
     position: fixed;
     top: 0;
@@ -75,24 +91,6 @@
     height: calc(100vh - var(--ospo-header-height-large) - var(--ospo-border-width-thin));
     overflow-y: auto;
   }
-}
-
-.docs-nav-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-black);
-  z-index: var(--z-index-docs-nav-backdrop);
-}
-
-.docs-nav-backdrop.show {
-  opacity: 0.5;
-}
-
-.docs-sidebar {
-  width: var(--ospo-size-width-medium);
 
   &__header {
     flex: none;
