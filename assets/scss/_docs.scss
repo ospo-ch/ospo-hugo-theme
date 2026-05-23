@@ -71,8 +71,8 @@
 
   @media (min-width: $screen-lg) {
     position: sticky;
-    top: 81px;
-    height: 100vh -81px;
+    top: calc(var(--ospo-header-height-large) + var(--ospo-border-width-thin));
+    height: calc(100vh - var(--ospo-header-height-large) - var(--ospo-border-width-thin));
     overflow-y: auto;
   }
 }
