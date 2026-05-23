@@ -1,21 +1,20 @@
-const accordions = document.querySelectorAll(".accordion");
-
 const openAccordion = (accordion) => {
-    accordion.classList.add("accordion__active");
+  accordion.classList.add("accordion__active");
 };
 
 const closeAccordion = (accordion) => {
-    accordion.classList.remove("accordion__active");
+  accordion.classList.remove("accordion__active");
 };
 
-accordions.forEach((accordion) => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".accordion").forEach((accordion) => {
     const title = accordion.querySelector(".accordion__title");
-
-    title.onclick = () => {
-        if (accordion.classList.contains("accordion__active")) {
-            closeAccordion(accordion);
-        } else {
-            openAccordion(accordion);
-        }
-    };
+    title.addEventListener("click", () => {
+      if (accordion.classList.contains("accordion__active")) {
+        closeAccordion(accordion);
+      } else {
+        openAccordion(accordion);
+      }
+    });
+  });
 });
