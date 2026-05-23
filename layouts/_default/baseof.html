@@ -7,14 +7,14 @@
     {{- partial "head.html" . -}}
   </head>
   <body>
-    {{- partialCached "accessibility.html" . -}} 
-    {{- partialCached "header.html" . -}}
+    {{- partialCached "accessibility.html" . "global" -}}
+    {{- partialCached "header.html" . .Language.Lang -}}
     <section id="content" class="container wrap">
       <header>
         <h1>{{ .Title }}</h1>
       </header>
       <main>{{ block "main" . }}{{ end }}</main>
     </section>
-    {{- partialCached "footer.html" . -}}
+    {{- partialCached "footer.html" . "global" -}}
   </body>
 </html>
