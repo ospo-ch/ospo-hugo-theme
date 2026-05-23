@@ -313,6 +313,4 @@ Copyright (c) 2023 Cloud Native Computing Foundation (CNCF)
     // Apply dropdown listeners.
     applyDropdownListeners();
   });
-
-  console.log("script initialized ...");
 })();
