@@ -10,8 +10,8 @@ This is a [Hugo](https://gohugo.io) theme for Open Source Program Office (ospo) 
 
 ## Features
 
-- **Software Catalog**: Inventory of the open-source projects used within your oganization
-- **Projects**: List of projects developped and maintained by your organization
+- **Software Catalog**: Inventory of the open-source projects used within your organization
+- **Projects**: List of projects developed and maintained by your organization
 - **Insights**: Open Source Health reports for your projects
 - **Docs**: Technical documentation
 
