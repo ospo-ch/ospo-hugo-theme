@@ -114,3 +114,4 @@ This project couldn't be possible without the amazing open-source work from the 
 - [CNCF Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme)
 - [Google Docsy Theme](https://github.com/google/docsy)
 - [Google Lighthouse](https://github.com/GoogleChrome/lighthouse)
+- [hoverintent](https://github.com/tristen/hoverintent)
