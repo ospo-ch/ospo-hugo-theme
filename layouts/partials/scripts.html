@@ -1,10 +1,10 @@
-{{ $js := resources.Get "js/hoverintent.min.js" }}
-<script defer src="{{ $js.Permalink }}"></script>
+{{ $hoverintent := resources.Get "js/hoverintent.min.js" }}
+<script defer src="{{ $hoverintent.RelPermalink }}"></script>
 
-{{ $js := resources.Get "js/menu.js" }}
-{{ if eq (getenv "HUGO_ENV") "production" }}
-{{ $js = $js | resources.Minify | resources.Fingerprint }}
-<script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ $menu := resources.Get "js/menu.js" }}
+{{ if hugo.IsProduction }}
+{{ $menu = $menu | resources.Minify | resources.Fingerprint }}
+<script defer src="{{ $menu.RelPermalink }}" integrity="{{ $menu.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ else }}
-<script defer src="{{ $js.Permalink }}"></script>
+<script defer src="{{ $menu.RelPermalink }}"></script>
 {{ end }}
