@@ -91,6 +91,16 @@ To customize your project look and feel you can provide your own version of the 
 - `_variables_project.scss`: override the theme variables
 - `_styles_project.scss`: add custom SCSS styles or override the theme's styles
 
+## Development
+
+To preview the bundled example site locally, install [Hugo (extended)](https://gohugo.io/installation/) and run:
+
+```console
+./debug.sh
+```
+
+This starts `hugo server` against `exampleSite/` with the theme mounted from the repository root, served at <http://localhost:1313/>.
+
 ## Contributing
 
 To contribute, please follow the guidelines outlined in our [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CONDUCT.md).
