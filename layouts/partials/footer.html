@@ -21,7 +21,11 @@
           <ul class="social-links">
             {{ range . }}
             <li>
+<<<<<<< HEAD
                 <a href="{{ .url }}" aria-label="{{ humanize .key }}" rel="noopener noreferrer" target="_blank">
+=======
+                <a href="{{ .url }}">
+>>>>>>> 1cce2b2 (fix: Remove empty title attribute from footer social links)
                     <img loading="lazy" width="20" height="20" src="{{ printf "images/icons/%s.svg" .key | relURL }}" alt="{{ (humanize .key) | safeHTMLAttr }} icon">
                 </a>
             </li>
