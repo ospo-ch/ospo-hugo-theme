@@ -7,8 +7,8 @@
     {{- partial "head.html" . -}}
   </head>
   <body>
-    {{- partialCached "accessibility.html" . "global" -}}
-    {{- partialCached "header.html" . .Language.Lang -}}
+    {{- partialCached "accessibility.html" . -}}
+    {{- partial "header.html" . -}}
     <div class="container-fluid docs-wrapper">
       <aside class="sidebar">
         <div class="docs-nav-container">
