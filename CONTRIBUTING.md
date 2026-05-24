@@ -1,7 +1,5 @@
 # Contributing
 
-_[Deutsch](./docs/de/CONTRIBUTING.de.md),_ _[Français](./docs/fr/CONTRIBUTING.fr.md),_ _[Italiano](./docs/it/CONTRIBUTING.it.md),_ _[Rumantsch](./docs/rm/CONTRIBUTING.rm.md),_ _[English](./CONTRIBUTING.md)_
-
 Welcome! We're thrilled that you'd like to contribute to this project!
 
 Contributions to this project are [released](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license) to the public under the project's open source license.
