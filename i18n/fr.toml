@@ -1,0 +1,72 @@
+# UI strings: buttons, components, etc ...
+
+[ui_pager_prev]
+other = "Précédent"
+
+[ui_pager_next]
+other = "Suivant"
+
+[ui_toggle_show]
+other = "Afficher"
+
+[ui_toggle_hide]
+other = "Masquer"
+
+# Docs
+[docs_toc_heading]
+other = "Sur cette page"
+
+[docs_sidebar_current_section]
+other = "Dans cette section"
+
+# Alert
+[alert_note]
+other = "Note"
+
+[alert_tip]
+other = "Astuce"
+
+[alert_important]
+other = "Important"
+
+[alert_warning]
+other = "Avertissement"
+
+[alert_caution]
+other = "Attention"
+
+
+# Insights: Documentation
+[insights_documentation_heading]
+other = "Documentation"
+
+[insights_documentation_desc]
+other = "Ces contrôles mettent en évidence les possibilités d'améliorer la documentation de votre projet."
+
+# Insights: License
+[insights_license_heading]
+other = "Licence"
+
+[insights_license_desc]
+other = "Ces contrôles garantissent que le projet dispose d'une licence conforme."
+
+# Insights: Best practices
+[insights_best_practices_heading]
+other = "Bonnes pratiques"
+
+[insights_best_practices_desc]
+other = "Ces contrôles évaluent les pratiques recommandées pour le projet."
+
+# Insights: Security
+[insights_security_heading]
+other = "Sécurité"
+
+[insights_security_desc]
+other = "Ces contrôles garantissent que votre projet respecte les pratiques de sécurité."
+
+# Insights: Legal
+[insights_legal_heading]
+other = "Juridique"
+
+[insights_legal_desc]
+other = "Ces contrôles garantissent que votre projet est conforme aux directives juridiques."
