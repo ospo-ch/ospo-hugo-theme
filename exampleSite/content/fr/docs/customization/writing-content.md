@@ -141,6 +141,40 @@ Exemple : `[exemple](https://example.com)` affichera le lien [exemple](https://e
 | Élément n°2 | Propriété 2 |         12 € |
 | Élément n°3 | Propriété 3 |          1 € |
 
+## Code
+
+Utilisez des blocs délimités par des backticks avec un identifiant de langage pour obtenir la coloration syntaxique. Le code en ligne utilise des backticks simples : `comme ceci`.
+
+### YAML
+
+```yaml
+baseURL: https://example.com/
+title: Mon portail OSPO
+
+params:
+  accessibility:
+    help_url: docs/accessibility/
+```
+
+### Bash
+
+```bash
+hugo mod get
+hugo server --environment development
+```
+
+### Go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Bonjour, OSPO !")
+}
+```
+
 ## Admonitions / Blocs d'alerte
 
 **Entrée**

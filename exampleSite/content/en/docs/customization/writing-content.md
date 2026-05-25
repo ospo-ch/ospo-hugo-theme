@@ -165,6 +165,40 @@ Example `[example](https://example.com)` will display the link [example](https:/
 | Item #2   | Property #2 |       $12 |
 | Item #3   | Property #3 |        $1 |
 
+## Code
+
+Use backtick-fenced blocks with a language identifier to get syntax highlighting. Inline code uses single backticks: `like this`.
+
+### YAML
+
+```yaml
+baseURL: https://example.com/
+title: My OSPO Portal
+
+params:
+  accessibility:
+    help_url: docs/accessibility/
+```
+
+### Bash
+
+```bash
+hugo mod get
+hugo server --environment development
+```
+
+### Go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, OSPO!")
+}
+```
+
 ## Admonitions / Callouts
 
 **Input**
