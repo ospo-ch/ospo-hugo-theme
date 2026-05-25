@@ -1,6 +1,13 @@
 ---
 title: Docker
 description: A collaborative project for the container ecosystem to assemble container-based systems.
+categories:
+  - devops
+tags:
+  - containers
+  - deployment
+prog_languages:
+  - Go
 params:
   org_name: Moby
   website: https://www.docker.com/

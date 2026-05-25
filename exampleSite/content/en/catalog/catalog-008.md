@@ -1,6 +1,13 @@
 ---
 title: Prometheus
 description: An open source systems monitoring and alerting toolkit.
+categories:
+  - observability
+tags:
+  - monitoring
+  - metrics
+prog_languages:
+  - Go
 params:
   org_name: Prometheus
   website: https://prometheus.io/

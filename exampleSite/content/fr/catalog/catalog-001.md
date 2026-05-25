@@ -1,6 +1,13 @@
 ---
 title: React
 description: Une bibliothèque JavaScript pour créer des interfaces utilisateur.
+categories:
+  - frontend
+tags:
+  - javascript
+  - ui-library
+prog_languages:
+  - JavaScript
 params:
   org_name: Meta
   website: https://react.dev/

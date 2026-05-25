@@ -1,6 +1,13 @@
 ---
 title: PostgreSQL
 description: A powerful, open source object-relational database system.
+categories:
+  - database
+tags:
+  - sql
+  - storage
+prog_languages:
+  - C
 params:
   org_name: PostgreSQL
   website: https://www.postgresql.org/

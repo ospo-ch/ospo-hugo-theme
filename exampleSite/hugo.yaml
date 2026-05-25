@@ -16,7 +16,7 @@ build:
 taxonomies:
   category: "categories"
   tag: "tags"
-  languages: "languages"
+  prog_language: "prog_languages"
 
 markup:
   goldmark:
