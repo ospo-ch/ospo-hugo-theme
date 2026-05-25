@@ -175,6 +175,51 @@ func main() {
 }
 ```
 
+## En-têtes
+
+Hugo convertit les en-têtes Markdown `#` en balises HTML `<h1>`–`<h6>`. Les niveaux `h2`–`h4` apparaissent dans la table des matières lorsque `toc: true` est défini dans le frontmatter.
+
+```text
+## En-tête h2
+### En-tête h3
+#### En-tête h4
+##### En-tête h5
+```
+
+Le hook render-heading ajoute automatiquement des liens d'ancrage.
+
+## Règle horizontale
+
+```text
+---
+```
+
+---
+
+## Listes de tâches
+
+```text
+- [x] Rédiger la déclaration d'accessibilité
+- [x] Ajouter des exemples de coloration syntaxique
+- [ ] Publier la version 1.0
+```
+
+- [x] Rédiger la déclaration d'accessibilité
+- [x] Ajouter des exemples de coloration syntaxique
+- [ ] Publier la version 1.0
+
+## Images
+
+```text
+![Texte alternatif](https://via.placeholder.com/400x200 "Titre optionnel")
+```
+
+Pour inclure une image locale, placez-la dans `static/images/` et référencez-la avec un chemin relatif à la racine :
+
+```text
+![Logo](/images/logo.svg)
+```
+
 ## Admonitions / Blocs d'alerte
 
 **Entrée**

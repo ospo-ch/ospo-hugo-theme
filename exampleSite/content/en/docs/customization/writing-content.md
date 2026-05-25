@@ -175,6 +175,51 @@ func main() {
 }
 ```
 
+## Headings
+
+Hugo maps Markdown `#` headings to HTML `<h1>`–`<h6>`. Headings `h2`–`h4` appear in the table of contents when `toc: true` is set in frontmatter.
+
+```text
+## h2 heading
+### h3 heading
+#### h4 heading
+##### h5 heading
+```
+
+The render-heading hook adds anchor links automatically.
+
+## Horizontal rule
+
+```text
+---
+```
+
+---
+
+## Task lists
+
+```text
+- [x] Write the accessibility statement
+- [x] Add syntax highlighting examples
+- [ ] Publish the 1.0 release
+```
+
+- [x] Write the accessibility statement
+- [x] Add syntax highlighting examples
+- [ ] Publish the 1.0 release
+
+## Images
+
+```text
+![Alt text](https://via.placeholder.com/400x200 "Optional title")
+```
+
+To include a local image, place it under `static/images/` and reference it with a root-relative path:
+
+```text
+![Logo](/images/logo.svg)
+```
+
 ## Admonitions / Callouts
 
 **Input**
