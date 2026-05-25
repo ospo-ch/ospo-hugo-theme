@@ -15,6 +15,6 @@ params:
   repository: https://github.com/ansible/ansible
 ---
 
-Ansible is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
+Ansible est une suite d'outils logiciels permettant l'infrastructure en tant que code. Elle est open source et comprend des fonctionnalités de provisionnement de logiciels, de gestion de la configuration et de déploiement d'applications.
 
-Originally written by Michael DeHaan in 2012, and acquired by Red Hat in 2015, Ansible is designed to configure both Unix-like systems and Microsoft Windows. Ansible is agentless, relying on temporary remote connections via SSH or Windows Remote Management which allows PowerShell execution. The Ansible control node runs on most Unix-like systems that are able to run Python, including Windows with Windows Subsystem for Linux installed. System configuration is defined in part by using its own declarative language.
+Écrite à l'origine par Michael DeHaan en 2012 et acquise par Red Hat en 2015, Ansible est conçue pour configurer aussi bien les systèmes de type Unix que Microsoft Windows. Ansible est sans agent : elle s'appuie sur des connexions distantes temporaires via SSH ou Windows Remote Management avec PowerShell. Sa configuration est définie à l'aide d'un langage déclaratif propre à la plateforme.
