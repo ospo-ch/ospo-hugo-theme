@@ -53,8 +53,8 @@ languages:
   en:
     ### Language ###
     contentDir: "content/en"
-    languageName: "English"
-    languageCode: "en-US"
+    label: "English"
+    locale: "en-US"
     weight: 1
     ### Copyright ###
     copyright: "Copyright &copy; 2024 - 2025. All Rights Reserved."
@@ -85,8 +85,8 @@ languages:
           weight: 4
   fr:
     contentDir: "content/fr"
-    languageName: "French"
-    languageCode: "fr-FR"
+    label: "French"
+    locale: "fr-FR"
     ### Copyright ###
     copyright: "&copy; 2024 - 2025 auteurs ospo.ch. Tous droits réservés."
     weight: 2
