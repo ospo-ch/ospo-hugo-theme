@@ -1,5 +1,5 @@
 ---
-title: ospo utils
+title: OSPO Utils
 description: A set of scripts to build ospo.ch
 params:
   org_name: ospo.ch

@@ -1,5 +1,5 @@
 ---
-title: ospo project template
+title: OSPO Project Template
 description: A repository template for ospo.ch projects
 params:
   org_name: ospo.ch
