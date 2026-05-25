@@ -5,8 +5,8 @@ description = "A Hugo theme to bootstrap an ospo portal"
 homepage = "https://github.com/ospo-ch/ospo-hugo-theme/"
 tags = ["ospo", "multilingual", "responsive", "documentation", "docs"]
 features = ["responsive", "docs", "social-icons", "multilingual", "projects"]
-min_version = "0.134.0"
+min_version = "0.161.0"
 
 [author]
-    name = "ospo.ch Authors"
-    homepage = "https://github.com/ospo-ch/ospo-hugo-theme/"
+name = "ospo.ch Authors"
+homepage = "https://github.com/ospo-ch/ospo-hugo-theme/"
