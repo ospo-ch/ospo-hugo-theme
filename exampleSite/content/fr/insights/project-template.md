@@ -179,7 +179,7 @@ params:
           id: token_permissions
           title: Token Permissions
           description: This check determines whether the project’s automated workflows tokens are set to read-only by default.
-          passed:
+          passed: false
       legal:
         trademark_disclaimer:
           id: trademark_disclaimer
