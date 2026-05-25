@@ -137,9 +137,9 @@ Exemple : `[exemple](https://example.com)` affichera le lien [exemple](https://e
 
 | Colonne n°1 | Colonne n°2 | Colonne n°3 |
 | ----------- | :---------: | ----------: |
-| Élément n°1 | Propriété 1 |      1 600 € |
-| Élément n°2 | Propriété 2 |         12 € |
-| Élément n°3 | Propriété 3 |          1 € |
+| Élément n°1 | Propriété 1 |       1 600 € |
+| Élément n°2 | Propriété 2 |          12 € |
+| Élément n°3 | Propriété 3 |           1 € |
 
 ## Code
 
