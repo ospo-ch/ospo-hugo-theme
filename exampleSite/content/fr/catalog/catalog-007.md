@@ -1,6 +1,14 @@
 ---
 title: Grafana
 description: Une plateforme d'observabilité et de visualisation de données ouverte et composable.
+categories:
+  - observability
+tags:
+  - monitoring
+  - visualization
+prog_languages:
+  - Go
+  - TypeScript
 params:
   org_name: Grafana
   website: https://grafana.com/

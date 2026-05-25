@@ -6,7 +6,7 @@ categories:
 tags:
   - automation
   - deployment
-languages:
+prog_languages:
   - Python
 
 params:

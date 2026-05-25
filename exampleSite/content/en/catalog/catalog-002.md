@@ -1,6 +1,13 @@
 ---
 title: Vue.js
 description: A progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+categories:
+  - frontend
+tags:
+  - javascript
+  - framework
+prog_languages:
+  - JavaScript
 params:
   org_name: Vue
   website: https://vuejs.org/
