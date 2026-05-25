@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="main-wrapper">
+  <div class="main-area">
+    <article>
+      <header class="project-header">
+        <p class="project-header__org">{{ .Params.org_name }}</p>
+        <h1 class="project-header__title">{{ .Title }}</h1>
+        {{- with .Description }}
+        <p class="project-header__description">{{ . }}</p>
+        {{- end }}
+        <div class="project-header__links">
+          {{- with .Params.repository }}
+          <a href="{{ . }}" class="button button--secondary" target="_blank" rel="noopener noreferrer">Repository</a>
+          {{- end }}
+          {{- with .Params.website }}
+          <a href="{{ . }}" class="button button--secondary" target="_blank" rel="noopener noreferrer">Website</a>
+          {{- end }}
+        </div>
+      </header>
+      {{- with .Content }}
+      <div class="project-body">{{ . }}</div>
+      {{- end }}
+    </article>
+  </div>
+</div>
+{{ end }}
