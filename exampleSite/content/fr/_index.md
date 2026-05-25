@@ -5,8 +5,8 @@ description: Ceci est un exemple de site pour le thème ospo. Ce thème a été 
 
 Ceci est un exemple de site pour le thème ospo. Ce thème a été créé pour le CMS Hugo, et a été développé et publié par ospo.ch.
 
-{{< button link="catalog" text="Software Catalog" >}}
+{{< button link="catalog" text="Catalogue" >}}
 
-{{< button link="projects" text="Projects" >}}
+{{< button link="projects" text="Projets" >}}
 
-{{< button link="insights" text="Insights" >}}
+{{< button link="insights" text="Évaluation" >}}
