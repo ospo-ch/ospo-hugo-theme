@@ -10,7 +10,7 @@ Le thème OSPO Hugo peut être ajouté à un site Hugo existant de trois manièr
 
 ## Prérequis
 
-- [Hugo extended](https://gohugo.io/installation/) ≥ 0.134.0
+- [Hugo extended](https://gohugo.io/installation/) ≥ 0.161.0
 - [Go](https://go.dev/dl/) (requis uniquement pour la méthode Module Hugo)
 
 ## Méthode 1 — Module Hugo (recommandé)
